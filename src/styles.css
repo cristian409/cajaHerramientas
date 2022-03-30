@@ -1,0 +1,28 @@
+.remover {
+    display: none;
+}
+
+.contentPortada .contentTitulo .tituloPrincipal {
+    padding: 0 20vw;
+}
+
+.contentPortada .contentTitulo  .parrafoTitulo {
+    margin-top: 5vh;
+    padding: 0 15vw;
+}
+
+.contentPortada .contentTitulo {
+    padding-top: 12vh;
+}
+
+.contentPortada .container.contentImg {
+    margin-top: 6vh;
+}
+
+.contentInterna .parrafosPresentacion .parrafoUno{
+    margin-top: 5vh;
+}
+
+.contentInterna .parrafosPresentacion .parrafoDos{
+    margin: 2vh 0;
+}
