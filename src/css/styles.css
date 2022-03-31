@@ -22,3 +22,17 @@
 .contentInterna .parrafosPresentacion .parrafoDos{
     margin: 2vh 0;
 }
+
+.navbar-toggler .fa-bars{
+    font-size: 35px;
+}
+
+.menuMobile .container .navbar-nav{
+    padding-top: 6vh !important;
+}
+
+@media (min-width:768px) {
+    .menuMobile .navbar{
+        display: none;
+    }
+}

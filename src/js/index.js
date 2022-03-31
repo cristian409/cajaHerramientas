@@ -42,6 +42,7 @@ let abrirCajaHerramientas = elemento => {
     botonInterno.addEventListener('click', async (event) => {
         event.preventDefault;
         await CajaHerramienta.crearCaja(elemento.id);
+        // await CajaHerramienta.cargarMenu();
     });
 }
 
