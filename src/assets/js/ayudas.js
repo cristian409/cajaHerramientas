@@ -1,7 +1,18 @@
+/**
+ * Clase que contiene los metodos de soporte para los metodos internos
+ * cada clase o index
+ */
 export default class Ayudas {
+    /**
+     * Metodo que sirve para cargar e incrustar las paginas html
+     * en la pagina index 
+     * @param {*} elemento id donde se incrusta el codigo 
+     * @param {*} url ruta de la pagina 
+     * @returns el tag donde se incrusta el codigo
+     */
     static async cargarPagina(elemento, url) {
         let respuesta = await fetch(url);
-
+    
         if (respuesta.ok) {
             const contenedor = document.getElementById(`${elemento}`);
             contenedor.innerHTML = await respuesta.text();
@@ -11,6 +22,13 @@ export default class Ayudas {
         throw `error ${respuesta.status} - ${respuesta.statusText}`;
     }
 
+    /**
+     * Metodo para generar un alerta en caso de no enocntrar la pagina
+     * que se quiere incrustar en el index
+     * @param {*} elemento id donde se añade el codigo
+     * @param {*} mensaje  mensaje que se muestra al usuario
+     * @param {*} error error que se muestra en consola
+     */
     static alerta(elemento, mensaje, error = 'Problemas al cargar la pagina') {
         document.getElementById(`${elemento}`).insertAdjacentHTML('afterbegin', `
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">

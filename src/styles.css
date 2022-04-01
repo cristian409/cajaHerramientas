@@ -1,38 +1,214 @@
-.contentPortada .contentTitulo .tituloPrincipal {
-    padding: 0 20vw;
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('assets/fuentes/MyriadProBold/MyriadProBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
-.contentPortada .contentTitulo  .parrafoTitulo {
-    margin-top: 5vh;
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('assets/fuentes/MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Myriad Pro Regular;
+}
+
+/* Estilos de la portada "app/inicio/portada.html"*/
+.contentPortada {
+    height: 100vh;
+    background-color: #1B75BB;
+}
+
+.contentPortada .contentTitulo .tituloPrincipal {
     padding: 0 15vw;
+    font-family: Myriad Pro Bold;
+    font-size: 34px;
+    color: #1B2F72;
+    line-height: 34px;
+}
+
+.contentPortada .contentTitulo .tituloPrincipal>span {
+    color: #ffff;
+}
+
+.contentPortada .contentTitulo .estrellaIzquierda {
+    width: 6%;
+    position: relative;
+    left: -113px;
+    top: 8px;
+}
+
+.contentPortada .contentTitulo .estrellaDerecha {
+    width: 5%;
+    position: relative;
+    left: 115px;
+    top: -30px;
+}
+
+.contentPortada .contentTitulo .parrafoTitulo {
+    padding: 0px 18vw;
+    font-size: 16px;
+    color: #ffff;
+    line-height: 20px;
 }
 
 .contentPortada .contentTitulo {
-    padding-top: 12vh;
+    padding-top: 8vh;
 }
 
 .contentPortada .container.contentImg {
-    margin-top: 6vh;
+    margin-top: -6vh;
 }
 
-.contentInterna .parrafosPresentacion .parrafoUno{
-    margin-top: 5vh;
+.contentPortada .container.contentImg .conBrillo {
+    display: none;
 }
 
-.contentInterna .parrafosPresentacion .parrafoDos{
-    margin: 2vh 0;
+.contentPortada .container.contentImg .btn {
+    cursor: pointer;
+    position: relative;
+    top: 86px;
+    left: -5px;
+    height: 90px;
 }
 
-.navbar-toggler .fa-bars{
+.contentPortada .container .nube {
+    width: 30%;
+    position: relative;
+}
+
+.contentPortada .container .nube.izquierda {
+    top: 90px;
+    left: 16px;
+}
+
+.contentPortada .container .nube.derecha {
+    left: 100px;
+    top: 190px;
+}
+
+
+/* Estilos de la pagina interna "app/paginaPortada/portadaInterna.html"*/
+.contentInterna {
+    background-color: #1B75BB;
+    color: #ffff;
+}
+
+.contentInterna .seccion {
+    padding-top: 8vh;
+}
+
+.contentInterna .parrafosPresentacion .parrafoUno {
+    padding: 0 10vw;
+}
+
+.contentInterna .parrafosPresentacion .parrafoDos {
+    margin: 2vh 11vw;
+}
+
+.contentInterna .parrafosPresentacion .parrafoTres {
+    margin: 0 8vw;
+}
+
+.contentInterna .parrafosPresentacion .btn {
+    cursor: pointer;
+    color: #ffff;
+    margin: 2vh 0 4vh;
+    padding: 36px;
+    font-family: Myriad Pro Bold;
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos del menu mobile "app/mobile/menuMobile.html"*/
+.navbar-toggler .fa-bars {
     font-size: 35px;
 }
 
-.menuMobile .container .navbar-nav{
+.menuMobile .container .navbar-nav {
     padding-top: 6vh !important;
 }
 
 @media (min-width:768px) {
-    .menuMobile .navbar{
+    .menuMobile .navbar {
         display: none;
     }
+}
+
+/* Estilos de la caja de herramientas "app/modeloCaja/cajaHerramienta.html"*/
+.cajaPrincipal {
+    background-color: #C63D96;
+    color: #ffff;
+}
+
+.cajaPrincipal .introduccion {
+    padding-top: 6vh;
+}
+
+.cajaPrincipal .introduccion .tituloPrincipal {
+    padding: 0 15vw;
+    font-family: Myriad Pro Bold;
+    font-size: 34px;
+    line-height: 34px;
+}
+
+.cajaPrincipal .introduccion .estrellaDerecha {
+    width: 5%;
+    position: relative;
+    left: 115px;
+    top: -30px;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda {
+    width: 6%;
+    position: relative;
+    left: -86px;
+    top: 8px;
+}
+
+@keyframes transiciónPuntos {
+    from {
+        opacity: 0.9;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+.cajaPrincipal .introduccion .marco .puntosBlanco {
+    position: relative;
+    z-index: 1;
+    margin-top: -1vh;
+    width: 85%;
+    opacity: 1;
+    animation-name: transiciónPuntos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.cajaPrincipal .introduccion .marco .imgMarco {
+    position: relative;
+    z-index: 999;
+    margin-top: -32vh;
+    width: 35%;
+}
+
+.cajaPrincipal .introduccion .marco .btn {
+    cursor: pointer;
+    color: #000000;
+    margin-top: -4vh;
+    padding: 22px;
+    font-family: Myriad Pro Bold;
+    font-size: 11px;
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
