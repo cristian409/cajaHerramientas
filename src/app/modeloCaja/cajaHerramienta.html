@@ -27,12 +27,12 @@
 </head>
 
 <body>
-    <div id="cajaPrincipal" class="container-fluid cajaPrincipal">
-        <div id="menuMobile" class="menuMobile">
+    <div id="cajaPrincipal" class="cajaPrincipal">
+        <div id="menuMobile" class="menuMobile fixed-top">
             <!-- Espacio para incrustar el menu mobile -->
         </div>
 
-        <div class="text-center introduccion">
+        <div class="container-fluid text-center introduccion">
             <div id="introduccion">
                 <img class="estrellaIzquierda"
                     src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/004. Estrellas 1-11.png"
@@ -47,14 +47,40 @@
             <div class="marco">
                 <img class="puntosBlanco"
                     src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0014. Puntos blancos-11.png" alt="punto">
-                <img class="imgMarco"
+                <img class="imgMuñeco"
                     src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0015. Introduccion-marco normativo-11.png"
                     alt="marco normativo"><br>
-                <button id="btnMarco" type="button" class="btn">Marco normativo
+                <span id="btnMarco" type="button" class="btn">Marco normativo
                     <div></div>
-                </button>
+                </sapan>
+            </div>
+            <div class="recomendaciones">
+                <img class="puntosBlanco"
+                    src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0014. Puntos blancos-11.png" alt="punto">
+                <img class="imgMuñeco"
+                    src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0016. Introduccion-recomendaciones-11.png"
+                    alt="recomendaciones"><br>
+                <span id="btnRecomendaciones" type="button" class="btn">Recomendaciones
+                    <div></div>
+                </span>
+            </div>
+            <div class="guiaVerificacion">
+                <img class="puntosBlanco"
+                    src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0014. Puntos blancos-11.png" alt="punto">
+                <img class="imgMuñeco"
+                    src="/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0017. Introduccion-guia de verificacion-11.png"
+                    alt="guia verificacion"><br>
+                <span id="btnGuiaVerificacion" type="button" class="btn">Guia de verificación
+                    <div></div>
+                </span>
             </div>
         </div>
+
+
+        <div id="cajaHerramientaModal" class="">
+            <!-- Lugar donde se carga el modal que fue llamado -->
+        </div>
+
     </div>
 </body>
 

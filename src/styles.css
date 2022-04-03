@@ -23,7 +23,8 @@ body {
     background-color: #1B75BB;
 }
 
-.contentPortada .contentTitulo .tituloPrincipal {
+.contentPortada .contentTitulo .tituloPrincipal,
+.cajaPrincipal .introduccion .tituloPrincipal {
     padding: 0 15vw;
     font-family: Myriad Pro Bold;
     font-size: 34px;
@@ -127,35 +128,37 @@ body {
 }
 
 /* Estilos del menu mobile "app/mobile/menuMobile.html"*/
-.navbar-toggler .fa-bars {
+.cajaPrincipal .navbar-toggler .fa-bars {
     font-size: 35px;
 }
 
-.menuMobile .container .navbar-nav {
+.cajaPrincipal .menuMobile .navbar-nav {
     padding-top: 6vh !important;
+    padding-left: 5vw;
+}
+
+.cajaPrincipal .menuMobile {
+    padding: 1vh 4vw 0 0;
 }
 
 @media (min-width:768px) {
-    .menuMobile .navbar {
+    .cajaPrincipal .navbar {
         display: none;
     }
 }
 
 /* Estilos de la caja de herramientas "app/modeloCaja/cajaHerramienta.html"*/
 .cajaPrincipal {
-    background-color: #C63D96;
     color: #ffff;
 }
 
 .cajaPrincipal .introduccion {
     padding-top: 6vh;
+    background-color: #C63D96;
 }
 
 .cajaPrincipal .introduccion .tituloPrincipal {
-    padding: 0 15vw;
-    font-family: Myriad Pro Bold;
-    font-size: 34px;
-    line-height: 34px;
+    color: #ffff;
 }
 
 .cajaPrincipal .introduccion .estrellaDerecha {
@@ -168,47 +171,223 @@ body {
 .cajaPrincipal .introduccion .estrellaIzquierda {
     width: 6%;
     position: relative;
-    left: -86px;
+    left: -108px;
     top: 8px;
 }
 
 @keyframes transiciónPuntos {
-    from {
-        opacity: 0.9;
+    0% {
+        opacity: 1;
     }
 
-    to {
+    60% {
         opacity: 0.2;
     }
 }
 
-.cajaPrincipal .introduccion .marco .puntosBlanco {
+.cajaPrincipal .introduccion .puntosBlanco {
     position: relative;
     z-index: 1;
     margin-top: -1vh;
     width: 85%;
     opacity: 1;
     animation-name: transiciónPuntos;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
-.cajaPrincipal .introduccion .marco .imgMarco {
+.cajaPrincipal .introduccion .imgMuñeco {
     position: relative;
     z-index: 999;
     margin-top: -32vh;
-    width: 35%;
+    width: 46%;
 }
 
-.cajaPrincipal .introduccion .marco .btn {
+.cajaPrincipal .introduccion .marco .imgMuñeco {
+    width: 34%;
+}
+
+.cajaPrincipal .introduccion .guiaVerificacion .imgMuñeco {
+    width: 54%;
+}
+
+.cajaPrincipal .introduccion .btn {
     cursor: pointer;
     color: #000000;
     margin-top: -4vh;
     padding: 22px;
     font-family: Myriad Pro Bold;
-    font-size: 11px;
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+    font-size: 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.cajaPrincipal .introduccion .marco .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+}
+
+.cajaPrincipal .introduccion .recomendaciones .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    margin-top: -6vh;
+    color: #ffff;
+}
+
+.cajaPrincipal .introduccion .recomendaciones {
+    margin: 4vh 0;
+}
+
+.cajaPrincipal .introduccion .guiaVerificacion .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
+    margin-top: -4vh;
+}
+
+/* Estilos del modal */
+.modal-dialog {
+    -webkit-box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-content .btnClose {
+    position: relative;
+    top: 1vh;
+    left: 86vw;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.modal .modal-content {
+    border-radius: 0;
+    background-clip: unset;
+}
+
+/* Estilos marco normativo */
+.modal-content.primerDivMarco {
+    background-color: #EE3A4F;
+}
+
+.primerDivMarco .tituloPrincipal {
+    font-family: Myriad Pro Bold;
+    font-size: 28px;
+}
+
+.primerDivMarco .estrellaDerecha {
+    width: 5%;
+    position: relative;
+    left: 115px;
+    top: -30px;
+}
+
+.primerDivMarco .estrellaIzquierda {
+    width: 6%;
+    position: relative;
+    left: -124px;
+    top: 30px;
+}
+
+.primerDivMarco article {
+    line-height: 18px;
+    text-align: justify;
+    padding: 0 6vw;
+}
+
+.primerDivMarco .foto1 {
+    width: 92%;
+}
+
+.segundoDivMarco .foto2 {
+    width: 114%;
+    margin-left: -6vw;
+    margin-top: -4vh;
+}
+
+.segundoDivMarco .estrellaRojas {
+    width: 6%;
+    position: relative;
+    top: 10px;
+}
+
+.segundoDivMarco .numero {
+    font-family: Myriad Pro Bold;
+    font-size: 16px;
+    width: max-content;
+    background-color: #FFF100;
+    border-radius: 20px;
+    padding: 0 6px;
+    margin: 10px 0 10px -40px;
+}
+
+.segundoDivMarco .lineaPunteada {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/005.Línea punteada.png");
+    background-size: auto;
+    background-repeat: repeat-y;
+    background-position: left;
+    margin-left: 11vw;
+    padding: 0 4vw 0 4vw;
+}
+
+.segundoDivMarco .lineaPunteada .accordion{
+    margin-bottom: 15px;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-button:not(.collapsed) {
+    font-family: Myriad Pro Bold;
+    color: #000000;
+    font-weight: 900;
+    background-color: #ffff;
+    box-shadow: none;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-button {
+    background-color: #fff;
+    font-family: Myriad Pro Bold;
+    border-radius: 0;
+    padding: 8px;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-button:focus {
+    z-index: 3;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 10px;
+    font-family: FontAwesome;
+    content: "\2b";
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+    
+}
+
+.segundoDivMarco .lineaPunteada .accordion-button:not(.collapsed)::after {
+    font-family: FontAwesome;
+    content: "\f068";
+    background-image: none;
+    transform: none;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-item {
+    background-color: #fff;
+    border-radius: 0;
+    border: 2px solid #000000;
+    font-weight: 500;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-item .accordion-body {
+    padding: 0 8px 8px 8px;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-item .accordion-body a{
+    font-weight: 900;
+    color: #F7931D;
+    text-decoration: none;
 }
