@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3/04/2022, 04:07:58 PM
+    Author     : danis
+*/
+
+#cajaHerramientaModal .modal-body .text-center{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: -30px;
+}
