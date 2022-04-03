@@ -30,13 +30,13 @@ let abrirMarcoNormativo = () => {
                 <main class="modal-body">
                    <div class="text-center">
                         <img class="estrellaIzquierda"
-                        src="/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/001.Estrellas blancas.png"
+                        src="../../assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/001.Estrellas blancas.png"
                         alt="estrellas izquierda">
                         <h1 class="tituloPrincipal">
                             Marco Normativo
                         </h1>
                         <img class="estrellaDerecha"
-                            src="/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/002.Estrellas blancas_1.png"
+                            src="../../assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/002.Estrellas blancas_1.png"
                             alt="estrellas derecha">
                     </div>
                     <article>
@@ -78,7 +78,7 @@ let abrirMarcoNormativo = () => {
                     </article>
                     <footer class="text-center">
                         <img class="foto1"
-                        src="/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/003.Foto 1 marco normativo.png"
+                        src="../../assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/003.Foto 1 marco normativo.png"
                         alt="foto1 marco normativo">
                     </footer>
                 </main>
@@ -86,7 +86,7 @@ let abrirMarcoNormativo = () => {
             <div class="modal-content segundoDivMarco">
                 <main class="modal-body text-dark">
                     <img class="estrellaRojas"
-                        src="/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/004.Estrellas rojas.png"
+                        src="../../assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/004.Estrellas rojas.png"
                         alt="estrellas rojas">
                     <div class="lineaPunteada">
                         <div class="numero">
@@ -621,7 +621,7 @@ let abrirMarcoNormativo = () => {
                         </div>
                     </div>
                     <img class="foto2"
-                    src="/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/006.Foto 2 marco normativo.png"
+                    src="../../assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/006.Foto 2 marco normativo.png"
                     alt="foto2 marco normativo">
                 </main>
             </div>

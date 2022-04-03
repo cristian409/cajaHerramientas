@@ -121,7 +121,7 @@ body {
     margin: 2vh 0 4vh;
     padding: 36px;
     font-family: Myriad Pro Bold;
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -175,14 +175,10 @@ body {
     top: 8px;
 }
 
-@keyframes transiciónPuntos {
-    0% {
-        opacity: 1;
-    }
-
-    60% {
-        opacity: 0.2;
-    }
+@keyframes transicionPuntos {
+    0% {     opacity: 1;  }
+    30% {    opacity: 0.3;}
+    100% {   opacity: 1;  }
 }
 
 .cajaPrincipal .introduccion .puntosBlanco {
@@ -191,8 +187,8 @@ body {
     margin-top: -1vh;
     width: 85%;
     opacity: 1;
-    animation-name: transiciónPuntos;
-    animation-duration: 10s;
+    animation-name: transicionPuntos;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
@@ -224,11 +220,11 @@ body {
 }
 
 .cajaPrincipal .introduccion .marco .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
 }
 
 .cajaPrincipal .introduccion .recomendaciones .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
     margin-top: -6vh;
     color: #ffff;
 }
@@ -238,7 +234,7 @@ body {
 }
 
 .cajaPrincipal .introduccion .guiaVerificacion .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
     margin-top: -4vh;
 }
 
@@ -319,7 +315,7 @@ body {
 }
 
 .segundoDivMarco .lineaPunteada {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/005.Línea punteada.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/005.Línea punteada.png");
     background-size: auto;
     background-repeat: repeat-y;
     background-position: left;
