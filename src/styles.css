@@ -41,6 +41,7 @@ body {
     position: relative;
     left: -113px;
     top: 8px;
+    animation: transicionPuntos 6s infinite;
 }
 
 .contentPortada .contentTitulo .estrellaDerecha {
@@ -48,6 +49,8 @@ body {
     position: relative;
     left: 115px;
     top: -30px;
+    animation: transicionPuntos 7s infinite;
+    animation-direction: reverse;
 }
 
 .contentPortada .contentTitulo .parrafoTitulo {
@@ -85,13 +88,40 @@ body {
 .contentPortada .container .nube.izquierda {
     top: 90px;
     left: 16px;
+    animation: transicionNubes 7s infinite;
+    animation-direction: reverse;
 }
 
 .contentPortada .container .nube.derecha {
     left: 100px;
     top: 190px;
+    animation: transicionNubes 6s infinite;
 }
 
+@keyframes transicionNubes {
+    0% {     transform: translate(10px,4px);
+            -webkit-transform: translate(10px,4px);
+            -o-transform: translate(10px,4px);
+            -moz-transform: translate(10px,4px);  
+    }
+    
+    40% {    transform: translate(-10px,-4px);
+            -webkit-transform: translate(-10px,-4px);
+            -o-transform: translate(-10px,-4px);
+            -moz-transform: translate(-10px,-4px);  
+    }
+    60% {    transform: translate(-5px,-2px);
+            -webkit-transform: translate(-5px,-2px);
+            -o-transform: translate(-5px,-2px);
+            -moz-transform: translate(-5px,-2px);  
+    }
+    
+    100% {     transform: translate(10px,4px);
+            -webkit-transform: translate(10px,4px);
+            -o-transform: translate(10px,4px);
+            -moz-transform: translate(10px,4px);  
+    }
+}
 
 /* Estilos de la pagina interna "app/paginaPortada/portadaInterna.html"*/
 .contentInterna {
@@ -166,6 +196,8 @@ body {
     position: relative;
     left: 115px;
     top: -30px;
+    animation: transicionPuntos 7s infinite;
+    animation-direction: reverse;
 }
 
 .cajaPrincipal .introduccion .estrellaIzquierda {
@@ -173,6 +205,7 @@ body {
     position: relative;
     left: -108px;
     top: 8px;
+    animation: transicionPuntos 6s infinite;
 }
 
 @keyframes transicionPuntos {
@@ -187,9 +220,7 @@ body {
     margin-top: -1vh;
     width: 85%;
     opacity: 1;
-    animation-name: transicionPuntos;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+    animation-name: transicionPuntos 6s infinite;
 }
 
 .cajaPrincipal .introduccion .imgMuñeco {
