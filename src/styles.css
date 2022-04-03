@@ -28,10 +28,13 @@ body strong{
 }
 
 .contentPortada .contentTitulo .tituloPrincipal,
-.cajaPrincipal .introduccion .tituloPrincipal {
+.cajaPrincipal .introduccion .tituloPrincipal,
+.cajaPrincipal .lenguaje .tituloPrincipal,
+.cajaPrincipal .accesibilidad .tituloPrincipal,
+.cajaPrincipal .materialAudio .tituloPrincipal {
     padding: 0 15vw;
     font-family: Myriad Pro Bold;
-    font-size: 34px;
+    font-size: 36px;
     color: #1B2F72;
     line-height: 34px;
 }
@@ -163,35 +166,132 @@ body strong{
     color: #ffff;
 }
 
+.cajaPrincipal .introduccion,
+.cajaPrincipal .lenguaje,
+.cajaPrincipal .accesibilidad,
+.cajaPrincipal .materialAudio {
+    padding: 6vh 0;
+}
+
 .cajaPrincipal .introduccion {
-    padding-top: 6vh;
     background-color: #C63D96;
 }
 
-.cajaPrincipal .introduccion .tituloPrincipal {
+.cajaPrincipal .lenguaje {
+    background-color: #1B2F72;
+}
+
+.cajaPrincipal .accesibilidad {
+    background-color: #CADB2A;
+}
+
+.cajaPrincipal .materialAudio {
+    background-color: #F7931D;
+
+}
+
+.cajaPrincipal .introduccion .tituloPrincipal,
+.cajaPrincipal .lenguaje .tituloPrincipal {
     color: #ffff;
 }
 
-.cajaPrincipal .introduccion .estrellaDerecha {
+.cajaPrincipal .accesibilidad .tituloPrincipal,
+.cajaPrincipal .materialAudio .tituloPrincipal{
+    color: #000000;
+}
+
+.cajaPrincipal .introduccion .estrellaDerecha,
+.cajaPrincipal .lenguaje .estrellaDerecha,
+.cajaPrincipal .accesibilidad .estrellaDerecha,
+.cajaPrincipal .materialAudio .estrellaDerecha {
     width: 5%;
     position: relative;
+}
+
+.cajaPrincipal .introduccion .estrellaDerecha {
     left: 115px;
     top: -30px;
     animation: transicionPuntos 7s infinite;
     animation-direction: reverse;
 }
 
-.cajaPrincipal .introduccion .estrellaIzquierda {
+.cajaPrincipal .lenguaje .estrellaDerecha {
+    left: 90px;
+    top: -30px;
+}
+
+.cajaPrincipal .accesibilidad .estrellaDerecha {
+    left: 120px;
+    top: -25px;
+}
+
+.cajaPrincipal .materialAudio .estrellaDerecha {
+    left: 120px;
+    top: -25px;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda,
+.cajaPrincipal .lenguaje .estrellaIzquierda,
+.cajaPrincipal .accesibilidad .estrellaIzquierda,
+.cajaPrincipal .materialAudio .estrellaIzquierda {
     width: 6%;
     position: relative;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda {
     left: -108px;
     top: 8px;
     animation: transicionPuntos 6s infinite;
 }
 
+<<<<<<< HEAD
+=======
+.cajaPrincipal .lenguaje .estrellaIzquierda {
+    left: -85px;
+    top: 8px;
+}
+
+.cajaPrincipal .accesibilidad .estrellaIzquierda {
+    left: -125px;
+    top: 20px;
+}
+
+.cajaPrincipal .materialAudio .estrellaIzquierda {
+    left: -100px;
+    top: 20px;
+}
+
+@keyframes transiciónPuntos {
+    0% {
+        opacity: 1;
+    }
+>>>>>>> 61d1a8ad506e2b8496b64c34989a890917e610f0
 
 
-.cajaPrincipal .introduccion .puntosBlanco {
+.cajaPrincipal .introduccion .recomendaciones {
+    margin: 4vh 0;
+}
+
+.cajaPrincipal .lenguaje .lugar {
+    margin-top: 4vh;
+}
+
+.cajaPrincipal .lenguaje .recomendaciones {
+    margin: 10vh 0;
+}
+
+.cajaPrincipal .lenguaje .guiaVerificacion {
+    margin-top: 12vh;
+}
+
+.cajaPrincipal .accesibilidad .accesImg {
+    margin: 10vh 0;
+}
+
+.cajaPrincipal .introduccion .puntosBlanco,
+.cajaPrincipal .lenguaje .puntosBlanco,
+.cajaPrincipal .accesibilidad .puntosBlanco,
+.cajaPrincipal .materialAudio .puntosBlanco {
     position: relative;
     z-index: 1;
     margin-top: -1vh;
@@ -206,7 +306,10 @@ body strong{
     animation-direction: reverse;
 }
 
-.cajaPrincipal .introduccion .imgMuñeco {
+.cajaPrincipal .introduccion .imgMuñeco,
+.cajaPrincipal .lenguaje .imgMuñeco,
+.cajaPrincipal .accesibilidad .imgMuñeco,
+.cajaPrincipal .materialAudio .imgMuñeco {
     position: relative;
     z-index: 999;
     margin-top: -32vh;
@@ -217,24 +320,75 @@ body strong{
     width: 34%;
 }
 
-.cajaPrincipal .introduccion .guiaVerificacion .imgMuñeco {
+.cajaPrincipal .lenguaje .lugar .imgMuñeco {
+    width: 38%;
+}
+
+.cajaPrincipal .lenguaje .recomendaciones .imgMuñeco {
+    width: 40%;
+}
+
+.cajaPrincipal .introduccion .guiaVerificacion .imgMuñeco,
+.cajaPrincipal .lenguaje .guiaVerificacion .imgMuñeco {
     width: 54%;
 }
 
-.cajaPrincipal .introduccion .btn {
+.cajaPrincipal .accesibilidad .accesText .imgMuñeco {
+    width: 75%;
+    margin: -22vh 0 4vh 0;
+}
+
+.cajaPrincipal .accesibilidad .accesImg .imgMuñeco {
+    width: 62%;
+    margin-left: 8vh;
+}
+
+.cajaPrincipal .accesibilidad .guiaVerificacion .imgMuñeco {
+    width: 60%;
+    margin-left: -8vh;
+}
+
+.cajaPrincipal .introduccion .btn,
+.cajaPrincipal .lenguaje .btn,
+.cajaPrincipal .accesibilidad .btn,
+.cajaPrincipal .materialAudio .btn {
     cursor: pointer;
     color: #000000;
     margin-top: -4vh;
     padding: 22px;
     font-family: Myriad Pro Bold;
-    font-size: 10px;
+    font-size: 12px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    z-index: 9999;
+    line-height: 16px;
+}
+
+.cajaPrincipal .lenguaje .btn,
+.cajaPrincipal .accesibilidad .btn,
+.cajaPrincipal .materialAudio .btn {
+    font-size: 14px;
+    padding: 26px;
+    color: #ffff;
 }
 
 .cajaPrincipal .introduccion .marco .btn {
     background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+}
+
+.cajaPrincipal .lenguaje .lugar .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+}
+
+.cajaPrincipal .accesibilidad .accesText .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    padding: 11%;
+}
+
+.cajaPrincipal .materialAudio .elaboracion .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/007. Boton azul oscuro-11.png");
 }
 
 .cajaPrincipal .introduccion .recomendaciones .btn {
@@ -243,13 +397,41 @@ body strong{
     color: #ffff;
 }
 
-.cajaPrincipal .introduccion .recomendaciones {
-    margin: 4vh 0;
+.cajaPrincipal .lenguaje .recomendaciones .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    margin-top: -6vh;
+}
+
+.cajaPrincipal .accesibilidad .accesImg .btn{
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    padding: 11%;
+    margin-top: -8vh;
+}
+
+.cajaPrincipal .materialAudio .uso .btn{
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
 }
 
 .cajaPrincipal .introduccion .guiaVerificacion .btn {
     background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
     margin-top: -4vh;
+}
+
+.cajaPrincipal .lenguaje .guiaVerificacion .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    margin-top: -4vh;
+}
+
+.cajaPrincipal .accesibilidad .guiaVerificacion .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+}
+
+.cajaPrincipal .materialAudio .guiaVerificacionV .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+}
+
+.cajaPrincipal .materialAudio .guiaVerificacionI .btn {
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
 }
 
 /* Estilos del modal */
@@ -337,7 +519,7 @@ body strong{
     padding: 0 4vw 0 4vw;
 }
 
-.segundoDivMarco .lineaPunteada .accordion{
+.segundoDivMarco .lineaPunteada .accordion {
     margin-bottom: 15px;
 }
 
@@ -373,7 +555,6 @@ body strong{
     background-repeat: no-repeat;
     background-size: 1.25rem;
     transition: transform .2s ease-in-out;
-    
 }
 
 .segundoDivMarco .lineaPunteada .accordion-button:not(.collapsed)::after {
@@ -396,8 +577,63 @@ body strong{
     font-size: 14px;
 }
 
-.segundoDivMarco .lineaPunteada .accordion-item .accordion-body a{
+.segundoDivMarco .lineaPunteada .accordion-item .accordion-body a {
     font-weight: 900;
     color: #F7931D;
     text-decoration: none;
+}
+
+/* Estilos marco normativo */
+.modal-content.DivRecomendaciones {
+    background-color: #237D34;
+}
+
+.DivRecomendaciones .tituloPrincipal {
+    font-family: Myriad Pro Bold;
+    font-size: 24px;
+    padding: 0 10vw;
+}
+
+.DivRecomendaciones .estrellaDerecha {
+    width: 5%;
+    position: relative;
+    left: 120px;
+    top: -30px;
+}
+
+.DivRecomendaciones .estrellaIzquierda {
+    width: 6%;
+    position: relative;
+    left: -140px;
+    top: 26px;
+}
+
+.DivRecomendaciones article {
+    line-height: 18px;
+    text-align: justify;
+    padding: 0 7vw;
+}
+
+.DivRecomendaciones .foto1 {
+    width: 114%;
+}
+
+.DivRecomendaciones article .anterior,
+.DivRecomendaciones article .siguiente {
+    float: left;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: -30px;
+    content: "";
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+.DivRecomendaciones article .siguiente {
+    float: right;
+    margin-right: -30px;
+    content: "";
+    background-image: url();
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 import Ayudas from "../../assets/js/ayudas.js";
-import Modal from "../modal/modal.js";
+import Modal from "../modales/modal.js";
 
 document.addEventListener('DOMContentLoaded', async event => {
     await Ayudas.cargarPagina(
@@ -18,11 +18,25 @@ document.addEventListener('DOMContentLoaded', async event => {
 });
 
 let gestionarMetodos = () => {
+    // cambiarColorMenuMobil();
     abrirMarcoNormativo();
+    abrirRecomendaciones();
+}
+
+let cambiarColorMenuMobil = () =>{
+    let menu = document.querySelector(".navbar-toggler");
+    window.addEventListener('scroll',()=>{
+        let scrollTop = document.documentElement.scrollTop;
+        console.log("scrollTop" + scrollTop);
+        if (scrollTop > 2470) {
+            menu.style.color = "#000000";
+        }
+    });
 }
 
 let abrirMarcoNormativo = () => {
     document.getElementById("btnMarco").addEventListener('click', () => {
+<<<<<<< HEAD
         Modal.desplegar({
             contenido: `
             <div class="modal-content primerDivMarco">
@@ -627,5 +641,14 @@ let abrirMarcoNormativo = () => {
             </div>
            `
         });
+=======
+        Modal.desplegarMarcoNormativo();
+    });
+}
+
+let abrirRecomendaciones = () => {
+    document.getElementById("btnRecomendaciones").addEventListener('click', () => {
+        Modal.desplegarRecomendaciones();
+>>>>>>> 61d1a8ad506e2b8496b64c34989a890917e610f0
     });
 }
