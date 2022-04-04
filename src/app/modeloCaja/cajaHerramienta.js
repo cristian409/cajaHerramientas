@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async event => {
 });
 
 let gestionarMetodos = () => {
-    // cambiarColorMenuMobil();
+    cambiarColorMenuMobil();
     abrirMarcoNormativo();
     abrirRecomendaciones();
 }
@@ -27,9 +27,10 @@ let cambiarColorMenuMobil = () =>{
     let menu = document.querySelector(".navbar-toggler");
     window.addEventListener('scroll',()=>{
         let scrollTop = document.documentElement.scrollTop;
-        console.log("scrollTop" + scrollTop);
-        if (scrollTop > 2470) {
+        if (scrollTop > 2470 && scrollTop < 5920) {
             menu.style.color = "#000000";
+        }else{
+            menu.style.color = "#ffff";
         }
     });
 }
