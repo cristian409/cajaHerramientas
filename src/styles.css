@@ -79,6 +79,7 @@ body strong {
 
 .contentPortada .container.contentImg {
     margin-top: -6vh;
+    animation: shake-slow 70s infinite;
 }
 
 .contentPortada .container.contentImg .conBrillo {
@@ -101,14 +102,14 @@ body strong {
 .contentPortada .container .nube.izquierda {
     top: 90px;
     left: 16px;
-    animation: transicionNubes 7s infinite;
+    animation: shake-slow 40s infinite;
     animation-direction: reverse;
 }
 
 .contentPortada .container .nube.derecha {
     left: 100px;
     top: 190px;
-    animation: transicionNubes 6s infinite;
+    animation: transicionNubes 3s infinite;
 }
 
 
