@@ -244,8 +244,7 @@ body strong{
     animation: transicionPuntos 6s infinite;
 }
 
-<<<<<<< HEAD
-=======
+
 .cajaPrincipal .lenguaje .estrellaIzquierda {
     left: -85px;
     top: 8px;
@@ -261,11 +260,7 @@ body strong{
     top: 20px;
 }
 
-@keyframes transiciónPuntos {
-    0% {
-        opacity: 1;
-    }
->>>>>>> 61d1a8ad506e2b8496b64c34989a890917e610f0
+
 
 
 .cajaPrincipal .introduccion .recomendaciones {
