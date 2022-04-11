@@ -145,7 +145,7 @@ body strong {
     margin: -20px 0 4vh;
     padding: 36px;
     font-family: Myriad Pro Bold;
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -552,127 +552,127 @@ body strong {
 }
 
 .cajaPrincipal .introduccion .marco .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
 }
 
 .cajaPrincipal .lenguaje .lugar .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
 }
 
 .cajaPrincipal .accesibilidad .accesText .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
     padding: 11%;
 }
 
 .cajaPrincipal .materialAudio .elaboracion .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/007. Boton azul oscuro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/007. Boton azul oscuro-11.png");
     padding: 10%;
     margin: 0;
 }
 
 .cajaPrincipal .evaluacionMateriales .evaluacionM .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
     padding: 10%;
     margin-top: -6vh;
     margin-bottom: 6vh;
 }
 
 .cajaPrincipal .recomendacionesA .claves .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
     margin-bottom: 6vh;
 }
 
 .cajaPrincipal .introduccion .recomendaciones .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
     margin-top: -6vh;
     color: #ffff;
 }
 
 .cajaPrincipal .lenguaje .recomendaciones .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     margin-top: -6vh;
 }
 
 .cajaPrincipal .accesibilidad .accesImg .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
     padding: 11%;
     margin-top: -8vh;
 }
 
 .cajaPrincipal .materialAudio .uso .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
     margin-bottom: 18vh;
 }
 
 .cajaPrincipal .evaluacionMateriales .evaluacionA .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     padding: 10%;
     margin-top: -8vh;
     margin-bottom: 10vh;
 }
 
 .cajaPrincipal .recomendacionesA .personas .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
     color: #000000;
     padding: 8%;
     margin-bottom: 12vh;
 }
 
 .cajaPrincipal .introduccion .guiaVerificacion .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
     margin-top: -4vh;
 }
 
 .cajaPrincipal .lenguaje .guiaVerificacion .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
     margin-top: -4vh;
 }
 
 .cajaPrincipal .accesibilidad .guiaVerificacion .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
 }
 
 .cajaPrincipal .materialAudio .guiaVerificacionV .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
     margin-bottom: 18vh;
 }
 
 .cajaPrincipal .materialAudio .guiaVerificacionI .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
 }
 
 .cajaPrincipal .evaluacionMateriales .evaluacionD .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
     padding: 10%;
     margin-top: -7vh;
 }
 
 .cajaPrincipal .recomendacionesA .discapacidad .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
     color: #000000;
     padding: 8%;
     margin-top: 1vh;
 }
 
 .cajaPrincipal .referencias .descargaReferencias .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     padding: 8%;
     margin-top: -1vh;
 }
 
 .cajaPrincipal .infoAdicional .procesoCualificacion .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
     padding: 10%;
 }
 
 .cajaPrincipal .infoAdicional .glosario .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     padding: 14%;
     margin-bottom: 10vh;
 }
 
 .cajaPrincipal .infoAdicional .bibliografia .btn {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
     padding: 10%;
     margin-top: -2vh;
 }
@@ -761,7 +761,7 @@ body strong {
 }
 
 .segundoDivMarco .lineaPunteada {
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/005.Línea punteada.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Marco Normativo/005.Línea punteada.png");
     background-size: auto;
     background-repeat: repeat-y;
     background-position: left;
@@ -972,7 +972,7 @@ body strong {
 
 .DivRecomendaciones .itemSlider article p::before {
     content: ' ';
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Recomendaciones para la implementación del enfoque de género/011.Estrella verde.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Recomendaciones para la implementación del enfoque de género/011.Estrella verde.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -985,7 +985,7 @@ body strong {
 
 .DivLenguajeUno .itemSlider article div>.False {
     content: ' ';
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. No usar_Mesa de trabajo 1 copia 2.png");
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. No usar_Mesa de trabajo 1 copia 2.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -999,21 +999,25 @@ body strong {
 
 .DivLenguajeUno .itemSlider article div>.True {
     content: ' ';
-    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/010. Usar_Mesa de trabajo 1 copia 2.png");
-    background-size: cover;
+    background-image: url("assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/010. Usar_Mesa de trabajo 1 copia 2.png");
+    background-size: 90%;
     background-repeat: no-repeat;
     display: block;
     width: 42px;
     height: 42px;
-    margin-right: 2vw;
     position: relative;
-    left: -3vw;
-    top: 7vh;
+    top: 5vh;
 }
 
 .DivLenguajeUno .itemSlider article img{
     width: 120%;
     margin-left: -6vw;
+    margin-top: 4vh;
+}
+
+.DivLenguajeUno .itemSlider article .personaCharlando{
+    width: 144%;
+    margin-left: -15vw;
 }
 
 .DivRecomendaciones .owl-theme .owl-controls .owl-page span,
