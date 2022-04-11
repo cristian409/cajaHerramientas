@@ -17,7 +17,7 @@
     background-clip: unset;
 }
 
-.modal-open{
+.modal-open {
     overflow: hidden;
 }
 
@@ -212,13 +212,16 @@
     padding: 0 7vw;
 }
 
-.DivRecomendaciones .foto1,
+.DivRecomendaciones .foto1 {
+    width: 110%;
+}
+
 .DivLenguajeUno .foto1 {
     width: 100%;
 }
 
 .DivLenguajeUno footer {
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 .DivLenguajeUno .nube {
@@ -238,8 +241,9 @@
     margin-bottom: 3vh;
 }
 
-.DivRecomendaciones .itemSlider .interImg{
-    margin-top: 1vh;;
+.DivRecomendaciones .itemSlider .interImg {
+    margin-top: 1vh;
+    ;
 }
 
 .DivRecomendaciones .itemSlider .imgItemS {
@@ -251,19 +255,20 @@
     color: #000000;
 }
 
-.DivLenguajeUno .itemSlider .imgEstrellaI{
+.DivLenguajeUno .itemSlider .imgEstrellaI {
     width: 12%;
     padding: 0 0 8vh 2vw;
 }
 
-.DivLenguajeUno .itemSlider .imgEstrellaD{
+.DivLenguajeUno .itemSlider .imgEstrellaD {
     width: 14%;
     padding-right: 2vw;
 }
 
 .DivLenguajeUno .itemSlider article {
-    padding: 0 12vw 0 14vw;
+    padding: 0 12vw;
     color: #000000;
+    line-height: 18px;
 }
 
 .DivRecomendaciones .itemSlider article .tituloSlider {
@@ -275,18 +280,13 @@
 }
 
 .DivLenguajeUno .itemSlider article .tituloSlider {
-    margin-bottom: 3vh;
     text-align: left;
     font-family: Myriad Pro Bold;
     line-height: 24px;
 }
 
-.DivRecomendaciones .itemSlider article p{
+.DivRecomendaciones .itemSlider article p {
     margin-bottom: -2px;
-}
-
-.DivLenguajeUno .itemSlider article p{
-   margin-top: 3vh;
 }
 
 .DivRecomendaciones .itemSlider article p::before {
@@ -295,7 +295,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    width: 10px; 
+    width: 10px;
     height: 20px;
     position: relative;
     left: -4vw;
@@ -305,15 +305,13 @@
 .DivLenguajeUno .itemSlider article div>.False {
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. No usar_Mesa de trabajo 1 copia 2.png");
-    background-size: cover;
+    background-size: 80%;
     background-repeat: no-repeat;
     display: block;
     width: 42px;
     height: 42px;
-    margin-right: 2vw;
     position: relative;
-    left: -3vw;
-    top: 7vh;
+    top: 5vh;
 }
 
 .DivLenguajeUno .itemSlider article div>.True {
@@ -328,18 +326,91 @@
     top: 5vh;
 }
 
-.DivLenguajeUno .itemSlider article img{
+.DivLenguajeUno .itemSlider article img {
     width: 120%;
     margin-left: -6vw;
     margin-top: 4vh;
 }
 
-.DivLenguajeUno .itemSlider article .personaCharlando{
+.DivLenguajeUno .itemSlider article .personaCharlando {
     width: 144%;
     margin-left: -15vw;
 }
 
 .DivRecomendaciones .owl-theme .owl-controls .owl-page span,
-.DivLenguajeUno .owl-theme .owl-controls .owl-page span{
+.DivLenguajeUno .owl-theme .owl-controls .owl-page span {
     background-color: #FFF100;
 }
+
+.DivLenguajeUno .itemSlider article .divCuarto>div,
+.DivLenguajeUno .itemSlider article .divCinco>div {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 14px;
+}
+
+.DivLenguajeUno .itemSlider article .divCuarto>div>.no {
+    color: #EE3A4F;
+    font-family: Myriad Pro Bold;
+}
+
+.DivLenguajeUno .itemSlider article .divCuarto>div>.si {
+    color: #237D34;
+    font-family: Myriad Pro Bold;
+}
+
+.DivLenguajeUno .itemSlider article .divCuarto strong {
+    line-height: 14px;
+}
+
+.DivLenguajeUno .itemSlider .contentInfo .opcionA {
+    color: #CADB2A;
+    margin-bottom: 5vh;
+}
+
+.DivLenguajeUno .itemSlider .articleOpcionA {
+    padding: 0 8vw;
+}
+
+.DivLenguajeUno .itemSlider .contentInfo .bombilloLenguaje {
+    width: 12%;
+    position: relative;
+    left: -130px;
+    top: 26px;
+}
+
+.DivLenguajeUno .foto1.opcionA {
+    width: 92%;
+}
+
+.DivLenguajeUno .itemSlider .articleSeis{
+    text-align: left;
+}
+
+.DivLenguajeUno .itemSlider article .divSeis>div {
+    font-size: 12px;
+}
+
+.DivLenguajeUno .itemSlider article .divSeis {
+    line-height: 14px;
+    font-style: italic;
+}
+
+.DivLenguajeUno .itemSlider article .divSeis .divBefore div{
+    margin-left: 5vw;
+    margin-top: -2vh;
+}
+
+.DivLenguajeUno .itemSlider article .divSeis .divBefore div::before{
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/0033. Estrella verde.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 10px;
+    height: 20px;
+    position: relative;
+    left: -4vw;
+    top: 2vh;
+}
+
