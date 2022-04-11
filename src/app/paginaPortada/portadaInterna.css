@@ -1,0 +1,35 @@
+.contentInterna {
+    background-color: #1B75BB;
+    color: #ffff;
+}
+
+.contentInterna .parrafosPresentacion {
+    animation: rubberBand 2s;
+    line-height: 1.36
+}
+
+
+.contentInterna .seccion {
+    padding-top: 5vh;
+}
+
+.contentInterna .parrafosPresentacion .parrafoUno,
+.contentInterna .parrafosPresentacion .parrafoTres {
+    padding: 0 5vw;
+}
+
+.contentInterna .parrafosPresentacion .parrafoDos {
+    margin: 2vh 5vw;
+}
+
+.contentInterna .parrafosPresentacion .btn {
+    cursor: pointer;
+    color: #ffff;
+    margin: -20px 0 4vh;
+    padding: 36px;
+    font-family: Myriad Pro Bold;
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

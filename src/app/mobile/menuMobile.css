@@ -1,0 +1,18 @@
+.cajaPrincipal .navbar-toggler .fa-bars {
+    font-size: 35px;
+}
+
+.cajaPrincipal .menuMobile .navbar-nav {
+    padding-top: 6vh !important;
+    padding-left: 5vw;
+}
+
+.cajaPrincipal .menuMobile {
+    padding: 1vh 4vw 0 0;
+}
+
+@media (min-width:768px) {
+    .cajaPrincipal .navbar {
+        display: none;
+    }
+}

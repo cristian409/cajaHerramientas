@@ -8,8 +8,517 @@ and open the template in the editor.
     Author     : danis
 */
 
+/* Estilos del modal */
+@import url("../modales/stylesModales.css");
+
 #cajaHerramientaModal .modal-body .contentInfo{
     width: 70%;
     margin-left: 15%;
     margin-top: -30px;
+}
+
+
+.cajaPrincipal {
+    color: #ffff;
+}
+
+.cajaPrincipal .introduccion,
+.cajaPrincipal .lenguaje,
+.cajaPrincipal .accesibilidad,
+.cajaPrincipal .materialAudio,
+.cajaPrincipal .evaluacionMateriales,
+.cajaPrincipal .recomendacionesA,
+.cajaPrincipal .referencias,
+.cajaPrincipal .infoAdicional {
+    padding: 6vh 0;
+}
+
+.cajaPrincipal .introduccion,
+.cajaPrincipal .recomendacionesA {
+    background-color: #C63D96;
+}
+
+.cajaPrincipal .lenguaje {
+    background-color: #1B2F72;
+}
+
+.cajaPrincipal .accesibilidad {
+    background-color: #CADB2A;
+}
+
+.cajaPrincipal .materialAudio {
+    background-color: #F7931D;
+}
+
+.cajaPrincipal .evaluacionMateriales {
+    background-color: #EE3A4F;
+}
+
+.cajaPrincipal .referencias {
+    background-color: #237D34;
+}
+
+.cajaPrincipal .infoAdicional {
+    background-color: #1B75BB;
+}
+
+.cajaPrincipal .introduccion .tituloPrincipal,
+.cajaPrincipal .lenguaje .tituloPrincipal,
+.cajaPrincipal .evaluacionMateriales .tituloPrincipal,
+.cajaPrincipal .recomendacionesA .tituloPrincipal,
+.cajaPrincipal .referencias .tituloPrincipal,
+.cajaPrincipal .infoAdicional .tituloPrincipal {
+    color: #ffff;
+}
+
+.cajaPrincipal .accesibilidad .tituloPrincipal,
+.cajaPrincipal .materialAudio .tituloPrincipal {
+    color: #000000;
+}
+
+.cajaPrincipal .introduccion .estrellaDerecha,
+.cajaPrincipal .lenguaje .estrellaDerecha,
+.cajaPrincipal .accesibilidad .estrellaDerecha,
+.cajaPrincipal .materialAudio .estrellaDerecha,
+.cajaPrincipal .evaluacionMateriales .estrellaDerecha,
+.cajaPrincipal .recomendacionesA .estrellaDerecha,
+.cajaPrincipal .referencias .estrellaDerecha,
+.cajaPrincipal .infoAdicional .estrellaDerecha {
+    width: 5%;
+    position: relative;
+}
+
+.cajaPrincipal .introduccion .estrellaDerecha {
+    left: 115px;
+    top: -30px;
+    animation: transicionPuntos 7s infinite;
+    animation-direction: reverse;
+}
+
+.cajaPrincipal .lenguaje .estrellaDerecha {
+    left: 90px;
+    top: -30px;
+}
+
+.cajaPrincipal .accesibilidad .estrellaDerecha {
+    left: 120px;
+    top: -25px;
+}
+
+.cajaPrincipal .materialAudio .estrellaDerecha {
+    left: 120px;
+    top: -25px;
+}
+
+.cajaPrincipal .evaluacionMateriales .estrellaDerecha {
+    left: 120px;
+    top: -25px;
+}
+
+.cajaPrincipal .recomendacionesA .estrellaDerecha {
+    left: 124px;
+    top: -30px;
+}
+
+.cajaPrincipal .referencias .estrellaDerecha {
+    left: 110px;
+    top: -30px;
+}
+
+.cajaPrincipal .infoAdicional .estrellaDerecha {
+    left: 105px;
+    top: -42px;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda,
+.cajaPrincipal .lenguaje .estrellaIzquierda,
+.cajaPrincipal .accesibilidad .estrellaIzquierda,
+.cajaPrincipal .materialAudio .estrellaIzquierda,
+.cajaPrincipal .evaluacionMateriales .estrellaIzquierda,
+.cajaPrincipal .recomendacionesA .estrellaIzquierda,
+.cajaPrincipal .referencias .estrellaIzquierda,
+.cajaPrincipal .infoAdicional .estrellaIzquierda {
+    width: 6%;
+    position: relative;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda {
+    left: -120px;
+    top: 24px;
+    animation: transicionPuntos 6s infinite;
+}
+
+.cajaPrincipal .lenguaje .estrellaIzquierda {
+    left: -96px;
+    top: 20px;
+}
+
+.cajaPrincipal .accesibilidad .estrellaIzquierda {
+    left: -125px;
+    top: 20px;
+}
+
+.cajaPrincipal .materialAudio .estrellaIzquierda,
+.cajaPrincipal .evaluacionMateriales .estrellaIzquierda {
+    left: -110px;
+    top: 25px;
+}
+
+.cajaPrincipal .recomendacionesA .estrellaIzquierda {
+    left: -155px;
+    top: 20px;
+}
+
+.cajaPrincipal .referencias .estrellaIzquierda {
+    left: -110px;
+    top: 25px;
+}
+
+.cajaPrincipal .infoAdicional .estrellaIzquierda {
+    left: -120px;
+    top: 20px;
+}
+
+.cajaPrincipal .introduccion .recomendaciones {
+    margin: 4vh 0;
+}
+
+.cajaPrincipal .lenguaje .lugar {
+    margin-top: 4vh;
+}
+
+.cajaPrincipal .lenguaje .recomendaciones {
+    margin: 10vh 0;
+}
+
+.cajaPrincipal .lenguaje .guiaVerificacion {
+    margin-top: 12vh;
+}
+
+.cajaPrincipal .accesibilidad .accesImg {
+    margin: 10vh 0;
+}
+
+.cajaPrincipal .materialAudio .elaboracion {
+    margin: 6vh 0;
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionM {
+    margin: 4vh 0;
+}
+
+.cajaPrincipal .recomendacionesA .claves {
+    margin: 4vh 0;
+}
+
+.cajaPrincipal .referencias .descargaReferencias {
+    margin: 10vh 0;
+}
+
+.cajaPrincipal .infoAdicional .procesoCualificacion {
+    margin: 10vh 0;
+}
+
+.cajaPrincipal .introduccion .puntosBlanco,
+.cajaPrincipal .lenguaje .puntosBlanco,
+.cajaPrincipal .accesibilidad .puntosBlanco,
+.cajaPrincipal .materialAudio .puntosBlanco,
+.cajaPrincipal .evaluacionMateriales .puntosBlanco,
+.cajaPrincipal .recomendacionesA .puntosBlanco,
+.cajaPrincipal .referencias .puntosBlanco,
+.cajaPrincipal .infoAdicional .puntosBlanco {
+    position: relative;
+    z-index: 1;
+    margin-top: -1vh;
+    width: 85%;
+    opacity: 1;
+}
+
+.cajaPrincipal .introduccion div:nth-child(odd) .puntosBlanco {
+    animation: transicionPuntos 6s infinite;
+}
+
+.cajaPrincipal .introduccion div:nth-child(even) .puntosBlanco {
+    animation: transicionPuntos 6s infinite;
+    animation-direction: reverse;
+}
+
+.cajaPrincipal .introduccion .imgMuñeco,
+.cajaPrincipal .lenguaje .imgMuñeco,
+.cajaPrincipal .accesibilidad .imgMuñeco,
+.cajaPrincipal .materialAudio .imgMuñeco,
+.cajaPrincipal .evaluacionMateriales .imgMuñeco,
+.cajaPrincipal .recomendacionesA .imgMuñeco,
+.cajaPrincipal .referencias .imgMuñeco,
+.cajaPrincipal .infoAdicional .imgMuñeco {
+    position: relative;
+    z-index: 999;
+    margin-top: -32vh;
+    width: 46%;
+}
+
+.cajaPrincipal .introduccion .marco .imgMuñeco {
+    width: 34%;
+}
+
+.cajaPrincipal .lenguaje .lugar .imgMuñeco {
+    width: 38%;
+}
+
+.cajaPrincipal .lenguaje .recomendaciones .imgMuñeco {
+    width: 40%;
+}
+
+.cajaPrincipal .introduccion .guiaVerificacion .imgMuñeco,
+.cajaPrincipal .lenguaje .guiaVerificacion .imgMuñeco {
+    width: 54%;
+}
+
+.cajaPrincipal .accesibilidad .accesText .imgMuñeco {
+    width: 75%;
+    margin: -22vh 0 4vh 0;
+}
+
+.cajaPrincipal .accesibilidad .accesImg .imgMuñeco {
+    width: 62%;
+    margin-left: 15vw;
+}
+
+.cajaPrincipal .accesibilidad .guiaVerificacion .imgMuñeco {
+    width: 60%;
+    margin-left: -25vw;
+}
+
+.cajaPrincipal .materialAudio .elaboracion .imgMuñeco {
+    width: 52%;
+}
+
+.cajaPrincipal .materialAudio .uso .imgMuñeco {
+    width: 70%;
+    margin-top: -36vh;
+}
+
+.cajaPrincipal .materialAudio .guiaVerificacionV .imgMuñeco {
+    width: 50%;
+    margin-top: -40vh;
+}
+
+.cajaPrincipal .materialAudio .guiaVerificacionI .imgMuñeco {
+    width: 60%;
+    margin-top: -40vh;
+    margin-left: 20vw;
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionM .imgMuñeco {
+    width: 64%;
+    margin-top: -30vh;
+    margin-left: 9vw;
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionA .imgMuñeco {
+    width: 64%;
+    margin-left: -18vw;
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionD .imgMuñeco {
+    width: 64%;
+    margin-top: -36vh;
+    margin-left: -18vw;
+}
+
+.cajaPrincipal .recomendacionesA .claves .imgMuñeco {
+    width: 60%;
+    margin-top: -36vh;
+    margin-left: 6vw;
+}
+
+.cajaPrincipal .recomendacionesA .personas .imgMuñeco {
+    width: 65%;
+    margin-top: -36vh;
+    margin-left: 6vw;
+}
+
+.cajaPrincipal .recomendacionesA .discapacidad .imgMuñeco {
+    width: 65%;
+    margin-left: -15vw;
+}
+
+.cajaPrincipal .referencias .descargaReferencias .imgMuñeco {
+    width: 75%;
+    margin-top: -40vh;
+}
+
+.cajaPrincipal .infoAdicional .procesoCualificacion .imgMuñeco {
+    width: 75%;
+    margin-top: -26vh;
+    margin-left: -10vw;
+}
+
+.cajaPrincipal .infoAdicional .glosario .imgMuñeco {
+    width: 85%;
+    margin-top: -36vh;
+}
+
+.cajaPrincipal .infoAdicional .bibliografia .imgMuñeco {
+    width: 80%;
+}
+
+.cajaPrincipal .introduccion .btn,
+.cajaPrincipal .lenguaje .btn,
+.cajaPrincipal .accesibilidad .btn,
+.cajaPrincipal .materialAudio .btn,
+.cajaPrincipal .evaluacionMateriales .btn,
+.cajaPrincipal .recomendacionesA .btn,
+.cajaPrincipal .referencias .btn,
+.cajaPrincipal .infoAdicional .btn {
+    cursor: pointer;
+    color: #000000;
+    margin-top: -4vh;
+    padding: 22px;
+    font-family: Myriad Pro Bold;
+    font-size: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+    line-height: 16px;
+}
+
+.cajaPrincipal .lenguaje .btn,
+.cajaPrincipal .accesibilidad .btn,
+.cajaPrincipal .materialAudio .btn,
+.cajaPrincipal .evaluacionMateriales .btn,
+.cajaPrincipal .recomendacionesA .btn,
+.cajaPrincipal .referencias .btn,
+.cajaPrincipal .infoAdicional .btn {
+    font-size: 14px;
+    padding: 26px;
+    color: #ffff;
+}
+
+.cajaPrincipal .introduccion .marco .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+}
+
+.cajaPrincipal .lenguaje .lugar .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+}
+
+.cajaPrincipal .accesibilidad .accesText .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    padding: 11%;
+}
+
+.cajaPrincipal .materialAudio .elaboracion .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/007. Boton azul oscuro-11.png");
+    padding: 10%;
+    margin: 0;
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionM .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    padding: 10%;
+    margin-top: -6vh;
+    margin-bottom: 6vh;
+}
+
+.cajaPrincipal .recomendacionesA .claves .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+    margin-bottom: 6vh;
+}
+
+.cajaPrincipal .introduccion .recomendaciones .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0013. Verde oscuro-11.png");
+    margin-top: -6vh;
+    color: #ffff;
+}
+
+.cajaPrincipal .lenguaje .recomendaciones .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    margin-top: -6vh;
+}
+
+.cajaPrincipal .accesibilidad .accesImg .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    padding: 11%;
+    margin-top: -8vh;
+}
+
+.cajaPrincipal .materialAudio .uso .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
+    margin-bottom: 18vh;
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionA .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    padding: 10%;
+    margin-top: -8vh;
+    margin-bottom: 10vh;
+}
+
+.cajaPrincipal .recomendacionesA .personas .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
+    color: #000000;
+    padding: 8%;
+    margin-bottom: 12vh;
+}
+
+.cajaPrincipal .introduccion .guiaVerificacion .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0012. Verde claro-11.png");
+    margin-top: -4vh;
+}
+
+.cajaPrincipal .lenguaje .guiaVerificacion .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    margin-top: -4vh;
+}
+
+.cajaPrincipal .accesibilidad .guiaVerificacion .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+}
+
+.cajaPrincipal .materialAudio .guiaVerificacionV .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    margin-bottom: 18vh;
+}
+
+.cajaPrincipal .materialAudio .guiaVerificacionI .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+}
+
+.cajaPrincipal .evaluacionMateriales .evaluacionD .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+    padding: 10%;
+    margin-top: -7vh;
+}
+
+.cajaPrincipal .recomendacionesA .discapacidad .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0011. Boton amarillo-11.png");
+    color: #000000;
+    padding: 8%;
+    margin-top: 1vh;
+}
+
+.cajaPrincipal .referencias .descargaReferencias .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    padding: 8%;
+    margin-top: -1vh;
+}
+
+.cajaPrincipal .infoAdicional .procesoCualificacion .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0010. Boton rojo-11.png");
+    padding: 10%;
+}
+
+.cajaPrincipal .infoAdicional .glosario .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
+    padding: 14%;
+    margin-bottom: 10vh;
+}
+
+.cajaPrincipal .infoAdicional .bibliografia .btn {
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/009. Boton naranja-11.png");
+    padding: 10%;
+    margin-top: -2vh;
 }
