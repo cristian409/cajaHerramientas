@@ -522,3 +522,10 @@ and open the template in the editor.
     padding: 10%;
     margin-top: -2vh;
 }
+
+#owl-introRecomen{display: grid !important}
+#owl-introRecomen .owl-wrapper-outer{order: 2;}
+#owl-introRecomen .owl-controls{
+    order: 1;
+    margin: -20px 0 40px;
+}

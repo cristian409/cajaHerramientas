@@ -394,7 +394,9 @@ if (typeof Object.create !== "function") {
         buildControls : function () {
             var base = this;
             if (base.options.navigation === true || base.options.pagination === true) {
+                console.log('1base.owlControls',base.owlControls);
                 base.owlControls = $("<div class=\"owl-controls\"/>").toggleClass("clickable", !base.browser.isTouch).appendTo(base.$elem);
+                console.log('2base.owlControls',base.owlControls);
             }
             if (base.options.pagination === true) {
                 base.buildPagination();
@@ -512,12 +514,12 @@ if (typeof Object.create !== "function") {
                                 && cont_mo.parentElement.parentElement.id== "modalRecomendaciones"){
                             if(act_item != this){
                                 cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
-                                var bt = document.getElementById('btnIntroRecomendaciones')
-                                if(bt) bt.style.color = "#000 !important";
+                                var bt = document.getElementById('btnIntroRecomendaciones');
+                                if(bt) bt.setAttribute('style', 'color:#000 !important');
                             }else {
                                 cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
-                                var bt = document.getElementById('btnIntroRecomendaciones')
-                                if(bt) bt.style.color = "#fff !important";
+                                var bt = document.getElementById('btnIntroRecomendaciones');
+                                if(bt) bt.setAttribute('style', 'color:#fff  !important');
                             }
                             
                         }
