@@ -394,9 +394,7 @@ if (typeof Object.create !== "function") {
         buildControls : function () {
             var base = this;
             if (base.options.navigation === true || base.options.pagination === true) {
-                console.log('1base.owlControls',base.owlControls);
                 base.owlControls = $("<div class=\"owl-controls\"/>").toggleClass("clickable", !base.browser.isTouch).appendTo(base.$elem);
-                console.log('2base.owlControls',base.owlControls);
             }
             if (base.options.pagination === true) {
                 base.buildPagination();
@@ -504,7 +502,9 @@ if (typeof Object.create !== "function") {
                     base.paginationWrapper
                         .find(".owl-page")
                         .removeClass("active");
-                
+                    $(this).addClass("active");
+                    
+                    
                     //cambiar de color verde a blaco
                     if(this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
                             && this.parentElement.parentElement.parentElement.id == "owl-introRecomen"){
@@ -525,7 +525,6 @@ if (typeof Object.create !== "function") {
                         }
                     }
                 }
-                
             });
         },
 
