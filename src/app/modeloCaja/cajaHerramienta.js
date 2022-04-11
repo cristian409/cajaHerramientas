@@ -21,6 +21,7 @@ let gestionarMetodos = () => {
     cambiarColorMenuMobil();
     abrirMarcoNormativo();
     abrirRecomendaciones();
+    abrirLenguajeUno();
 }
 
 let cambiarColorMenuMobil = () =>{
@@ -36,13 +37,45 @@ let cambiarColorMenuMobil = () =>{
 }
 
 let abrirMarcoNormativo = () => {
-    document.getElementById("btnMarco").addEventListener('click', () => {
+    document.getElementById("btnMarco").addEventListener('click', (event) => {
+        event.preventDefault();
         Modal.desplegarMarcoNormativo();
     });
 }
 
 let abrirRecomendaciones = () => {
-    document.getElementById("btnRecomendaciones").addEventListener('click', () => {
+    document.getElementById("btnRecomendaciones").addEventListener('click', (event) => {
+        event.preventDefault();
         Modal.desplegarRecomendaciones();
+        setTimeout(() => {
+            $(document).ready(function () {
+                $("#owl-introRecomen").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    autoPlay: false,
+                    items: 1,
+                    itemsDesktop: [640, 5],
+                    itemsDesktopSmall: [414, 4]
+                });
+            });
+        }, 20);  
     });
 }
+
+let abrirLenguajeUno = () => {
+    document.getElementById("btnLenguaje").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarLenguajeUno();
+        setTimeout(() => {
+            $(document).ready(function () {
+                $("#owl-lenguaje").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    autoPlay: false,
+                    items: 1,
+                    itemsDesktop: [640, 5],
+                    itemsDesktopSmall: [414, 4]
+                });
+            });
+        }, 20); 
+    });
+}
+

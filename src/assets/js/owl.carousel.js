@@ -970,7 +970,7 @@ if (typeof Object.create !== "function") {
 
                 if ((base.newRelativeX > 8 || base.newRelativeX < -8) && (base.browser.isTouch === true)) {
                     if (ev.preventDefault !== undefined) {
-                        ev.preventDefault();
+                        // ev.preventDefault();
                     } else {
                         ev.returnValue = false;
                     }
@@ -1003,7 +1003,7 @@ if (typeof Object.create !== "function") {
                     handlers,
                     owlStopEvent;
 
-                ev.target = ev.target || ev.srcElement;
+                // ev.target = ev.target || ev.srcElement;
 
                 locals.dragging = false;
 

@@ -43,6 +43,18 @@ export default class Modal {
         Modal.toogle();
     }
 
+    static async desplegarLenguajeUno(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalLenguajeUno.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
     /**
      * Metodo para asignar el evento de cerrar del boton del modal
      */

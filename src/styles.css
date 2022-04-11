@@ -297,14 +297,14 @@ body strong {
 }
 
 .cajaPrincipal .introduccion .estrellaIzquierda {
-    left: -108px;
-    top: 8px;
+    left: -120px;
+    top: 24px;
     animation: transicionPuntos 6s infinite;
 }
 
 .cajaPrincipal .lenguaje .estrellaIzquierda {
-    left: -85px;
-    top: 8px;
+    left: -96px;
+    top: 20px;
 }
 
 .cajaPrincipal .accesibilidad .estrellaIzquierda {
@@ -314,22 +314,22 @@ body strong {
 
 .cajaPrincipal .materialAudio .estrellaIzquierda,
 .cajaPrincipal .evaluacionMateriales .estrellaIzquierda {
-    left: -100px;
-    top: 20px;
+    left: -110px;
+    top: 25px;
 }
 
 .cajaPrincipal .recomendacionesA .estrellaIzquierda {
-    left: -145px;
+    left: -155px;
     top: 20px;
 }
 
 .cajaPrincipal .referencias .estrellaIzquierda {
-    left: -106px;
-    top: 20px;
+    left: -110px;
+    top: 25px;
 }
 
 .cajaPrincipal .infoAdicional .estrellaIzquierda {
-    left: -106px;
+    left: -120px;
     top: 20px;
 }
 
@@ -574,7 +574,7 @@ body strong {
     background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/008. Boton azul claro-11.png");
     padding: 10%;
     margin-top: -6vh;
-    margin-bottom: 8vh;
+    margin-bottom: 6vh;
 }
 
 .cajaPrincipal .recomendacionesA .claves .btn {
@@ -608,7 +608,7 @@ body strong {
     background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     padding: 10%;
     margin-top: -8vh;
-    margin-bottom: 12vh;
+    margin-bottom: 10vh;
 }
 
 .cajaPrincipal .recomendacionesA .personas .btn {
@@ -698,6 +698,10 @@ body strong {
     background-clip: unset;
 }
 
+.modal-open{
+    overflow: hidden;
+}
+
 /* Estilos marco normativo */
 .modal-content.primerDivMarco {
     background-color: #EE3A4F;
@@ -729,7 +733,9 @@ body strong {
 }
 
 .primerDivMarco .foto1 {
-    width: 92%;
+    margin-left: -3vw;
+    margin-bottom: -2vh;
+    width: 108%;
 }
 
 .segundoDivMarco .foto2 {
@@ -827,57 +833,191 @@ body strong {
     text-decoration: none;
 }
 
-/* Estilos marco normativo */
-.modal-content.DivRecomendaciones {
+/* Estilos marco normativo, Lenguaje */
+.DivRecomendaciones.color {
     background-color: #237D34;
 }
 
-.DivRecomendaciones .tituloPrincipal {
-    font-family: Myriad Pro Bold;
-    font-size: 24px;
-    padding: 0 10vw;
+.DivLenguajeUno.color {
+    background-color: #1B75BB;
 }
 
-.DivRecomendaciones .estrellaDerecha {
+#cajaHerramientaModal .DivRecomendaciones .modal-body .contentInfo,
+#cajaHerramientaModal .DivLenguajeUno .modal-body .contentInfo {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 8vw;
+}
+
+.DivRecomendaciones .item,
+.DivLenguajeUno .item {
+    color: #ffff;
+}
+
+.DivRecomendaciones .tituloPrincipal,
+.DivLenguajeUno .tituloPrincipal {
+    font-family: Myriad Pro Bold;
+    font-size: 24px;
+}
+
+.DivRecomendaciones .estrellaDerecha,
+.DivLenguajeUno .estrellaDerecha {
     width: 5%;
     position: relative;
-    left: 120px;
+    left: 115px;
     top: -30px;
 }
 
-.DivRecomendaciones .estrellaIzquierda {
+.DivLenguajeUno .estrellaDerecha {
+    left: 95px;
+    top: -30px;
+}
+
+.DivRecomendaciones .estrellaIzquierda,
+.DivLenguajeUno .estrellaIzquierda {
     width: 6%;
     position: relative;
-    left: -140px;
+    left: -150px;
     top: 26px;
 }
 
-.DivRecomendaciones article {
+.DivLenguajeUno .estrellaIzquierda {
+    left: -112px;
+    top: 28px;
+}
+
+.DivRecomendaciones article,
+.DivLenguajeUno article {
     line-height: 18px;
     text-align: justify;
     padding: 0 7vw;
 }
 
-.DivRecomendaciones .foto1 {
-    width: 114%;
+.DivRecomendaciones .foto1,
+.DivLenguajeUno .foto1 {
+    width: 100%;
 }
 
-.DivRecomendaciones article .anterior,
-.DivRecomendaciones article .siguiente {
-    float: left;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: -30px;
-    content: "";
-    background-image: url();
+.DivLenguajeUno footer {
+    margin-top: 15vh;
+}
+
+.DivLenguajeUno .nube {
+    width: 105%;
+    position: relative;
+    top: -21vh;
+    left: -1vw;
+}
+
+.DivRecomendaciones .owl-theme,
+.DivLenguajeUno .owl-theme {
+    margin-bottom: -2vh;
+}
+
+.DivRecomendaciones .itemSlider header {
+    margin-top: -3vh;
+    margin-bottom: 3vh;
+}
+
+.DivRecomendaciones .itemSlider .interImg{
+    margin-top: 1vh;;
+}
+
+.DivRecomendaciones .itemSlider .imgItemS {
+    width: 70%;
+}
+
+.DivRecomendaciones .itemSlider article {
+    padding: 0 5vw;
+    color: #000000;
+}
+
+.DivLenguajeUno .itemSlider .imgEstrellaI{
+    width: 12%;
+    padding: 0 0 8vh 2vw;
+}
+
+.DivLenguajeUno .itemSlider .imgEstrellaD{
+    width: 14%;
+    padding-right: 2vw;
+}
+
+.DivLenguajeUno .itemSlider article {
+    padding: 0 12vw 0 14vw;
+    color: #000000;
+}
+
+.DivRecomendaciones .itemSlider article .tituloSlider {
+    margin-left: 4px;
+    margin-bottom: -3px;
+    text-align: left;
+    font-family: Myriad Pro Bold;
+    line-height: 24px;
+}
+
+.DivLenguajeUno .itemSlider article .tituloSlider {
+    margin-bottom: 3vh;
+    text-align: left;
+    font-family: Myriad Pro Bold;
+    line-height: 24px;
+}
+
+.DivRecomendaciones .itemSlider article p{
+    margin-bottom: -2px;
+}
+
+.DivLenguajeUno .itemSlider article p{
+   margin-top: 3vh;
+}
+
+.DivRecomendaciones .itemSlider article p::before {
+    content: ' ';
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG INTRODUCCIÓN/Recomendaciones para la implementación del enfoque de género/011.Estrella verde.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
+    display: block;
+    width: 10px; 
+    height: 20px;
+    position: relative;
+    left: -4vw;
+    top: 2vh;
 }
 
-.DivRecomendaciones article .siguiente {
-    float: right;
-    margin-right: -30px;
-    content: "";
-    background-image: url();
+.DivLenguajeUno .itemSlider article div>.False {
+    content: ' ';
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. No usar_Mesa de trabajo 1 copia 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 2vw;
+    position: relative;
+    left: -3vw;
+    top: 7vh;
 }
+
+.DivLenguajeUno .itemSlider article div>.True {
+    content: ' ';
+    background-image: url("/src/assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/010. Usar_Mesa de trabajo 1 copia 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 2vw;
+    position: relative;
+    left: -3vw;
+    top: 7vh;
+}
+
+.DivLenguajeUno .itemSlider article img{
+    width: 120%;
+    margin-left: -6vw;
+}
+
+.DivRecomendaciones .owl-theme .owl-controls .owl-page span,
+.DivLenguajeUno .owl-theme .owl-controls .owl-page span{
+    background-color: #FFF100;
+}
+

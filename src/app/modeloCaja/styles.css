@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : danis
 */
 
-#cajaHerramientaModal .modal-body .text-center{
+#cajaHerramientaModal .modal-body .contentInfo{
     width: 70%;
     margin-left: 15%;
     margin-top: -30px;
