@@ -502,8 +502,28 @@ if (typeof Object.create !== "function") {
                     base.paginationWrapper
                         .find(".owl-page")
                         .removeClass("active");
-                    $(this).addClass("active");
+                
+                    //cambiar de color verde a blaco
+                    if(this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
+                            && this.parentElement.parentElement.parentElement.id == "owl-introRecomen"){
+                        var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
+                        var cont_mo = this.parentElement.parentElement.parentElement;
+                        if(cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                                && cont_mo.parentElement.parentElement.id== "modalRecomendaciones"){
+                            if(act_item != this){
+                                cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                                var bt = document.getElementById('btnIntroRecomendaciones')
+                                if(bt) bt.style.color = "#000 !important";
+                            }else {
+                                cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
+                                var bt = document.getElementById('btnIntroRecomendaciones')
+                                if(bt) bt.style.color = "#fff !important";
+                            }
+                            
+                        }
+                    }
                 }
+                
             });
         },
 
