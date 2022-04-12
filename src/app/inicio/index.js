@@ -25,7 +25,6 @@ let gestionPaginas = resultado => {
     let elemento = `${resultado.id}`;
 
     abrirSeccionInterna(elemento);
-    hover_llave();
 }
 
 /**
@@ -35,12 +34,8 @@ let gestionPaginas = resultado => {
  */
 let abrirSeccionInterna = elemento => {
     let llave = document.getElementById("btnLlaveInglesa");
-    let conBrillo = document.getElementById("conBrillo");
-    let sinBrillo = document.getElementById("sinBrillo");
     llave.addEventListener('click', async (event) => {
         event.preventDefault;
-        conBrillo.classList.remove("d-none");
-        sinBrillo.classList.add("d-none");
         setTimeout(() => {
             Ayudas.cargarPagina(
                 `${elemento}`,
@@ -62,14 +57,15 @@ let abrirSeccionInterna = elemento => {
  */
 let abrirCajaHerramientas = () => {
     let botonInterno = document.getElementById("btnLlevame");
+    
+    botonInterno.addEventListener('mouseover', hover_llave());
+    botonInterno.addEventListener('mouseout', hover_llave_out());
+
     botonInterno.addEventListener('click', async (event) => {
         event.preventDefault;
         location.href = "app/modeloCaja/cajaHerramienta.html";
     });
 }
-
-
-
 
 let hover_llave_out = () => {
     let conBrillo = document.getElementById("conBrillo");
@@ -78,9 +74,7 @@ let hover_llave_out = () => {
     sinBrillo.classList.remove("d-none");
 }
 
-
-function hover_llave(){
-    console.log('hhh')
+let hover_llave = () => {
     let conBrillo = document.getElementById("conBrillo");
     let sinBrillo = document.getElementById("sinBrillo");
     conBrillo.classList.remove("d-none");
