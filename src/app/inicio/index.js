@@ -58,8 +58,8 @@ let abrirSeccionInterna = elemento => {
 let abrirCajaHerramientas = () => {
     let botonInterno = document.getElementById("btnLlevame");
     
-    botonInterno.addEventListener('mouseover', hover_llave());
-    botonInterno.addEventListener('mouseout', hover_llave_out());
+    //botonInterno.addEventListener('mouseover', hover_llave());
+    //botonInterno.addEventListener('mouseout', hover_llave_out());
 
     botonInterno.addEventListener('click', async (event) => {
         event.preventDefault;
