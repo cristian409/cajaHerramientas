@@ -25,6 +25,7 @@ let gestionPaginas = resultado => {
     let elemento = `${resultado.id}`;
 
     abrirSeccionInterna(elemento);
+    hover_llave();
 }
 
 /**
@@ -67,6 +68,24 @@ let abrirCajaHerramientas = () => {
     });
 }
 
+
+
+
+let hover_llave_out = () => {
+    let conBrillo = document.getElementById("conBrillo");
+    let sinBrillo = document.getElementById("sinBrillo");
+    conBrillo.classList.add("d-none");
+    sinBrillo.classList.remove("d-none");
+}
+
+
+function hover_llave(){
+    console.log('hhh')
+    let conBrillo = document.getElementById("conBrillo");
+    let sinBrillo = document.getElementById("sinBrillo");
+    conBrillo.classList.remove("d-none");
+    sinBrillo.classList.add("d-none");
+}
 
 
 

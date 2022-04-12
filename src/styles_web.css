@@ -1,0 +1,67 @@
+/* Estilos de la portada "app/inicio/portada.html"*/
+@import url("app/inicio/portada.css");
+/* Estilos de la pagina interna "app/paginaPortada/portadaInterna.html"*/
+@import url("app/paginaPortada/portadaInterna.css");
+/* Estilos del menu mobile "app/mobile/menuMobile.html"*/
+@import url("app/mobile/menuMobile.css");
+
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('assets/fuentes/MyriadProBold/MyriadProBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('assets/fuentes/MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Myriad Pro Regular;
+}
+
+body strong {
+    font-family: Myriad Pro Bold !important;
+    font-weight: normal !important;
+    ;
+}
+
+/*home*/
+.contentPortada .contentTitulo .tituloPrincipal{font-size: 45px;}
+.contentPortada .contentTitulo .estrellaIzquierda {
+    width: 2%;
+    left: -21%;
+}
+.contentPortada .contentTitulo .estrellaDerecha{
+    width: 2%;
+    left: 21%;
+}
+.contentPortada .contentTitulo .parrafoTitulo { margin-top: -2%;}
+.contentPortada .contentTitulo .parrafoTitulo { padding: 0px 30vw; font-size: 20px; font-family: 'Myriad Pro Regular';}
+.contentPortada .container.contentImg{
+    width: 55%;
+    margin-top: -28vh;
+}
+.contentPortada .contentTitulo{    padding-top: 2vh;}
+#btnLlaveInglesa{
+    width: 70px;
+    height: 25vh;
+    top: 25vh;
+}
+#btnLlaveInglesa:hover #conBrillo{    display: block;}
+#btnLlaveInglesa:hover #sinBrillo{    display: none;}
+.contentPortada .container .nube {    width: 18%; float: left;}
+.contentPortada .container .nube.arriba{
+    display: block !important;
+    float: right;
+    animation: shake-slow 35s infinite;
+    right: -50px;
+}
+.contentPortada .container .nube.izquierda {    top: -90px;}
+.contentPortada .container .nube.derecha {    left: 55%; top: -10px;}
+
