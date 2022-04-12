@@ -15,11 +15,11 @@
 
 .contentInterna .parrafosPresentacion .parrafoUno,
 .contentInterna .parrafosPresentacion .parrafoTres {
-    padding: 0 5vw;
+    padding: 0 11vw;
 }
 
 .contentInterna .parrafosPresentacion .parrafoDos {
-    margin: 2vh 5vw;
+    margin: 2vh 12vw;
 }
 
 .contentInterna .parrafosPresentacion .btn {
@@ -27,7 +27,7 @@
     color: #ffff;
     margin: -20px 0 4vh;
     padding: 36px;
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
     background-size: contain;
     background-repeat: no-repeat;

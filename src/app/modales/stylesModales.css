@@ -27,22 +27,22 @@
 }
 
 .primerDivMarco .tituloPrincipal {
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     font-size: 28px;
 }
 
 .primerDivMarco .estrellaDerecha {
     width: 5%;
     position: relative;
-    left: 115px;
+    left: 95px;
     top: -30px;
 }
 
 .primerDivMarco .estrellaIzquierda {
     width: 6%;
     position: relative;
-    left: -124px;
-    top: 30px;
+    left: -100px;
+    top: 20px;
 }
 
 .primerDivMarco article {
@@ -70,7 +70,7 @@
 }
 
 .segundoDivMarco .numero {
-    font-family: Myriad Pro Bold;
+    font-family:DIN Condensed Bold;
     font-size: 16px;
     width: max-content;
     background-color: #FFF100;
@@ -93,7 +93,7 @@
 }
 
 .segundoDivMarco .lineaPunteada .accordion-button:not(.collapsed) {
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     color: #000000;
     font-weight: 900;
     background-color: #ffff;
@@ -102,7 +102,7 @@
 
 .segundoDivMarco .lineaPunteada .accordion-button {
     background-color: #fff;
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     border-radius: 0;
     padding: 8px;
 }
@@ -157,56 +157,61 @@
     background-color: #237D34;
 }
 
-.DivLenguajeUno.color {
+.DivLenguajeDos.color {
     background-color: #1B75BB;
 }
 
 #cajaHerramientaModal .DivRecomendaciones .modal-body .contentInfo,
-#cajaHerramientaModal .DivLenguajeUno .modal-body .contentInfo {
+#cajaHerramientaModal .DivLenguajeDos .modal-body .contentInfo {
     width: 100%;
     margin-left: 0;
     padding: 0 8vw;
 }
 
 .DivRecomendaciones .item,
-.DivLenguajeUno .item {
+.DivLenguajeDos .item {
     color: #ffff;
 }
 
 .DivRecomendaciones .tituloPrincipal,
-.DivLenguajeUno .tituloPrincipal {
-    font-family: Myriad Pro Bold;
+.DivLenguajeDos .tituloPrincipal {
+    font-family: DIN Condensed Bold;
     font-size: 24px;
 }
 
-.DivRecomendaciones .estrellaDerecha,
-.DivLenguajeUno .estrellaDerecha {
-    width: 5%;
-    position: relative;
-    left: 115px;
-    top: -30px;
+.DivRecomendaciones .tituloPrincipal{
+    padding: 0 10vw;
+    line-height: 22px;
 }
 
-.DivLenguajeUno .estrellaDerecha {
+.DivRecomendaciones .estrellaDerecha,
+.DivLenguajeDos .estrellaDerecha {
+    width: 5%;
+    position: relative;
+    left: 90px;
+    top: -20px;
+}
+
+.DivLenguajeDos .estrellaDerecha {
     left: 95px;
     top: -30px;
 }
 
 .DivRecomendaciones .estrellaIzquierda,
-.DivLenguajeUno .estrellaIzquierda {
+.DivLenguajeDos .estrellaIzquierda {
     width: 6%;
     position: relative;
-    left: -150px;
+    left: -115px;
     top: 26px;
 }
 
-.DivLenguajeUno .estrellaIzquierda {
+.DivLenguajeDos .estrellaIzquierda {
     left: -112px;
     top: 28px;
 }
 
 .DivRecomendaciones article,
-.DivLenguajeUno article {
+.DivLenguajeDos article {
     line-height: 18px;
     text-align: justify;
     padding: 0 7vw;
@@ -216,15 +221,15 @@
     width: 110%;
 }
 
-.DivLenguajeUno .foto1 {
+.DivLenguajeDos .foto1 {
     width: 100%;
 }
 
-.DivLenguajeUno footer {
+.DivLenguajeDos footer {
     margin-top: 10vh;
 }
 
-.DivLenguajeUno .nube {
+.DivLenguajeDos .nube {
     width: 105%;
     position: relative;
     top: -21vh;
@@ -232,7 +237,7 @@
 }
 
 .DivRecomendaciones .owl-theme,
-.DivLenguajeUno .owl-theme {
+.DivLenguajeDos .owl-theme {
     margin-bottom: -2vh;
 }
 
@@ -255,33 +260,33 @@
     color: #000000;
 }
 
-.DivLenguajeUno .itemSlider .imgEstrellaI {
+.DivLenguajeDos .itemSlider .imgEstrellaI {
     width: 12%;
     padding: 0 0 8vh 2vw;
 }
 
-.DivLenguajeUno .itemSlider .imgEstrellaD {
+.DivLenguajeDos .itemSlider .imgEstrellaD {
     width: 14%;
     padding-right: 2vw;
 }
 
-.DivLenguajeUno .itemSlider article {
+.DivLenguajeDos .itemSlider article {
     padding: 0 12vw;
     color: #000000;
     line-height: 18px;
 }
 
 .DivRecomendaciones .itemSlider article .tituloSlider {
-    margin-left: 4px;
+    margin-left: -2px;
     margin-bottom: -3px;
     text-align: left;
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     line-height: 24px;
 }
 
-.DivLenguajeUno .itemSlider article .tituloSlider {
+.DivLenguajeDos .itemSlider article .tituloSlider {
     text-align: left;
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     line-height: 24px;
 }
 
@@ -302,7 +307,7 @@
     top: 2vh;
 }
 
-.DivLenguajeUno .itemSlider article div>.False {
+.DivLenguajeDos .itemSlider article div>.False {
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. No usar_Mesa de trabajo 1 copia 2.png");
     background-size: 80%;
@@ -314,7 +319,7 @@
     top: 5vh;
 }
 
-.DivLenguajeUno .itemSlider article div>.True {
+.DivLenguajeDos .itemSlider article div>.True {
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/010. Usar_Mesa de trabajo 1 copia 2.png");
     background-size: 90%;
@@ -326,82 +331,82 @@
     top: 5vh;
 }
 
-.DivLenguajeUno .itemSlider article img {
+.DivLenguajeDos .itemSlider article img {
     width: 120%;
     margin-left: -6vw;
     margin-top: 4vh;
 }
 
-.DivLenguajeUno .itemSlider article .personaCharlando {
+.DivLenguajeDos .itemSlider article .personaCharlando {
     width: 144%;
     margin-left: -15vw;
 }
 
 .DivRecomendaciones .owl-theme .owl-controls .owl-page span,
-.DivLenguajeUno .owl-theme .owl-controls .owl-page span {
+.DivLenguajeDos .owl-theme .owl-controls .owl-page span {
     background-color: #FFF100;
 }
 
-.DivLenguajeUno .itemSlider article .divCuarto>div,
-.DivLenguajeUno .itemSlider article .divCinco>div {
+.DivLenguajeDos .itemSlider article .divCuarto>div,
+.DivLenguajeDos .itemSlider article .divCinco>div {
     font-size: 12px;
     margin-bottom: 10px;
     line-height: 14px;
 }
 
-.DivLenguajeUno .itemSlider article .divCuarto>div>.no {
+.DivLenguajeDos .itemSlider article .divCuarto>div>.no {
     color: #EE3A4F;
     font-family: Myriad Pro Bold;
 }
 
-.DivLenguajeUno .itemSlider article .divCuarto>div>.si {
+.DivLenguajeDos .itemSlider article .divCuarto>div>.si {
     color: #237D34;
     font-family: Myriad Pro Bold;
 }
 
-.DivLenguajeUno .itemSlider article .divCuarto strong {
+.DivLenguajeDos .itemSlider article .divCuarto strong {
     line-height: 14px;
 }
 
-.DivLenguajeUno .itemSlider .contentInfo .opcionA {
+.DivLenguajeDos .itemSlider .contentInfo .opcionA {
     color: #CADB2A;
     margin-bottom: 5vh;
 }
 
-.DivLenguajeUno .itemSlider .articleOpcionA {
+.DivLenguajeDos .itemSlider .articleOpcionA {
     padding: 0 8vw;
 }
 
-.DivLenguajeUno .itemSlider .contentInfo .bombilloLenguaje {
+.DivLenguajeDos .itemSlider .contentInfo .bombilloLenguaje {
     width: 12%;
     position: relative;
     left: -130px;
     top: 26px;
 }
 
-.DivLenguajeUno .foto1.opcionA {
+.DivLenguajeDos .foto1.opcionA {
     width: 92%;
 }
 
-.DivLenguajeUno .itemSlider .articleSeis{
+.DivLenguajeDos .itemSlider .articleSeis{
     text-align: left;
 }
 
-.DivLenguajeUno .itemSlider article .divSeis>div {
+.DivLenguajeDos .itemSlider article .divSeis>div {
     font-size: 12px;
 }
 
-.DivLenguajeUno .itemSlider article .divSeis {
+.DivLenguajeDos .itemSlider article .divSeis {
     line-height: 14px;
     font-style: italic;
 }
 
-.DivLenguajeUno .itemSlider article .divSeis .divBefore div{
+.DivLenguajeDos .itemSlider article .divSeis .divBefore div{
     margin-left: 5vw;
     margin-top: -2vh;
 }
 
-.DivLenguajeUno .itemSlider article .divSeis .divBefore div::before{
+.DivLenguajeDos .itemSlider article .divSeis .divBefore div::before{
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/0033. Estrella verde.png");
     background-size: cover;

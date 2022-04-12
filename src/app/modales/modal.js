@@ -55,6 +55,18 @@ export default class Modal {
         Modal.toogle();
     }
 
+    static async desplegarLenguajeDos(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalLenguajeDos.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
     static async desplegarAccesoTexto(){
         await Ayudas.cargarPagina(
             `modalDialog`,
