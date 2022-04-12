@@ -79,3 +79,21 @@ let abrirLenguajeUno = () => {
     });
 }
 
+let abrirAccesoTexto = () => {
+    document.getElementById("btnAccesText").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarAccesoTexto();
+        setTimeout(() => {
+            $(document).ready(function () {
+                $("#owl-AccessTexto").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    autoPlay: false,
+                    items: 1,
+                    itemsDesktop: [640, 5],
+                    itemsDesktopSmall: [414, 4]
+                });
+            });
+        }, 20); 
+    });
+}
+
