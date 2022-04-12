@@ -34,6 +34,8 @@ let gestionPaginas = resultado => {
  */
 let abrirSeccionInterna = elemento => {
     let llave = document.getElementById("btnLlaveInglesa");
+    llave.addEventListener('mouseover', hover_llave);
+    llave.addEventListener('mouseout', hover_llave_out);
     llave.addEventListener('click', async (event) => {
         event.preventDefault;
         setTimeout(() => {
@@ -57,10 +59,6 @@ let abrirSeccionInterna = elemento => {
  */
 let abrirCajaHerramientas = () => {
     let botonInterno = document.getElementById("btnLlevame");
-    
-    botonInterno.addEventListener('mouseover', hover_llave());
-    botonInterno.addEventListener('mouseout', hover_llave_out());
-
     botonInterno.addEventListener('click', async (event) => {
         event.preventDefault;
         location.href = "app/modeloCaja/cajaHerramienta.html";

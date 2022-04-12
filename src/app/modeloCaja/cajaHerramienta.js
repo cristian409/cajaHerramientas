@@ -22,6 +22,7 @@ let gestionarMetodos = () => {
     abrirMarcoNormativo();
     abrirRecomendaciones();
     abrirLenguajeUno();
+    abrirLenguajeDos();
 }
 
 let cambiarColorMenuMobil = () =>{
@@ -67,7 +68,25 @@ let abrirLenguajeUno = () => {
         Modal.desplegarLenguajeUno();
         setTimeout(() => {
             $(document).ready(function () {
-                $("#owl-lenguaje").owlCarousel({
+                $("#owl-LenguajeUno").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    autoPlay: false,
+                    items: 1,
+                    itemsDesktop: [640, 5],
+                    itemsDesktopSmall: [414, 4]
+                });
+            });
+        }, 20); 
+    });
+}
+
+let abrirLenguajeDos = () => {
+    document.getElementById("btnRecomendacionesL").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarLenguajeDos();
+        setTimeout(() => {
+            $(document).ready(function () {
+                $("#owl-lenguajeDos").owlCarousel({
                     autoPlay: 3000, //Set AutoPlay to 3 seconds
                     autoPlay: false,
                     items: 1,

@@ -59,7 +59,6 @@ body strong {
 .contentPortada .container .nube.arriba{
     display: block !important;
     float: right;
-    animation: shake-slow 35s infinite;
     right: -50px;
 }
 .contentPortada .container .nube.izquierda {    top: -90px;}

@@ -11,7 +11,7 @@ and open the template in the editor.
 /* Estilos del modal */
 @import url("../modales/stylesModales.css");
 
-#cajaHerramientaModal .modal-body .contentInfo{
+#cajaHerramientaModal .modal-body .contentInfo {
     width: 70%;
     margin-left: 15%;
     margin-top: -30px;
@@ -86,47 +86,47 @@ and open the template in the editor.
 .cajaPrincipal .infoAdicional .estrellaDerecha {
     width: 5%;
     position: relative;
-}
-
-.cajaPrincipal .introduccion .estrellaDerecha {
-    left: 115px;
-    top: -30px;
     animation: transicionPuntos 7s infinite;
     animation-direction: reverse;
 }
 
+.cajaPrincipal .introduccion .estrellaDerecha {
+    left: 100px;
+    top: -30px;
+}
+
 .cajaPrincipal .lenguaje .estrellaDerecha {
-    left: 90px;
+    left: 75px;
     top: -30px;
 }
 
 .cajaPrincipal .accesibilidad .estrellaDerecha {
-    left: 120px;
+    left: 95px;
     top: -25px;
 }
 
 .cajaPrincipal .materialAudio .estrellaDerecha {
-    left: 120px;
-    top: -25px;
+    left: 90px;
+    top: -55px;
 }
 
 .cajaPrincipal .evaluacionMateriales .estrellaDerecha {
-    left: 120px;
-    top: -25px;
+    left: 102px;
+    top: -35px;
 }
 
 .cajaPrincipal .recomendacionesA .estrellaDerecha {
-    left: 124px;
-    top: -30px;
+    left: 105px;
+    top: -36px;
 }
 
 .cajaPrincipal .referencias .estrellaDerecha {
-    left: 110px;
+    left: 90px;
     top: -30px;
 }
 
 .cajaPrincipal .infoAdicional .estrellaDerecha {
-    left: 105px;
+    left: 90px;
     top: -42px;
 }
 
@@ -140,43 +140,47 @@ and open the template in the editor.
 .cajaPrincipal .infoAdicional .estrellaIzquierda {
     width: 6%;
     position: relative;
-}
-
-.cajaPrincipal .introduccion .estrellaIzquierda {
-    left: -120px;
-    top: 24px;
     animation: transicionPuntos 6s infinite;
 }
 
+.cajaPrincipal .introduccion .estrellaIzquierda {
+    left: -100px;
+    top: 24px;
+}
+
 .cajaPrincipal .lenguaje .estrellaIzquierda {
-    left: -96px;
+    left: -80px;
     top: 20px;
 }
 
 .cajaPrincipal .accesibilidad .estrellaIzquierda {
-    left: -125px;
+    left: -102px;
     top: 20px;
 }
 
-.cajaPrincipal .materialAudio .estrellaIzquierda,
+.cajaPrincipal .materialAudio .estrellaIzquierda {
+    left: -105px;
+    top: 20px;
+}
+
 .cajaPrincipal .evaluacionMateriales .estrellaIzquierda {
-    left: -110px;
-    top: 25px;
+    left: -80px;
+    top: 20px;
 }
 
 .cajaPrincipal .recomendacionesA .estrellaIzquierda {
-    left: -155px;
-    top: 20px;
+    left: -136px;
+    top: 35px;
 }
 
 .cajaPrincipal .referencias .estrellaIzquierda {
-    left: -110px;
+    left: -100px;
     top: 25px;
 }
 
 .cajaPrincipal .infoAdicional .estrellaIzquierda {
-    left: -120px;
-    top: 20px;
+    left: -96px;
+    top: 24px;
 }
 
 .cajaPrincipal .introduccion .recomendaciones {
@@ -234,11 +238,25 @@ and open the template in the editor.
     opacity: 1;
 }
 
-.cajaPrincipal .introduccion div:nth-child(odd) .puntosBlanco {
+.cajaPrincipal .introduccion div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .lenguaje div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .accesibilidad div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .materialAudio div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .evaluacionMateriales div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .recomendacionesA div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .referencias div:nth-child(odd) .puntosBlanco,
+.cajaPrincipal .infoAdicional div:nth-child(odd) .puntosBlanco {
     animation: transicionPuntos 6s infinite;
 }
 
-.cajaPrincipal .introduccion div:nth-child(even) .puntosBlanco {
+.cajaPrincipal .introduccion div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .lenguaje div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .accesibilidad div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .materialAudio div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .evaluacionMateriales div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .recomendacionesA div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .referencias div:nth-child(even) .puntosBlanco,
+.cajaPrincipal .infoAdicional div:nth-child(even) .puntosBlanco {
     animation: transicionPuntos 6s infinite;
     animation-direction: reverse;
 }
@@ -375,7 +393,7 @@ and open the template in the editor.
     color: #000000;
     margin-top: -4vh;
     padding: 22px;
-    font-family: Myriad Pro Bold;
+    font-family: DIN Condensed Bold;
     font-size: 12px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -523,9 +541,15 @@ and open the template in the editor.
     margin-top: -2vh;
 }
 
-#owl-introRecomen{display: grid !important}
-#owl-introRecomen .owl-wrapper-outer{order: 2;}
-#owl-introRecomen .owl-controls{
+#owl-introRecomen {
+    display: grid !important
+}
+
+#owl-introRecomen .owl-wrapper-outer {
+    order: 2;
+}
+
+#owl-introRecomen .owl-controls {
     order: 1;
     margin: -20px 0 40px;
 }

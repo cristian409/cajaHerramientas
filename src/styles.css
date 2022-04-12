@@ -19,9 +19,23 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'DIN Condensed Bold';
+    src: url('assets/fuentes/DIN Condensed Bold/FontsFree-Net-D-DINCondensed-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Italic';
+    src: url('assets/fuentes/Myriad Pro Italic/Myriad Pro Italic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     min-height: 100vh;
-    font-family: Myriad Pro Regular;
+    font-family: Myriad Pro Italic;
 }
 
 body strong {
