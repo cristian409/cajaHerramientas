@@ -32,7 +32,7 @@ body strong {
 }
 
 /*home*/
-.contentPortada .contentTitulo .tituloPrincipal{font-size: 45px;}
+.contentPortada .contentTitulo .tituloPrincipal{font-size: 3.5vw;}
 .contentPortada .contentTitulo .estrellaIzquierda {
     width: 2%;
     left: -21%;
@@ -63,4 +63,11 @@ body strong {
 }
 .contentPortada .container .nube.izquierda {    top: -90px;}
 .contentPortada .container .nube.derecha {    left: 55%; top: -10px;}
+
+/*DENTO DE LA LLAVE*/
+#contentPaginaInicio #contentInterna{
+    height: 100vh;
+    font-size: 22px;
+}
+.contentInterna .seccion {    padding-top: 10vh;}
 

@@ -19,9 +19,7 @@
     line-height: 34px;
 }
 
-.contentPortada .contentTitulo .tituloPrincipal>span {
-    color: #ffff;
-}
+.contentPortada .contentTitulo .tituloPrincipal>span {    color: #ffff;}
 
 .contentPortada .contentTitulo .estrellaIzquierda {
     width: 6%;
@@ -45,18 +43,14 @@
     line-height: 20px;
 }
 
-.contentPortada .contentTitulo {
-    padding-top: 8vh;
-}
+.contentPortada .contentTitulo {    padding-top: 5vh;}
 
 .contentPortada .container.contentImg {
     margin-top: -6vh;
     animation: shake-slow 70s infinite;
 }
 
-.contentPortada .container.contentImg .conBrillo {
-    display: none;
-}
+.contentPortada .container.contentImg .conBrillo {    display: none;}
 
 .contentPortada .container.contentImg .btn {
     cursor: pointer;
@@ -72,11 +66,19 @@
 }
 
 .contentPortada .container .nube.izquierda {
-    top: 90px;
+    top: 9vh;
     left: 16px;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2cc2940ca7f05767efd527e6691ce68be9714d5b
 }
 
 .contentPortada .container .nube.derecha {
     left: 100px;
+<<<<<<< HEAD
+    top: 22vh;
+=======
     top: 190px;
+>>>>>>> 2cc2940ca7f05767efd527e6691ce68be9714d5b
 }
