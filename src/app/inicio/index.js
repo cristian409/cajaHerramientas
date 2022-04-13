@@ -34,11 +34,15 @@ let gestionPaginas = resultado => {
  */
 let abrirSeccionInterna = elemento => {
     let llave = document.getElementById("btnLlaveInglesa");
+    let conBrillo = document.getElementById("conBrillo");
+    let sinBrillo = document.getElementById("sinBrillo");
     llave.addEventListener('mouseover', hover_llave);
     llave.addEventListener('mouseout', hover_llave_out);
     llave.addEventListener('click', async (event) => {
         event.preventDefault;
         setTimeout(() => {
+            conBrillo.classList.add("d-none");
+            sinBrillo.classList.remove("d-none");
             Ayudas.cargarPagina(
                 `${elemento}`,
                 "app/paginaPortada/portadaInterna.html"

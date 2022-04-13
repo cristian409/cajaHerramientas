@@ -21,37 +21,97 @@
     overflow: hidden;
 }
 
-/* Estilos marco normativo */
 .modal-content.primerDivMarco {
     background-color: #EE3A4F;
 }
 
-.primerDivMarco .tituloPrincipal {
+.modal-content.primerDivLenguaje {
+    background-color: #1B75BB;
+}
+
+.modal-content.terceroDivLenguaje {
+    background-color: #CADB2A;
+}
+
+.terceroDivLenguaje .modal-body {
+    margin-top: 4vh;
+}
+
+.primerDivMarco .tituloPrincipal,
+.primerDivLenguaje .tituloPrincipal,
+.segundoDivLenguaje .tituloPrincipal,
+.terceroDivLenguaje .tituloPrincipal {
     font-family: DIN Condensed Bold;
     font-size: 28px;
 }
 
-.primerDivMarco .estrellaDerecha {
+.segundoDivLenguaje .tituloPrincipal {
+    color: #C63D96;
+    margin: 7vh -7vw 3vh -7vw;
+}
+
+.terceroDivLenguaje .tituloPrincipal {
+    font-size: 32px;
+}
+
+.primerDivMarco .estrellaDerecha,
+.primerDivLenguaje .estrellaDerecha,
+.terceroDivLenguaje .estrellaDerecha {
     width: 5%;
     position: relative;
     left: 95px;
     top: -30px;
 }
 
-.primerDivMarco .estrellaIzquierda {
+.primerDivLenguaje .estrellaDerecha {
+    left: 56px;
+}
+
+.terceroDivLenguaje .estrellaDerecha {
+    left: 56px;
+}
+
+.primerDivMarco .estrellaIzquierda,
+.primerDivLenguaje .estrellaIzquierda,
+.terceroDivLenguaje .estrellaIzquierda {
     width: 6%;
     position: relative;
     left: -100px;
     top: 20px;
 }
 
-.primerDivMarco article {
+.primerDivLenguaje .estrellaIzquierda {
+    left: -62px;
+}
+
+.terceroDivLenguaje .estrellaIzquierda {
+    left: -62px;
+}
+
+.primerDivMarco article,
+.primerDivLenguaje article,
+.segundoDivLenguaje article,
+.terceroDivLenguaje article {
     line-height: 18px;
     text-align: justify;
     padding: 0 6vw;
 }
 
-.primerDivMarco .foto1 {
+.terceroDivLenguaje article {
+    padding: 0 8vw;
+    margin-bottom: 3vh;
+}
+
+.segundoDivLenguaje article,
+.terceroDivLenguaje .tituloPrincipal,
+.terceroDivLenguaje article {
+    color: #000000;
+}
+
+.primerDivMarco .foto1,
+.primerDivLenguaje .foto1,
+.segundoDivLenguaje .foto1,
+.terceroDivLenguaje .foto1 {
     margin-left: -3vw;
     margin-bottom: -2vh;
     width: 108%;
@@ -70,7 +130,7 @@
 }
 
 .segundoDivMarco .numero {
-    font-family:DIN Condensed Bold;
+    font-family: DIN Condensed Bold;
     font-size: 16px;
     width: max-content;
     background-color: #FFF100;
@@ -152,13 +212,28 @@
     text-decoration: none;
 }
 
-/* Estilos marco normativo, Lenguaje */
-.DivRecomendaciones.color {
-    background-color: #237D34;
+.segundoDivLenguaje article .fondoUno {
+    background-color: #CADB2A;
+    padding: 5% 10% 10% 10%;
+    margin-bottom: 3vh;
+    text-align: start;
 }
 
-.DivLenguajeDos.color {
+.segundoDivLenguaje article .fondoDos {
     background-color: #1B75BB;
+    color: #ffff;
+    padding: 5% 10% 10% 10%;
+    margin-bottom: 3vh;
+    text-align: start;
+}
+
+.segundoDivLenguaje article .fondoUno h1,
+.segundoDivLenguaje article .fondoDos h1 {
+    font-family: DIN Condensed Bold;
+}
+
+.DivRecomendaciones.color {
+    background-color: #237D34;
 }
 
 #cajaHerramientaModal .DivRecomendaciones .modal-body .contentInfo,
@@ -179,7 +254,7 @@
     font-size: 24px;
 }
 
-.DivRecomendaciones .tituloPrincipal{
+.DivRecomendaciones .tituloPrincipal {
     padding: 0 10vw;
     line-height: 22px;
 }
@@ -388,7 +463,7 @@
     width: 92%;
 }
 
-.DivLenguajeDos .itemSlider .articleSeis{
+.DivLenguajeDos .itemSlider .articleSeis {
     text-align: left;
 }
 
@@ -401,12 +476,12 @@
     font-style: italic;
 }
 
-.DivLenguajeDos .itemSlider article .divSeis .divBefore div{
+.DivLenguajeDos .itemSlider article .divSeis .divBefore div {
     margin-left: 5vw;
     margin-top: -2vh;
 }
 
-.DivLenguajeDos .itemSlider article .divSeis .divBefore div::before{
+.DivLenguajeDos .itemSlider article .divSeis .divBefore div::before {
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/0033. Estrella verde.png");
     background-size: cover;
@@ -419,3 +494,28 @@
     top: 2vh;
 }
 
+.terceroDivLenguaje article .startBefore::before {
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. Estrella negra sola.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 10px;
+    height: 20px;
+    position: relative;
+    left: -4vw;
+    top: 2vh;
+}
+
+.cuartoDivLenguaje article .startBefore::before {
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. Estrella negra sola.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 10px;
+    height: 20px;
+    position: relative;
+    left: -4vw;
+    top: 2vh;
+}

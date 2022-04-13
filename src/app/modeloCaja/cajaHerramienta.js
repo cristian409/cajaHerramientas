@@ -66,17 +66,6 @@ let abrirLenguajeUno = () => {
     document.getElementById("btnLenguaje").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarLenguajeUno();
-        setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-LenguajeUno").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
-        }, 20); 
     });
 }
 
