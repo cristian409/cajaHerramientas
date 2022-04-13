@@ -63,13 +63,6 @@ let abrirSeccionInterna = elemento => {
  */
 let abrirCajaHerramientas = () => {
     let botonInterno = document.getElementById("btnLlevame");
-<<<<<<< HEAD
-    
-    //botonInterno.addEventListener('mouseover', hover_llave());
-    //botonInterno.addEventListener('mouseout', hover_llave_out());
-
-=======
->>>>>>> 2cc2940ca7f05767efd527e6691ce68be9714d5b
     botonInterno.addEventListener('click', async (event) => {
         event.preventDefault;
         location.href = "app/modeloCaja/cajaHerramienta.html";
