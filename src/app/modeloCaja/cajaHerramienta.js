@@ -23,6 +23,8 @@ let gestionarMetodos = () => {
     abrirRecomendaciones();
     abrirLenguajeUno();
     abrirLenguajeDos();
+    abrirAccesoTexto();
+    abrirAccesoImagenes();
 }
 
 let cambiarColorMenuMobil = () =>{
@@ -102,6 +104,13 @@ let abrirAccesoTexto = () => {
                 });
             });
         }, 20); 
+    });
+}
+
+let abrirAccesoImagenes = () => {
+    document.getElementById("btnAccessImg").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarAccesoImg();
     });
 }
 

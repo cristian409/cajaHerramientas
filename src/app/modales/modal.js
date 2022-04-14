@@ -79,6 +79,18 @@ export default class Modal {
         Modal.toogle();
     }
 
+    static async desplegarAccesoImg(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalAccesibilidadImg.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
     /**
      * Metodo para asignar el evento de cerrar del boton del modal
      */

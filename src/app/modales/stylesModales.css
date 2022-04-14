@@ -30,21 +30,45 @@
     background-color: #1B75BB;
 }
 
-.modal-content.terceroDivLenguaje {
+.modal-content.terceroDivLenguaje,
+.modal-content.cincoDivAccesImagen {
     background-color: #CADB2A;
+}
+
+.modal-content.primerDivAccesImagen {
+    background-color: #237D34;
 }
 
 .terceroDivLenguaje .modal-body,
 .cuartoDivLenguaje .modal-body,
-.cincoDivLenguaje .modal-body {
+.cincoDivLenguaje .modal-body,
+.primerDivAccesImagen .modal-body,
+.segundoDivAccesImagen .modal-body,
+.terceroDivAccesImagen .modal-body {
     margin-top: 4vh;
+}
+
+.segundoDivAccesImagen .modal-body,
+.terceroDivAccesImagen .modal-body,
+.cuartoDivAccesImagen .modal-body,
+.cincoDivAccesImagen .modal-body {
+    margin-top: 8vh;
+}
+
+.terceroDivAccesImagen .modal-body {
+    margin-top: 12vh;
 }
 
 .primerDivMarco .tituloPrincipal,
 .primerDivLenguaje .tituloPrincipal,
 .segundoDivLenguaje .tituloPrincipal,
 .terceroDivLenguaje .tituloPrincipal,
-.cuartoDivLenguaje .tituloPrincipal {
+.cuartoDivLenguaje .tituloPrincipal,
+.primerDivAccesImagen .tituloPrincipal,
+.segundoDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen .tituloPrincipal,
+.cuartoDivAccesImagen .tituloPrincipal,
+.cincoDivAccesImagen .tituloPrincipal {
     font-family: DIN Condensed Bold;
     font-size: 28px;
 }
@@ -58,11 +82,38 @@
     font-size: 32px;
 }
 
+.cuartoDivAccesImagen .tituloPrincipal,
+.cincoDivAccesImagen .tituloPrincipal {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.primerDivAccesImagen .tituloPrincipal,
+.segundoDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen .tituloPrincipal,
+.cuartoDivAccesImagen .tituloPrincipal,
+.cincoDivAccesImagen .tituloPrincipal {
+    margin: 0 -7vw;
+}
+
+.segundoDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen .tituloPrincipal {
+    margin-bottom: 2vh;
+    line-height: 28px;
+}
+
+.cincoDivAccesImagen .tituloPrincipal {
+    margin-bottom: 2vh;
+    color: #C63D96;
+}
+
 .primerDivMarco .estrellaDerecha,
 .primerDivLenguaje .estrellaDerecha,
 .terceroDivLenguaje .estrellaDerecha,
 .cuartoDivLenguaje .estrellaDerecha,
-.cincoDivLenguaje .estrellaDerecha {
+.cincoDivLenguaje .estrellaDerecha,
+.primerDivAccesImagen .estrellaDerecha,
+.cincoDivAccesImagen .estrellaDerecha {
     width: 5%;
     position: relative;
     left: 95px;
@@ -88,10 +139,22 @@
     left: -8px;
 }
 
+.primerDivAccesImagen .estrellaDerecha {
+    left: 135px;
+    top: -20px;
+}
+
+.cincoDivAccesImagen .estrellaDerecha {
+    left: 105px;
+    top: -30px;
+}
+
 .primerDivMarco .estrellaIzquierda,
 .primerDivLenguaje .estrellaIzquierda,
 .terceroDivLenguaje .estrellaIzquierda,
-.cuartoDivLenguaje .estrellaIzquierda{
+.cuartoDivLenguaje .estrellaIzquierda,
+.primerDivAccesImagen .estrellaIzquierda,
+.cincoDivAccesImagen .estrellaIzquierda {
     width: 6%;
     position: relative;
     left: -100px;
@@ -117,18 +180,37 @@
     left: 0px;
 }
 
+.primerDivAccesImagen .estrellaIzquierda {
+    left: -140px;
+    top: 20px;
+}
+
+.cincoDivAccesImagen .estrellaIzquierda {
+    left: -140px;
+    top: 20px;
+}
+
 .primerDivMarco article,
 .primerDivLenguaje article,
 .segundoDivLenguaje article,
 .terceroDivLenguaje article,
 .cuartoDivLenguaje article,
-.cincoDivLenguaje article {
+.cincoDivLenguaje article,
+.primerDivAccesImagen article,
+.segundoDivAccesImagen article,
+.terceroDivAccesImagen article,
+.cuartoDivAccesImagen article,
+.cincoDivAccesImagen article {
     line-height: 18px;
     text-align: justify;
     padding: 0 6vw;
 }
 
-.terceroDivLenguaje article {
+.terceroDivLenguaje article,
+.primerDivAccesImagen article,
+.segundoDivAccesImagen article,
+.cuartoDivAccesImagen article,
+.cincoDivAccesImagen article {
     padding: 0 8vw;
     margin-bottom: 3vh;
 }
@@ -136,7 +218,14 @@
 .segundoDivLenguaje article,
 .terceroDivLenguaje .tituloPrincipal,
 .terceroDivLenguaje article,
-.cincoDivLenguaje article {
+.cincoDivLenguaje article,
+.segundoDivAccesImagen article,
+.segundoDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen article,
+.cuartoDivAccesImagen .tituloPrincipal,
+.cuartoDivAccesImagen article,
+.cincoDivAccesImagen article {
     color: #000000;
 }
 
@@ -146,7 +235,9 @@
 
 .primerDivMarco .foto1,
 .primerDivLenguaje .foto1,
-.segundoDivLenguaje .foto1 {
+.segundoDivLenguaje .foto1,
+.primerDivAccesImagen .foto1,
+.segundoDivAccesImagen .foto1 {
     margin-left: -3vw;
     margin-bottom: -2vh;
     width: 108%;
@@ -157,6 +248,25 @@
     margin-left: 4vw;
     margin-bottom: -2vh;
     width: 90%;
+}
+
+.segundoDivAccesImagen .foto1 {
+    margin-top: 6vh;
+}
+
+.segundoDivAccesImagen .foto1,
+.terceroDivAccesImagen .foto1 {
+    margin-left: 4vw;
+    margin-bottom: -2vh;
+    width: 90%;
+}
+
+.cuartoDivAccesImagen .instagram,
+.cuartoDivAccesImagen .facebook,
+.cuartoDivAccesImagen .twitter {
+    width: 30%;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
 }
 
 .segundoDivMarco .foto2 {
@@ -282,18 +392,20 @@
 #cajaHerramientaModal .DivLenguajeDos .modal-body .contentInfo {
     width: 100%;
     margin-left: 0;
-    padding: 0 8vw;
+    padding: 0 6vw;
 }
 
 .DivRecomendaciones .item,
-.DivLenguajeDos .item {
+.DivLenguajeDos .item,
+.DivAccesibilidadTxt .item {
     color: #ffff;
 }
 
 .DivRecomendaciones .tituloPrincipal,
-.DivLenguajeDos .tituloPrincipal {
+.DivLenguajeDos .tituloPrincipal,
+.DivAccesibilidadTxt .tituloPrincipal {
     font-family: DIN Condensed Bold;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .DivRecomendaciones .tituloPrincipal {
@@ -302,7 +414,8 @@
 }
 
 .DivRecomendaciones .estrellaDerecha,
-.DivLenguajeDos .estrellaDerecha {
+.DivLenguajeDos .estrellaDerecha,
+.DivAccesibilidadTxt .estrellaDerecha {
     width: 5%;
     position: relative;
     left: 90px;
@@ -314,8 +427,14 @@
     top: -30px;
 }
 
+.DivAccesibilidadTxt .estrellaDerecha {
+    left: 115px;
+    top: -25px;
+}
+
 .DivRecomendaciones .estrellaIzquierda,
-.DivLenguajeDos .estrellaIzquierda {
+.DivLenguajeDos .estrellaIzquierda,
+.DivAccesibilidadTxt .estrellaIzquierda {
     width: 6%;
     position: relative;
     left: -115px;
@@ -327,11 +446,22 @@
     top: 28px;
 }
 
+.DivAccesibilidadTxt .estrellaIzquierda {
+    left: -122px;
+    top: 30px;
+}
+
 .DivRecomendaciones article,
-.DivLenguajeDos article {
+.DivLenguajeDos article,
+.DivAccesibilidadTxt article,
+.segundoDivAccesImagen article {
     line-height: 18px;
     text-align: justify;
     padding: 0 7vw;
+}
+
+.segundoDivAccesImagen article {
+    padding: 0 10vw;
 }
 
 .DivRecomendaciones .foto1 {
@@ -344,6 +474,31 @@
 
 .DivLenguajeDos footer {
     margin-top: 10vh;
+}
+
+.DivAccesibilidadTxt .foto1 {
+    width: 130%;
+    margin-left: -12vw;
+}
+
+.DivAccesibilidadTxt .itemSlider .foto1 {
+    width: 100%;
+    margin-left: 0;
+}
+
+.DivAccesibilidadTxt .itemSlider .foto1.segundo {
+    margin-left: -1vw;
+}
+
+.DivAccesibilidadTxt .itemSlider .foto1.tercero {
+    width: 88%;
+    margin-left: 4vw;
+}
+
+.DivAccesibilidadTxt .itemSlider .foto1.cuarto {
+    width: 86%;
+    margin-left: 10vw;
+    margin-top: 4vh;
 }
 
 .DivLenguajeDos .nube {
@@ -377,6 +532,11 @@
     color: #000000;
 }
 
+.DivAccesibilidadTxt .itemSlider article {
+    padding: 0 8vw;
+    color: #000000;
+}
+
 .DivLenguajeDos .itemSlider .imgEstrellaI {
     width: 12%;
     padding: 0 0 8vh 2vw;
@@ -405,6 +565,12 @@
     text-align: left;
     font-family: DIN Condensed Bold;
     line-height: 24px;
+}
+
+.DivAccesibilidadTxt .itemSlider article .tituloSlider {
+    text-align: left;
+    font-family: DIN Condensed Bold;
+    margin-bottom: 2vh;
 }
 
 .DivRecomendaciones .itemSlider article p {
@@ -462,6 +628,10 @@
 .DivRecomendaciones .owl-theme .owl-controls .owl-page span,
 .DivLenguajeDos .owl-theme .owl-controls .owl-page span {
     background-color: #FFF100;
+}
+
+.DivAccesibilidadTxt .owl-theme .owl-controls .owl-page span {
+    background-color: #C63D96;
 }
 
 .DivLenguajeDos .itemSlider article .divCuarto>div,
@@ -559,5 +729,80 @@
     height: 20px;
     position: relative;
     left: -4vw;
+    top: 2vh;
+}
+
+.DivAccesibilidadTxt .itemSlider article .contentVineta {
+    margin: -2vh 0 4vh 4vw;
+}
+
+.DivAccesibilidadTxt .itemSlider article .vinetaBeforeS {
+    margin: -2vh 0 1vh 4vw;
+}
+
+.DivAccesibilidadTxt .itemSlider article .vinetaBefore::before {
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG ACCESIBILIDAD/Accesibilidad en textos/006_Chispa amarilla.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 16px;
+    position: relative;
+    left: -5vw;
+    top: 2vh;
+}
+
+.DivAccesibilidadTxt .itemSlider article div .rojo {
+    margin-bottom: 1vh;
+    color: #C63D96;
+    font-family: DIN Condensed Bold;
+}
+
+.DivAccesibilidadTxt .itemSlider article div a {
+    color: #F7931D;
+    text-decoration: none;
+}
+
+.DivAccesibilidadTxt .itemSlider article .vinetaBeforeS::before {
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG ACCESIBILIDAD/Accesibilidad en textos/005_Chispa roja.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 16px;
+    position: relative;
+    left: -5vw;
+    top: 2vh;
+}
+
+.segundoDivAccesImagen article .vinetaBeforeS::before {
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG ACCESIBILIDAD/Accesibilidad en textos/005_Chispa roja.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 16px;
+    position: relative;
+    left: -5vw;
+    top: 2vh;
+}
+
+.cuartoDivAccesImagen article .text-center div a {
+    color: #000000;
+}
+
+.cincoDivAccesImagen article .vinetaBeforeT::before {
+    content: ' ';
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG ACCESIBILIDAD/Accesibilidad en imágenes/010.Estrella fucsia.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 15px;
+    position: relative;
+    left: -5vw;
     top: 2vh;
 }
