@@ -39,19 +39,34 @@
     background-color: #237D34;
 }
 
+.modal-content.primerDivUsoImg {
+    background-color: #F7931D;
+}
+
+.modal-content.terceroDivUsoImg,
+.modal-content.cincoDivUsoImg {
+    background-color: #1B2F72;
+}
+
 .terceroDivLenguaje .modal-body,
 .cuartoDivLenguaje .modal-body,
 .cincoDivLenguaje .modal-body,
 .primerDivAccesImagen .modal-body,
 .segundoDivAccesImagen .modal-body,
-.terceroDivAccesImagen .modal-body {
+.terceroDivAccesImagen .modal-body,
+.segundoDivUsoImg .modal-body,
+.terceroDivUsoImg .modal-body,
+.cuartoDivUsoImg .modal-body,
+.cincoDivUsoImg .modal-body,
+.seisDivUsoImg .modal-body {
     margin-top: 4vh;
 }
 
 .segundoDivAccesImagen .modal-body,
 .terceroDivAccesImagen .modal-body,
 .cuartoDivAccesImagen .modal-body,
-.cincoDivAccesImagen .modal-body {
+.cincoDivAccesImagen .modal-body,
+.primerDivUsoImg .modal-body {
     margin-top: 8vh;
 }
 
@@ -68,7 +83,13 @@
 .segundoDivAccesImagen .tituloPrincipal,
 .terceroDivAccesImagen .tituloPrincipal,
 .cuartoDivAccesImagen .tituloPrincipal,
-.cincoDivAccesImagen .tituloPrincipal {
+.cincoDivAccesImagen .tituloPrincipal,
+.primerDivUsoImg .tituloPrincipal,
+.segundoDivUsoImg .tituloPrincipal,
+.terceroDivUsoImg .tituloPrincipal,
+.cuartoDivUsoImg .tituloPrincipal,
+.cincoDivUsoImg .tituloPrincipal,
+.seisDivUsoImg .tituloPrincipal {
     font-family: DIN Condensed Bold;
     font-size: 28px;
 }
@@ -107,14 +128,24 @@
     color: #C63D96;
 }
 
+.segundoDivUsoImg .tituloPrincipal,
+.terceroDivUsoImg .tituloPrincipal,
+.cuartoDivUsoImg .tituloPrincipal,
+.cincoDivUsoImg .tituloPrincipal {
+    margin: -10vh -7vw 0vh 0vw;
+    font-size: 25px;
+    line-height: 26px;
+}
+
 .primerDivMarco .estrellaDerecha,
 .primerDivLenguaje .estrellaDerecha,
 .terceroDivLenguaje .estrellaDerecha,
 .cuartoDivLenguaje .estrellaDerecha,
 .cincoDivLenguaje .estrellaDerecha,
 .primerDivAccesImagen .estrellaDerecha,
-.cincoDivAccesImagen .estrellaDerecha {
-    width: 5%;
+.cincoDivAccesImagen .estrellaDerecha,
+.primerDivUsoImg .estrellaDerecha {
+    width: 6%;
     position: relative;
     left: 95px;
     top: -30px;
@@ -149,13 +180,18 @@
     top: -30px;
 }
 
+.primerDivUsoImg .estrellaDerecha {
+    left: 125px;
+}
+
 .primerDivMarco .estrellaIzquierda,
 .primerDivLenguaje .estrellaIzquierda,
 .terceroDivLenguaje .estrellaIzquierda,
 .cuartoDivLenguaje .estrellaIzquierda,
 .primerDivAccesImagen .estrellaIzquierda,
-.cincoDivAccesImagen .estrellaIzquierda {
-    width: 6%;
+.cincoDivAccesImagen .estrellaIzquierda,
+.primerDivUsoImg .estrellaIzquierda {
+    width: 7%;
     position: relative;
     left: -100px;
     top: 20px;
@@ -190,6 +226,11 @@
     top: 20px;
 }
 
+.primerDivUsoImg .estrellaIzquierda {
+    left: -140px;
+    top: 20px;
+}
+
 .primerDivMarco article,
 .primerDivLenguaje article,
 .segundoDivLenguaje article,
@@ -200,7 +241,12 @@
 .segundoDivAccesImagen article,
 .terceroDivAccesImagen article,
 .cuartoDivAccesImagen article,
-.cincoDivAccesImagen article {
+.cincoDivAccesImagen article,
+.segundoDivUsoImg article,
+.terceroDivUsoImg article,
+.cuartoDivUsoImg article,
+.cincoDivUsoImg article,
+.seisDivUsoImg article  {
     line-height: 18px;
     text-align: justify;
     padding: 0 6vw;
@@ -210,7 +256,12 @@
 .primerDivAccesImagen article,
 .segundoDivAccesImagen article,
 .cuartoDivAccesImagen article,
-.cincoDivAccesImagen article {
+.cincoDivAccesImagen article,
+.primerDivUsoImg article,
+.terceroDivUsoImg article,
+.cuartoDivUsoImg article,
+.cincoDivUsoImg article,
+.seisDivUsoImg article {
     padding: 0 8vw;
     margin-bottom: 3vh;
 }
@@ -225,7 +276,15 @@
 .terceroDivAccesImagen article,
 .cuartoDivAccesImagen .tituloPrincipal,
 .cuartoDivAccesImagen article,
-.cincoDivAccesImagen article {
+.cincoDivAccesImagen article,
+.primerDivUsoImg article,
+.primerDivUsoImg .tituloPrincipal,
+.segundoDivUsoImg article,
+.segundoDivUsoImg .tituloPrincipal,
+.cuartoDivUsoImg article,
+.cuartoDivUsoImg .tituloPrincipal,
+.seisDivUsoImg article,
+.seisDivUsoImg .tituloPrincipal {
     color: #000000;
 }
 
@@ -233,11 +292,28 @@
     padding: 0 8vw;
 }
 
+.primerDivUsoImg article,
+.segundoDivUsoImg article {
+    margin-top: 2vh;
+    padding: 0 14vw;
+}
+
+.segundoDivUsoImg article,
+.terceroDivUsoImg article,
+.cuartoDivUsoImg article,
+.cincoDivUsoImg article,
+.seisDivUsoImg article {
+    margin-top: 5vh;
+    padding: 0 6vw;
+    margin-left: 7vw;
+}
+
 .primerDivMarco .foto1,
 .primerDivLenguaje .foto1,
 .segundoDivLenguaje .foto1,
 .primerDivAccesImagen .foto1,
-.segundoDivAccesImagen .foto1 {
+.segundoDivAccesImagen .foto1,
+.primerDivUsoImg .retrato {
     margin-left: -3vw;
     margin-bottom: -2vh;
     width: 108%;
@@ -273,6 +349,10 @@
     width: 114%;
     margin-left: -6vw;
     margin-top: -4vh;
+}
+
+.primerDivUsoImg .retrato {
+    margin-top: 5vh;
 }
 
 .segundoDivMarco .estrellaRojas {
@@ -389,7 +469,8 @@
 }
 
 #cajaHerramientaModal .DivRecomendaciones .modal-body .contentInfo,
-#cajaHerramientaModal .DivLenguajeDos .modal-body .contentInfo {
+#cajaHerramientaModal .DivLenguajeDos .modal-body .contentInfo,
+#cajaHerramientaModal .DivElaboracionV .modal-body .contentInfo {
     width: 100%;
     margin-left: 0;
     padding: 0 6vw;
@@ -397,13 +478,15 @@
 
 .DivRecomendaciones .item,
 .DivLenguajeDos .item,
-.DivAccesibilidadTxt .item {
+.DivAccesibilidadTxt .item,
+.DivElaboracionV .item {
     color: #ffff;
 }
 
 .DivRecomendaciones .tituloPrincipal,
 .DivLenguajeDos .tituloPrincipal,
-.DivAccesibilidadTxt .tituloPrincipal {
+.DivAccesibilidadTxt .tituloPrincipal,
+.DivElaboracionV .tituloPrincipal {
     font-family: DIN Condensed Bold;
     font-size: 26px;
 }
@@ -415,7 +498,8 @@
 
 .DivRecomendaciones .estrellaDerecha,
 .DivLenguajeDos .estrellaDerecha,
-.DivAccesibilidadTxt .estrellaDerecha {
+.DivAccesibilidadTxt .estrellaDerecha,
+.DivElaboracionV .estrellaDerecha {
     width: 5%;
     position: relative;
     left: 90px;
@@ -432,9 +516,15 @@
     top: -25px;
 }
 
+.DivElaboracionV .estrellaDerecha {
+    left: 115px;
+    top: -30px;
+}
+
 .DivRecomendaciones .estrellaIzquierda,
 .DivLenguajeDos .estrellaIzquierda,
-.DivAccesibilidadTxt .estrellaIzquierda {
+.DivAccesibilidadTxt .estrellaIzquierda,
+.DivElaboracionV .estrellaIzquierda {
     width: 6%;
     position: relative;
     left: -115px;
@@ -451,10 +541,16 @@
     top: 30px;
 }
 
+.DivElaboracionV .estrellaIzquierda {
+    left: -135px;
+    top: 26px;
+}
+
 .DivRecomendaciones article,
 .DivLenguajeDos article,
 .DivAccesibilidadTxt article,
-.segundoDivAccesImagen article {
+.segundoDivAccesImagen article,
+.DivElaboracionV article {
     line-height: 18px;
     text-align: justify;
     padding: 0 7vw;
@@ -464,21 +560,31 @@
     padding: 0 10vw;
 }
 
+.DivElaboracionV article {
+    padding: 0 10vw;
+}
+
 .DivRecomendaciones .foto1 {
     width: 110%;
 }
 
-.DivLenguajeDos .foto1 {
+.DivLenguajeDos .foto1,
+.DivElaboracionV .foto1 {
     width: 100%;
 }
 
-.DivLenguajeDos footer {
+.DivLenguajeDos footer,
+.DivElaboracionV footer {
     margin-top: 10vh;
 }
 
 .DivAccesibilidadTxt .foto1 {
     width: 130%;
     margin-left: -12vw;
+}
+
+.DivElaboracionV .foto1 {
+    margin-left: -1vw;
 }
 
 .DivAccesibilidadTxt .itemSlider .foto1 {
@@ -537,17 +643,43 @@
     color: #000000;
 }
 
-.DivLenguajeDos .itemSlider .imgEstrellaI {
+.DivLenguajeDos .itemSlider .imgEstrellaI,
+.DivElaboracionV .itemSlider .imgEstrellaI,
+.segundoDivUsoImg .imgEstrellaI,
+.terceroDivUsoImg .imgEstrellaI,
+.cuartoDivUsoImg .imgEstrellaI,
+.cincoDivUsoImg .imgEstrellaI,
+.seisDivUsoImg .imgEstrellaI {
     width: 12%;
     padding: 0 0 8vh 2vw;
 }
 
-.DivLenguajeDos .itemSlider .imgEstrellaD {
+.DivElaboracionV .itemSlider .imgEstrellaI {
+    padding-bottom: 2vh;
+}
+
+.DivLenguajeDos .itemSlider .imgEstrellaD,
+.DivElaboracionV .itemSlider .imgEstrellaD,
+.segundoDivUsoImg .imgEstrellaD,
+.terceroDivUsoImg .imgEstrellaD,
+.cuartoDivUsoImg .imgEstrellaD,
+.cincoDivUsoImg .imgEstrellaD,
+.seisDivUsoImg .imgEstrellaD {
     width: 14%;
     padding-right: 2vw;
 }
 
-.DivLenguajeDos .itemSlider article {
+.segundoDivUsoImg .imgEstrellaD,
+.terceroDivUsoImg .imgEstrellaD,
+.cuartoDivUsoImg .imgEstrellaD,
+.cincoDivUsoImg .imgEstrellaD,
+.seisDivUsoImg .imgEstrellaD {
+    margin-top: -6vh;
+    margin-bottom: 4vh;
+}
+
+.DivLenguajeDos .itemSlider article,
+.DivElaboracionV .itemSlider article {
     padding: 0 12vw;
     color: #000000;
     line-height: 18px;
@@ -573,8 +705,19 @@
     margin-bottom: 2vh;
 }
 
+.DivElaboracionV .itemSlider article .tituloSlider {
+    text-align: left;
+    font-family: DIN Condensed Bold;
+    margin-bottom: 6vh;
+    font-size: 34px;
+}
+
 .DivRecomendaciones .itemSlider article p {
     margin-bottom: -2px;
+}
+
+.DivElaboracionV .itemSlider article .text-center p {
+    font-size: 14px;
 }
 
 .DivRecomendaciones .itemSlider article p::before {
@@ -590,7 +733,12 @@
     top: 2vh;
 }
 
-.DivLenguajeDos .itemSlider article div>.False {
+.DivLenguajeDos .itemSlider article div>.False,
+.segundoDivUsoImg article .infoInterna .False,
+.terceroDivUsoImg article .infoInterna .False,
+.cuartoDivUsoImg article .infoInterna .False,
+.cincoDivUsoImg article .infoInterna .False,
+.seisDivUsoImg article .infoInterna .False {
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/009. No usar_Mesa de trabajo 1 copia 2.png");
     background-size: 80%;
@@ -602,7 +750,12 @@
     top: 5vh;
 }
 
-.DivLenguajeDos .itemSlider article div>.True {
+.DivLenguajeDos .itemSlider article div>.True,
+.segundoDivUsoImg article .infoInterna .True,
+.terceroDivUsoImg article .infoInterna .True,
+.cuartoDivUsoImg article .infoInterna .True,
+.cincoDivUsoImg article .infoInterna .True,
+.seisDivUsoImg article .infoInterna .True {
     content: ' ';
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG LENGUAJE/010. Usar_Mesa de trabajo 1 copia 2.png");
     background-size: 90%;
@@ -615,14 +768,31 @@
 }
 
 .DivLenguajeDos .itemSlider article img {
-    width: 120%;
-    margin-left: -6vw;
-    margin-top: 4vh;
+    width: 130%;
+    margin-left: -10vw;
+    margin-top: 12vh;
 }
 
 .DivLenguajeDos .itemSlider article .personaCharlando {
     width: 144%;
     margin-left: -15vw;
+}
+
+.DivElaboracionV .itemSlider article img {
+    width: 130%;
+    margin-left: -10vw;
+    margin-top: 12vh;
+}
+
+.DivElaboracionV .itemSlider article .itemTres {
+    width: 151%;
+    margin-left: -12vw;
+    margin-top: 10vh;
+}
+
+.DivElaboracionV .itemSlider article .imgInterna {
+    width: 56%;
+    margin: 5vh 0 2vh 2vw;
 }
 
 .DivRecomendaciones .owl-theme .owl-controls .owl-page span,
@@ -805,4 +975,60 @@
     position: relative;
     left: -5vw;
     top: 2vh;
+}
+
+.DivElaboracionV .itemSlider article .text-center a {
+    cursor: pointer;
+    color: #ffff;
+    padding: 22px;
+    font-family: DIN Condensed Bold;
+    font-size: 14px;
+    background-size: 100%;
+    width: 62%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+    line-height: 16px;
+    background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG MATERIAL AUDIOVISUAL/Recomendaciones uso video/008.Boton.png");
+}
+
+.segundoDivUsoImg article .infoInterna .pFalse,
+.segundoDivUsoImg article .infoInterna .pTrue,
+.terceroDivUsoImg article .infoInterna .pTrue,
+.terceroDivUsoImg article .infoInterna .pFalse,
+.cuartoDivUsoImg article .infoInterna .pTrue,
+.cuartoDivUsoImg article .infoInterna .pFalse,
+.cincoDivUsoImg article .infoInterna .pTrue,
+.cincoDivUsoImg article .infoInterna .pFalse,
+.seisDivUsoImg article .infoInterna .pTrue,
+.seisDivUsoImg article .infoInterna .pFalse {
+    text-align: start;
+}
+
+.segundoDivUsoImg article .infoInterna .imgPoster,
+.terceroDivUsoImg article .infoInterna .imgPoster,
+.cuartoDivUsoImg article .infoInterna .imgPoster,
+.cincoDivUsoImg article .infoInterna .imgPoster,
+.seisDivUsoImg article .infoInterna .imgPoster {
+    margin-bottom: 4vh;
+}
+
+.segundoDivUsoImg article .infoInterna .imgPoster.imgUno,
+.terceroDivUsoImg article .infoInterna .imgPoster.imgUno,
+.terceroDivUsoImg article .infoInterna .imgPoster.imgDos,
+.cuartoDivUsoImg article .infoInterna .imgPoster.imgUno,
+.cuartoDivUsoImg article .infoInterna .imgPoster.imgDos,
+.cincoDivUsoImg article .infoInterna .imgPoster.imgUno,
+.cincoDivUsoImg article .infoInterna .imgPoster.imgDos,
+.seisDivUsoImg article .infoInterna .imgPoster.imgUno {
+    width: 100%;
+}
+
+.segundoDivUsoImg article .infoInterna .imgPoster.imgDos {
+    width: 76%;
+}
+
+.seisDivUsoImg article .infoInterna .imgPoster.imgDos {
+    width: 84%;
 }

@@ -91,6 +91,30 @@ export default class Modal {
         Modal.toogle();
     }
 
+    static async desplegarElaborarVideos(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalElaboVideos.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
+    static async desplegarUsoImagenes(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalUsoImg.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
     /**
      * Metodo para asignar el evento de cerrar del boton del modal
      */

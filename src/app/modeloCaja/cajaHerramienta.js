@@ -25,6 +25,8 @@ let gestionarMetodos = () => {
     abrirLenguajeDos();
     abrirAccesoTexto();
     abrirAccesoImagenes();
+    abrirElaborarVideos();
+    abrirUsoImagenes();
 }
 
 let cambiarColorMenuMobil = () =>{
@@ -111,6 +113,31 @@ let abrirAccesoImagenes = () => {
     document.getElementById("btnAccessImg").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarAccesoImg();
+    });
+}
+
+let abrirElaborarVideos = () => {
+    document.getElementById("btnElaboracion").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarElaborarVideos();
+        setTimeout(() => {
+            $(document).ready(function () {
+                $("#owl-ElaboracionV").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    autoPlay: false,
+                    items: 1,
+                    itemsDesktop: [640, 5],
+                    itemsDesktopSmall: [414, 4]
+                });
+            });
+        }, 20); 
+    });
+}
+
+let abrirUsoImagenes = () => {
+    document.getElementById("btnUso").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarUsoImagenes();
     });
 }
 
