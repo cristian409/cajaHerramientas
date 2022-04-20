@@ -175,6 +175,18 @@ export default class Modal {
         Modal.toogle();
     }
 
+    static async desplegarBibliografia(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalBibliografia.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
     /**
      * Metodo para asignar el evento de cerrar del boton del modal
      */

@@ -32,6 +32,7 @@ let gestionarMetodos = () => {
     abrirRecomendacionADos();
     abrirRecomendacionATres();
     abrirGlosario();
+    abrirBibliografia();
 }
 
 let cambiarColorMenuMobil = () =>{
@@ -189,6 +190,13 @@ let abrirGlosario = () => {
     document.getElementById("btnGlosario").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarGlosario();
+    });
+}
+
+let abrirBibliografia = () => {
+    document.getElementById("btnBibliografia").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarBibliografia();
     });
 }
 

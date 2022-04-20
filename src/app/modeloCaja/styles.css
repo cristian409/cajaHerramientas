@@ -541,15 +541,27 @@ and open the template in the editor.
     margin-top: -2vh;
 }
 
-#owl-introRecomen {
+#owl-introRecomen,
+#owl-lenguajeDos,
+#owl-AccessTexto,
+#owl-ElaboracionV,
+#owl-RecomendacionUno {
     display: grid !important
 }
 
-#owl-introRecomen .owl-wrapper-outer {
+#owl-introRecomen .owl-wrapper-outer,
+#owl-lenguajeDos .owl-wrapper-outer,
+#owl-AccessTexto .owl-wrapper-outer,
+#owl-ElaboracionV .owl-wrapper-outer,
+#owl-RecomendacionUno .owl-wrapper-outer {
     order: 2;
 }
 
-#owl-introRecomen .owl-controls {
+#owl-introRecomen .owl-controls,
+#owl-lenguajeDos .owl-controls,
+#owl-AccessTexto .owl-controls,
+#owl-ElaboracionV .owl-controls,
+#owl-RecomendacionUno .owl-controls {
     order: 1;
     margin: -20px 0 40px;
 }

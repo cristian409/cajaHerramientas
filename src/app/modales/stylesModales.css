@@ -75,7 +75,10 @@
 .cincoDivUsoImg .modal-body,
 .seisDivUsoImg .modal-body,
 .primerDivEvaluacionM .modal-body,
-.primerRecomendacionTres .modal-body {
+.primerRecomendacionTres .modal-body,
+.DivElaboracionV .modal-body,
+.DivRecomendacionUno .modal-body,
+.primerDivBibliografia .modal-body {
     margin-top: 4vh;
 }
 
@@ -86,14 +89,12 @@
 .primerDivUsoImg .modal-body,
 .segundoDivEvaluacionM .modal-body,
 .terceroDivEvaluacionM .modal-body,
-.DivRecomendacionUno .modal-body,
 .segundoRecomendacionDos .modal-body,
 .seisRecomendacionDos .modal-body,
 .sieteRecomendacionDos .modal-body,
 .ochoRecomendacionDos .modal-body,
 .nueveRecomendacionDos .modal-body,
-.segundoRecomendacionTres .modal-body,
-.DivLenguajeDos .modal-body {
+.segundoRecomendacionTres .modal-body {
     margin-top: 8vh;
 }
 
@@ -133,7 +134,10 @@
 .nueveRecomendacionDos .tituloPrincipal,
 .primerRecomendacionTres .tituloPrincipal,
 .segundoRecomendacionTres .tituloPrincipal,
-.primerDivGlosario .tituloPrincipal {
+.primerDivGlosario .tituloPrincipal,
+.primerDivBibliografia .tituloPrincipal,
+.segundoDivBibliografia .tituloPrincipal,
+.terceroDivBibliografia .tituloPrincipal {
     font-family: DIN Condensed Bold;
     font-size: 28px;
     line-height: 28px;
@@ -174,7 +178,11 @@
 .cuartoDivAccesImagen .tituloPrincipal,
 .cincoDivAccesImagen .tituloPrincipal,
 .primerRecomendacionDos .tituloPrincipal,
-.segundoRecomendacionTres .tituloPrincipal {
+.segundoRecomendacionTres .tituloPrincipal,
+.DivElaboracionV .tituloPrincipal,
+.primerDivBibliografia .tituloPrincipal,
+.segundoDivBibliografia .tituloPrincipal,
+.terceroDivBibliografia .tituloPrincipal {
     margin: 0 -7vw;
 }
 
@@ -211,6 +219,18 @@
     margin-bottom: 4vh;
 }
 
+.segundoDivBibliografia .tituloPrincipal {
+    margin-top: 3vh;
+}
+
+.terceroDivBibliografia .tituloPrincipal {
+    margin-bottom: 2vh;
+}
+
+.segundoDivBibliografia .segundo .tituloPrincipal {
+    margin-top: 5vh;
+}
+
 .primerDivMarco .estrellaDerecha,
 .primerDivLenguaje .estrellaDerecha,
 .terceroDivLenguaje .estrellaDerecha,
@@ -222,7 +242,10 @@
 .primerDivEvaluacionM .estrellaDerecha,
 .primerRecomendacionDos .estrellaDerecha,
 .primerRecomendacionTres .estrellaDerecha,
-.primerDivGlosario .estrellaDerecha {
+.primerDivGlosario .estrellaDerecha,
+.primerDivBibliografia .estrellaDerecha,
+.segundoDivBibliografia .estrellaDerecha,
+.terceroDivBibliografia .estrellaDerecha {
     width: 6%;
     position: relative;
     left: 95px;
@@ -279,6 +302,21 @@
     left: 55px;
 }
 
+.primerDivBibliografia .estrellaDerecha {
+    left: 134px;
+    top: -16px;
+}
+
+.segundoDivBibliografia .estrellaDerecha {
+    left: 118px;
+    top: -16px;
+}
+
+.terceroDivBibliografia .estrellaDerecha {
+    left: 110px;
+    top: -30px;
+}
+
 .primerDivMarco .estrellaIzquierda,
 .primerDivLenguaje .estrellaIzquierda,
 .terceroDivLenguaje .estrellaIzquierda,
@@ -289,7 +327,10 @@
 .primerDivEvaluacionM .estrellaIzquierda,
 .primerRecomendacionDos .estrellaIzquierda,
 .primerRecomendacionTres .estrellaIzquierda,
-.primerDivGlosario .estrellaIzquierda {
+.primerDivGlosario .estrellaIzquierda,
+.primerDivBibliografia .estrellaIzquierda,
+.segundoDivBibliografia .estrellaIzquierda,
+.terceroDivBibliografia .estrellaIzquierda {
     width: 7%;
     position: relative;
     left: -100px;
@@ -347,6 +388,26 @@
     left: -60px;
 }
 
+.primerDivBibliografia .estrellaIzquierda {
+    left: -135px;
+}
+
+.segundoDivBibliografia .estrellaIzquierda {
+    left: -125px;
+    top: 45px;
+}
+
+.segundoDivBibliografia .segundo .estrellaIzquierda {
+    left: -130px;
+    top: 65px;
+}
+
+.terceroDivBibliografia .estrellaIzquierda {
+    left: -112px;
+    top: 20px;
+}
+
+
 .primerDivMarco article,
 .primerDivLenguaje article,
 .segundoDivLenguaje article,
@@ -379,7 +440,10 @@
 .primerRecomendacionTres article,
 .segundoRecomendacionTres article,
 .primerDivGlosario article,
-.segundoDivGlosario article {
+.segundoDivGlosario article,
+.primerDivBibliografia article,
+.segundoDivBibliografia article,
+.terceroDivBibliografia article {
     line-height: 18px;
     text-align: justify;
     padding: 0 6vw;
@@ -435,12 +499,21 @@
 .cincoRecomendacionDos article,
 .cincoRecomendacionDos .tituloPrincipal,
 .segundoRecomendacionTres .tituloPrincipal,
-.segundoRecomendacionTres article {
+.segundoRecomendacionTres article,
+.primerDivBibliografia .tituloPrincipal,
+.primerDivBibliografia article,
+.segundoDivBibliografia .tituloPrincipal,
+.segundoDivBibliografia article,
+.terceroDivBibliografia .tituloPrincipal,
+.terceroDivBibliografia article {
     color: #000000;
 }
 
 .cincoDivLenguaje article,
-.segundoDivGlosario article {
+.segundoDivGlosario article,
+.primerDivBibliografia article,
+.segundoDivBibliografia article,
+.terceroDivBibliografia article {
     padding: 0 8vw;
 }
 
@@ -492,6 +565,12 @@
 
 .primerDivGlosario article {
     padding: 0 13vw;
+}
+
+.primerDivBibliografia article,
+.segundoDivBibliografia article,
+.terceroDivBibliografia article {
+    text-align: start;
 }
 
 .segundoRecomendacionDos article h2,
@@ -664,6 +743,13 @@
     width: 96%;
 }
 
+.terceroDivBibliografia .foto1 {
+    margin-top: 2vh;
+    margin-left: -5vw;
+    margin-bottom: -2vh;
+    width: 111%;
+}
+
 .segundoDivMarco .numero {
     font-family: DIN Condensed Bold;
     font-size: 16px;
@@ -792,6 +878,7 @@
 .DivLenguajeDos .tituloPrincipal {
     padding: 0 10vw;
     line-height: 22px;
+    margin-top: 1vh;
 }
 
 .DivRecomendacionUno .tituloPrincipal {
@@ -1122,7 +1209,7 @@
 .DivLenguajeDos .itemSlider article img {
     width: 130%;
     margin-left: -10vw;
-    margin-top: 12vh;
+    margin-top: 2vh;
 }
 
 .DivLenguajeDos .itemSlider article .personaCharlando {
@@ -1166,7 +1253,9 @@
 }
 
 .DivRecomendaciones .owl-theme .owl-controls .owl-page span,
-.DivLenguajeDos .owl-theme .owl-controls .owl-page span {
+.DivLenguajeDos .owl-theme .owl-controls .owl-page span,
+.DivElaboracionV .owl-theme .owl-controls .owl-page span,
+.DivRecomendacionUno .owl-theme .owl-controls .owl-page span {
     background-color: #FFF100;
 }
 
@@ -1202,6 +1291,7 @@
 
 .DivLenguajeDos .itemSlider .articleOpcionA {
     padding: 0 8vw;
+    color: #fff;
 }
 
 .DivLenguajeDos .itemSlider .contentInfo .bombilloLenguaje {
@@ -1219,7 +1309,7 @@
 }
 
 .DivLenguajeDos .foto1.opcionA {
-    width: 92%;
+    width: 98%;
 }
 
 .DivLenguajeDos .itemSlider .articleSeis {
@@ -1508,4 +1598,37 @@
     top: -42px;
     left: -34px;
     width: 20%;
+}
+
+.primerDivUsoImg .btnClose,
+.primerDivBibliografia .btnClose {
+    color: #000000 !important;
+}
+
+.primerDivBibliografia article h2,
+.segundoDivBibliografia article h2 {
+    font-family: DIN Condensed Bold;
+    font-size: 20px;
+    margin-top: 1vh;
+}
+
+.primerDivBibliografia article h2 {
+    color: #C63D96;
+}
+
+.segundoDivBibliografia article h2 {
+    color: #237D34;
+}
+
+.segundoDivBibliografia .h2Dos {
+    color: #EE3A4F;
+}
+
+.primerDivBibliografia article p>a,
+.segundoDivBibliografia article p>a,
+.terceroDivBibliografia article p>a {
+    color: #1B2F72;
+    text-decoration: none;
+    font-family: Myriad Pro Bold;
+    font-size: 15px;
 }
