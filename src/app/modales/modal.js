@@ -115,6 +115,66 @@ export default class Modal {
         Modal.toogle();
     }
 
+    static async desplegarEvaluacionMaterial(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalEvalucionMaterial.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
+    static async desplegarRecomendacionAtencionUno(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalRecomendacionAUno.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
+    static async desplegarRecomendacionAtencionDos(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalRecomendacionesADos.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
+    static async desplegarRecomendacionAtencionTres(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalRecomendacionesATres.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
+    static async desplegarGlosario(){
+        await Ayudas.cargarPagina(
+            `modalDialog`,
+            `../modales/modalGlosario.html`
+        ).catch(error =>{
+            Ayudas.alerta("cajaPrincipal",
+                "Imposible acceder al modal", error);
+        });
+        Modal.asignarEventos();
+        Modal.toogle();
+    }
+
     /**
      * Metodo para asignar el evento de cerrar del boton del modal
      */

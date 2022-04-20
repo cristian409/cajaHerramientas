@@ -27,6 +27,11 @@ let gestionarMetodos = () => {
     abrirAccesoImagenes();
     abrirElaborarVideos();
     abrirUsoImagenes();
+    abrirEvaluacionMaterial();
+    abrirRecomendacionAUno();
+    abrirRecomendacionADos();
+    abrirRecomendacionATres();
+    abrirGlosario();
 }
 
 let cambiarColorMenuMobil = () =>{
@@ -138,6 +143,52 @@ let abrirUsoImagenes = () => {
     document.getElementById("btnUso").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarUsoImagenes();
+    });
+}
+
+let abrirEvaluacionMaterial = () => {
+    document.getElementById("btnEvaluacionM").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarEvaluacionMaterial();
+    });
+}
+
+let abrirRecomendacionAUno = () => {
+    document.getElementById("btnClaves").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarRecomendacionAtencionUno();
+        setTimeout(() => {
+            $(document).ready(function () {
+                $("#owl-RecomendacionUno").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    autoPlay: false,
+                    items: 1,
+                    itemsDesktop: [640, 5],
+                    itemsDesktopSmall: [414, 4]
+                });
+            });
+        }, 20); 
+    });
+}
+
+let abrirRecomendacionADos = () => {
+    document.getElementById("btnPersonas").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarRecomendacionAtencionDos();
+    });
+}
+
+let abrirRecomendacionATres = () => {
+    document.getElementById("btnDiscapacidad").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarRecomendacionAtencionTres();
+    });
+}
+
+let abrirGlosario = () => {
+    document.getElementById("btnGlosario").addEventListener('click', (event) => {
+        event.preventDefault();
+        Modal.desplegarGlosario();
     });
 }
 

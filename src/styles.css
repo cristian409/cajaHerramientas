@@ -35,11 +35,11 @@
 
 body {
     min-height: 100vh;
-    font-family: Myriad Pro Italic;
+    font-family: Myriad Pro Regular;
 }
 
-/* body strong {
+body strong {
     font-family: Myriad Pro Bold !important;
     font-weight: normal !important;
-} */
+}
 

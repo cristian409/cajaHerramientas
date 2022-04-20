@@ -524,6 +524,26 @@ if (typeof Object.create !== "function") {
                             
                         }
                     }
+
+                     //cambiar de color azulClaro a blaco
+                    if(this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
+                        && this.parentElement.parentElement.parentElement.id == "owl-lenguajeDos"){
+                    var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
+                    var cont_mo = this.parentElement.parentElement.parentElement;
+                    if(cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                            && cont_mo.parentElement.parentElement.id== "LenguajeDos"){
+                        if(act_item != this){
+                            cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                            var bt = document.getElementById('btnLenguajeDos');
+                            if(bt) bt.setAttribute('style', 'color:#000 !important');
+                        }else {
+                            cont_mo.parentElement.parentElement.style.backgroundColor = "#1B75BB";
+                            var bt = document.getElementById('btnLenguajeDos');
+                            if(bt) bt.setAttribute('style', 'color:#fff  !important');
+                        }
+                        
+                    }
+                }
                 }
             });
         },
