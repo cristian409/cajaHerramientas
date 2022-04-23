@@ -524,6 +524,32 @@ if (typeof Object.create !== "function") {
 
                         }
                     }
+                    //hacer largos de slider del tamaño de la modal
+                    if(this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement
+                            && this.parentElement.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.parentElement.parentElement
+                            && this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement
+                            && this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.id == "modalDialog"){
+                        
+                        var cont_btns_cont =this.parentElement.parentElement.parentElement; //contenedor de silider y bolitas
+                        var itmess = cont_btns_cont.getElementsByClassName('owl-item'); // todos los items del slider
+                        var conten_b = this.parentElement;     //contenedor bolitas
+                        var btnsss = conten_b.getElementsByClassName('owl-page'); //todas las bolitas
+                        for(var i =0; i< btnsss.length; i++){
+                            if(btnsss[i] == this){//cuando la bolita esté activa, igualar al item del slider
+                                var ahora = itmess[i]; //item de slider activo
+                                break;       
+                            }
+                        }
+                        setTimeout((function() {//para alcanzar a leer el alto
+                            var it = ahora; //item activo
+                            var largoo = it.clientHeight + 50; //largo del activo mas un poquito de margen
+                            var div_largo = cont_btns_cont.getElementsByClassName('owl-wrapper-outer')[0]; //item
+                            var min_largo = window.innerHeight - 110
+                            div_largo.style.minHeight = min_largo+'px'; //minimo de la ventana de largo
+                            div_largo.style.maxHeight = largoo+'px';
+                        }), 50);
+                        //modalDialog
+                    }
 
                     //cambiar de color azulClaro a blanco
                     if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
