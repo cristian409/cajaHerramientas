@@ -506,24 +506,27 @@ if (typeof Object.create !== "function") {
 
 
                     //cambiar de color verde a blanco
+                    
                     if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
                         && this.parentElement.parentElement.parentElement.id == "owl-introRecomen") {
                         var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
                         var cont_mo = this.parentElement.parentElement.parentElement;
                         if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
                             && cont_mo.parentElement.parentElement.id == "modalRecomendaciones") {
-                            if (act_item != this) {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
-                                var bt = document.getElementById('btnIntroRecomendaciones');
-                                if (bt) bt.setAttribute('style', 'color:#000 !important');
-                            } else {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
-                                var bt = document.getElementById('btnIntroRecomendaciones');
-                                if (bt) bt.setAttribute('style', 'color:#fff  !important');
-                            }
-
+                            setTimeout((function() {//para alcanzar a leer el alto
+                                if (act_item != this) {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                                    var bt = document.getElementById('btnIntroRecomendaciones');
+                                    if (bt) bt.setAttribute('style', 'color:#000 !important');
+                                } else {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
+                                    var bt = document.getElementById('btnIntroRecomendaciones');
+                                    if (bt) bt.setAttribute('style', 'color:#fff  !important');
+                                }
+                            }), 30);
                         }
                     }
+                    
                     //hacer largos de slider del tamaño de la modal
                     if(this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement
                             && this.parentElement.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.parentElement.parentElement
