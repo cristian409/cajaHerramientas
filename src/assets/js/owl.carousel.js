@@ -506,15 +506,18 @@ if (typeof Object.create !== "function") {
 
 
                     //cambiar de color verde a blanco
-                    
-                    if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
-                        && this.parentElement.parentElement.parentElement.id == "owl-introRecomen") {
-                        var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
-                        var cont_mo = this.parentElement.parentElement.parentElement;
+                    var dis = this;
+                    if (dis.parentElement && dis.parentElement.parentElement 
+                        && dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
+                        && dis.parentElement.parentElement.parentElement.id == "owl-introRecomen") {
+                        
+                        var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
+                        var cont_mo = dis.parentElement.parentElement.parentElement;
                         if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
                             && cont_mo.parentElement.parentElement.id == "modalRecomendaciones") {
-                            setTimeout((function() {//para alcanzar a leer el alto
-                                if (act_item != this) {
+                        
+                            setTimeout((function() {
+                                if (act_item != dis) {
                                     cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
                                     var bt = document.getElementById('btnIntroRecomendaciones');
                                     if (bt) bt.setAttribute('style', 'color:#000 !important');
@@ -523,7 +526,7 @@ if (typeof Object.create !== "function") {
                                     var bt = document.getElementById('btnIntroRecomendaciones');
                                     if (bt) bt.setAttribute('style', 'color:#fff  !important');
                                 }
-                            }), 30);
+                            }), 50);
                         }
                     }
                     
