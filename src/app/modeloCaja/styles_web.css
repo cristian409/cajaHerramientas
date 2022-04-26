@@ -1,0 +1,68 @@
+.marco,
+.recomendaciones,
+.guiaVerificacion {
+    display: none;
+}
+
+.cajaPrincipal .introduccion,
+.cajaPrincipal .lenguaje,
+.cajaPrincipal .accesibilidad,
+.cajaPrincipal .materialAudio,
+.cajaPrincipal .evaluacionMateriales,
+.cajaPrincipal .recomendacionesA,
+.cajaPrincipal .referencias,
+.cajaPrincipal .infoAdicional {
+    padding: 4vh 0;
+}
+
+.cajaPrincipal .introduccion .tituloPrincipal {
+    font-size: 5vw;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda,
+.cajaPrincipal .introduccion .estrellaDerecha {
+    width: 2%;
+}
+
+.cajaPrincipal .introduccion .estrellaIzquierda {
+    left: -170px;
+    top: 38px;
+}
+
+.cajaPrincipal .introduccion .estrellaDerecha {
+    left: 170px;
+}
+
+.cajaPrincipal .introduccion .parrafoTituloWeb {
+    display: block !important;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 0 30vw;
+}
+
+.cajaPrincipal .introduccion .contentWeb {
+    display: block !important;
+    padding: 0 3vw;
+}
+
+.cajaPrincipal .introduccion .contentMenu {
+    margin-top: -22vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.cajaPrincipal .introduccion .puntosBlanco {
+    width: 50%;
+    left: -4vw;
+}
+
+.cajaPrincipal .contentWeb .contentVsg {
+    margin-left: 15vw;
+}
+
+.cajaPrincipal .contentVsg .svgIntroduccion {
+    position: relative;
+    z-index: 10;
+    width: 95%;
+    margin-top: -48vh;
+}

@@ -32,42 +32,119 @@ body strong {
 }
 
 /*home*/
-.contentPortada .contentTitulo .tituloPrincipal{font-size: 3.5vw;}
+.contentPortada .contentTitulo .tituloPrincipal {
+    font-size: 3.5vw;
+}
+
 .contentPortada .contentTitulo .estrellaIzquierda {
     width: 2%;
     left: -21%;
 }
-.contentPortada .contentTitulo .estrellaDerecha{
+
+.contentPortada .contentTitulo .estrellaDerecha {
     width: 2%;
     left: 21%;
 }
-.contentPortada .contentTitulo .parrafoTitulo { margin-top: -2%;}
-.contentPortada .contentTitulo .parrafoTitulo { padding: 0px 30vw; font-size: 20px; font-family: 'Myriad Pro Regular';}
-.contentPortada .container.contentImg{
+
+.contentPortada .contentTitulo .parrafoTitulo {
+    margin-top: -2%;
+}
+
+.contentPortada .contentTitulo .parrafoTitulo {
+    padding: 0px 30vw;
+    font-size: 20px;
+}
+
+.contentPortada .container.contentImg {
     width: 55%;
     margin-top: -28vh;
 }
-.contentPortada .contentTitulo{    padding-top: 2vh;}
-#btnLlaveInglesa{
+
+.contentPortada .contentTitulo {
+    padding-top: 2vh;
+}
+
+#btnLlaveInglesa {
     width: 70px;
     height: 25vh;
     top: 25vh;
 }
-#btnLlaveInglesa:hover #conBrillo{    display: block;}
-#btnLlaveInglesa:hover #sinBrillo{    display: none;}
-.contentPortada .container .nube {    width: 18%; float: left;}
-.contentPortada .container .nube.arriba{
+
+#btnLlaveInglesa:hover #conBrillo {
+    display: block;
+}
+
+#btnLlaveInglesa:hover #sinBrillo {
+    display: none;
+}
+
+.contentPortada .container .nube,
+.contentInterna .nube {
+    width: 18%;
+    float: left;
+}
+
+.contentInterna .nube {
+    animation: rubberBand 2s;
+}
+
+.contentPortada .container .nube.arriba,
+.contentInterna .nube.arriba {
     display: block !important;
     float: right;
     right: -50px;
 }
-.contentPortada .container .nube.izquierda {    top: -90px;}
-.contentPortada .container .nube.derecha {    left: 55%; top: -10px;}
+
+.contentInterna .nube.arriba {
+    position: absolute;
+    width: 12%;
+    right: 40px;
+    top: 38%;
+}
+
+.contentPortada .container .nube.izquierda,
+.contentInterna .nube.izquierda {
+    top: -90px;
+}
+
+.contentPortada .container .nube.derecha,
+.contentInterna .nube.derecha {
+    left: 55%;
+    top: -10px;
+}
+
+.contentInterna .nube.izquierda,
+.contentInterna .nube.derecha {
+    display: block !important;
+}
+
+.contentInterna .nube.derecha {
+    position: absolute;
+    width: 14%;
+    left: 65%;
+    top: 89%;
+}
+
+.contentInterna .nube.izquierda {
+    position: absolute;
+    width: 14%;
+    left: 5%;
+    top: 75%;
+}
 
 /*DENTO DE LA LLAVE*/
-#contentPaginaInicio #contentInterna{
+#contentPaginaInicio #contentInterna {
     height: 100vh;
     font-size: 22px;
 }
-.contentInterna .seccion {    padding-top: 10vh;}
+
+.contentInterna .seccion {
+    padding: 10vh 4vw 0
+}
+
+/* PORTADA INTERNA */
+.contentInterna .parrafosPresentacion .btn {
+    font-size: 24px;
+}
+
 
