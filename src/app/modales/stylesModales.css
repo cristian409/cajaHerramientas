@@ -76,7 +76,6 @@
 .seisDivUsoImg .modal-body,
 .primerDivEvaluacionM .modal-body,
 .primerRecomendacionTres .modal-body,
-.DivElaboracionV .modal-body,
 .DivRecomendacionUno .modal-body,
 .primerDivBibliografia .modal-body {
     margin-top: 4vh;
@@ -94,7 +93,8 @@
 .sieteRecomendacionDos .modal-body,
 .ochoRecomendacionDos .modal-body,
 .nueveRecomendacionDos .modal-body,
-.segundoRecomendacionTres .modal-body {
+.segundoRecomendacionTres .modal-body,
+.DivElaboracionV .modal-body {
     margin-top: 8vh;
 }
 
@@ -182,7 +182,8 @@
 .DivElaboracionV .tituloPrincipal,
 .primerDivBibliografia .tituloPrincipal,
 .segundoDivBibliografia .tituloPrincipal,
-.terceroDivBibliografia .tituloPrincipal {
+.terceroDivBibliografia .tituloPrincipal,
+.DivRecomendaciones .tituloPrincipal {
     margin: 0 -7vw;
 }
 
@@ -406,7 +407,6 @@
     left: -112px;
     top: 20px;
 }
-
 
 .primerDivMarco article,
 .primerDivLenguaje article,
@@ -881,8 +881,21 @@
     margin-top: 1vh;
 }
 
+.DivRecomendaciones .tituloPrincipal,
+.DivLenguajeDos .tituloPrincipal {
+    margin-top: 2vh;
+}
+
 .DivRecomendacionUno .tituloPrincipal {
     line-height: 26px;
+}
+
+.DivLenguajeDos .item.primero {
+    margin-bottom: -30vh;
+}
+
+.DivLenguajeDos .item.segundo {
+    margin-bottom: -30vh;
 }
 
 .DivRecomendaciones .estrellaDerecha,
@@ -968,6 +981,11 @@
     padding: 0 10vw;
 }
 
+.DivElaboracionV .primero {
+    margin-top: 4vh;
+}
+
+
 .DivRecomendacionUno article {
     padding: 0 12vw;
     margin-top: 2vh;
@@ -979,7 +997,7 @@
 }
 
 .DivRecomendaciones .foto1 {
-    width: 110%;
+    width: 120%;
 }
 
 .DivLenguajeDos .foto1,
@@ -990,9 +1008,12 @@
     width: 100%;
 }
 
-.DivLenguajeDos footer,
+.DivLenguajeDos footer {
+    margin-top: 14vh;
+}
+
 .DivElaboracionV footer {
-    margin-top: 10vh;
+    margin-top: 14vh;
 }
 
 .DivAccesibilidadTxt .foto1 {
@@ -1000,9 +1021,13 @@
     margin-left: -12vw;
 }
 
-.DivElaboracionV .foto1,
+.DivElaboracionV .foto1 {
+    margin-left: -1vw;
+}
+
 .DivRecomendacionUno .foto1 {
     margin-left: -1vw;
+    margin-top: 7vh;
 }
 
 .DivAccesibilidadTxt .itemSlider .foto1 {
@@ -1020,6 +1045,11 @@
     width: 100%;
     margin-left: 0vw;
     margin-top: 6vh;
+}
+
+.DivRecomendacionUno .foto4 {
+    width: 100%;
+    margin-top: 7vh;
 }
 
 .DivAccesibilidadTxt .itemSlider .foto1.segundo {
@@ -1310,6 +1340,11 @@
 
 .DivLenguajeDos .foto1.opcionA {
     width: 98%;
+    margin-top: -10vh;
+}
+
+.DivLenguajeDos .foto1.opcionB {
+    margin-top: 2vh;
 }
 
 .DivLenguajeDos .itemSlider .articleSeis {

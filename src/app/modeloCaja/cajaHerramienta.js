@@ -190,6 +190,7 @@ let abrirGlosario = () => {
     document.getElementById("btnGlosario").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarGlosario();
+        
     });
 }
 
