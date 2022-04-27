@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async event => {
 });
 
 let gestionarMetodos = () => {
-    cambiarColorMenuMobil();
+    cambiarColorMenu();
     abrirMarcoNormativo();
     abrirRecomendaciones();
     abrirLenguajeUno();
@@ -35,14 +35,26 @@ let gestionarMetodos = () => {
     abrirBibliografia();
 }
 
-let cambiarColorMenuMobil = () =>{
+let cambiarColorMenu = () =>{
     let menu = document.querySelector(".navbar-toggler");
+    let menuWebUno = document.querySelector(".uno");
+    let menuWebDos = document.querySelector(".dos");
     window.addEventListener('scroll',()=>{
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 2470 && scrollTop < 5920) {
             menu.style.color = "#000000";
         }else{
             menu.style.color = "#ffff";
+        }
+    });
+    window.addEventListener('scroll',()=>{
+        let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop > 880 && scrollTop < 2300) {
+            menuWebUno.classList.add("oculto");
+            menuWebDos.classList.remove("oculto");
+        }else{
+            menuWebUno.classList.remove("oculto");
+            menuWebDos.classList.add("oculto");
         }
     });
 }

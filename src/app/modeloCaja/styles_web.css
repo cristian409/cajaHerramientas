@@ -1,6 +1,4 @@
-.marco,
-.recomendaciones,
-.guiaVerificacion {
+.oculto {
     display: none;
 }
 
@@ -12,41 +10,190 @@
 .cajaPrincipal .recomendacionesA,
 .cajaPrincipal .referencias,
 .cajaPrincipal .infoAdicional {
-    padding: 4vh 0;
+    padding: 4vh 0 0 0;
 }
 
-.cajaPrincipal .introduccion .tituloPrincipal {
-    font-size: 5vw;
+
+.cajaPrincipal .introduccion .tituloPrincipal,
+.cajaPrincipal .lenguaje .tituloPrincipal,
+.cajaPrincipal .accesibilidad .tituloPrincipal,
+.cajaPrincipal .materialAudio .tituloPrincipal,
+.cajaPrincipal .evaluacionMateriales .tituloPrincipal,
+.cajaPrincipal .recomendacionesA .tituloPrincipal,
+.cajaPrincipal .referencias .tituloPrincipal,
+.cajaPrincipal .infoAdicional .tituloPrincipal {
+    font-size: 4vw;
 }
 
 .cajaPrincipal .introduccion .estrellaIzquierda,
-.cajaPrincipal .introduccion .estrellaDerecha {
+.cajaPrincipal .introduccion .estrellaDerecha,
+.cajaPrincipal .lenguaje .estrellaIzquierda,
+.cajaPrincipal .lenguaje .estrellaDerecha,
+.cajaPrincipal .accesibilidad .estrellaIzquierda,
+.cajaPrincipal .accesibilidad .estrellaDerecha,
+.cajaPrincipal .materialAudio .estrellaIzquierda,
+.cajaPrincipal .materialAudio .estrellaDerecha,
+.cajaPrincipal .evaluacionMateriales .estrellaIzquierda,
+.cajaPrincipal .evaluacionMateriales .estrellaDerecha,
+.cajaPrincipal .recomendacionesA .estrellaIzquierda,
+.cajaPrincipal .recomendacionesA .estrellaDerecha,
+.cajaPrincipal .referencias .estrellaIzquierda,
+.cajaPrincipal .referencias .estrellaDerecha,
+.cajaPrincipal .infoAdicional .estrellaIzquierda,
+.cajaPrincipal .infoAdicional .estrellaDerecha {
     width: 2%;
 }
 
 .cajaPrincipal .introduccion .estrellaIzquierda {
-    left: -170px;
+    left: -144px;
+    top: 38px;
+}
+
+.cajaPrincipal .lenguaje .estrellaIzquierda {
+    left: -110px;
+    top: 38px;
+}
+
+.cajaPrincipal .accesibilidad .estrellaIzquierda {
+    left: -150px;
+    top: 38px;
+}
+
+.cajaPrincipal .materialAudio .estrellaIzquierda {
+    left: -220px;
+    top: 38px;
+}
+
+.cajaPrincipal .evaluacionMateriales .estrellaIzquierda {
+    left: -255px;
+    top: 38px;
+}
+
+.cajaPrincipal .recomendacionesA .estrellaIzquierda {
+    left: -330px;
+    top: 38px;
+}
+
+.cajaPrincipal .referencias .estrellaIzquierda {
+    left: -145px;
+    top: 38px;
+}
+
+.cajaPrincipal .infoAdicional .estrellaIzquierda {
+    left: -230px;
     top: 38px;
 }
 
 .cajaPrincipal .introduccion .estrellaDerecha {
-    left: 170px;
+    left: 142px;
 }
 
-.cajaPrincipal .introduccion .parrafoTituloWeb {
+.cajaPrincipal .lenguaje .estrellaDerecha {
+    left: 104px;
+}
+
+.cajaPrincipal .accesibilidad .estrellaDerecha {
+    left: 148px;
+}
+
+.cajaPrincipal .materialAudio .estrellaDerecha {
+    left: 210px;
+    top: -30px;
+}
+
+.cajaPrincipal .evaluacionMateriales .estrellaDerecha {
+    left: 250px;
+    top: -36px;
+}
+
+.cajaPrincipal .recomendacionesA .estrellaDerecha {
+    left: 320px;
+    top: -36px;
+}
+
+.cajaPrincipal .referencias .estrellaDerecha {
+    left: 134px;
+    top: -36px;
+}
+
+.cajaPrincipal .infoAdicional .estrellaDerecha {
+    left: 230px;
+    top: -36px;
+}
+
+.cajaPrincipal .introduccion .parrafoTituloWeb,
+.cajaPrincipal .introduccion .contentWeb,
+.cajaPrincipal .lenguaje .parrafoTituloWeb,
+.cajaPrincipal .lenguaje .contentWeb,
+.cajaPrincipal .accesibilidad .parrafoTituloWeb,
+.cajaPrincipal .accesibilidad .contentWeb,
+.cajaPrincipal .materialAudio .parrafoTituloWeb,
+.cajaPrincipal .materialAudio .contentWeb,
+.cajaPrincipal .evaluacionMateriales .parrafoTituloWeb,
+.cajaPrincipal .evaluacionMateriales .contentWeb,
+.cajaPrincipal .recomendacionesA .parrafoTituloWeb,
+.cajaPrincipal .recomendacionesA .contentWeb,
+.cajaPrincipal .referencias .parrafoTituloWeb,
+.cajaPrincipal .referencias .contentWeb,
+.cajaPrincipal .infoAdicional .parrafoTituloWeb,
+.cajaPrincipal .infoAdicional .contentWeb {
     display: block !important;
+}
+
+.cajaPrincipal .introduccion .parrafoTituloWeb,
+.cajaPrincipal .lenguaje .parrafoTituloWeb,
+.cajaPrincipal .accesibilidad .parrafoTituloWeb,
+.cajaPrincipal .materialAudio .parrafoTituloWeb,
+.cajaPrincipal .evaluacionMateriales .parrafoTituloWeb,
+.cajaPrincipal .recomendacionesA .parrafoTituloWeb,
+.cajaPrincipal .referencias .parrafoTituloWeb,
+.cajaPrincipal .infoAdicional .parrafoTituloWeb {
     line-height: 20px;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 0 32vw;
+}
+
+.cajaPrincipal .lenguaje .parrafoTituloWeb {
+    padding: 0 34vw;
+}
+
+.cajaPrincipal .accesibilidad .parrafoTituloWeb,
+.cajaPrincipal .materialAudio .parrafoTituloWeb {
+    color: #000;
+    padding: 0 35vw;
+}
+
+.cajaPrincipal .materialAudio .parrafoTituloWeb {
+    margin-top: -4vh;
+}
+
+.cajaPrincipal .recomendacionesA .parrafoTituloWeb {
+    padding: 0 31vw;
+}
+
+.cajaPrincipal .referencias .parrafoTituloWeb {
+    padding: 0 31vw;
+}
+
+.cajaPrincipal .infoAdicional .parrafoTituloWeb {
     padding: 0 30vw;
 }
 
-.cajaPrincipal .introduccion .contentWeb {
-    display: block !important;
+.cajaPrincipal .introduccion .contentWeb,
+.cajaPrincipal .lenguaje .contentWeb,
+.cajaPrincipal .accesibilidad .contentWeb,
+.cajaPrincipal .materialAudio .contentWeb,
+.cajaPrincipal .evaluacionMateriales .contentWeb,
+.cajaPrincipal .recomendacionesA .contentWeb,
+.cajaPrincipal .referencias .contentWeb,
+.cajaPrincipal .infoAdicional .contentWeb {
     padding: 0 3vw;
+    margin-bottom: -1vh;
+    margin-top: 4vh;
 }
 
 .cajaPrincipal .introduccion .contentMenu {
-    margin-top: -22vh;
+    margin-top: -26vh;
     position: fixed;
     padding: 20px;
 }
@@ -56,13 +203,84 @@
     left: -4vw;
 }
 
+.cajaPrincipal .lenguaje .puntosBlanco,
+.cajaPrincipal .accesibilidad .puntosBlanco {
+    margin-top: 2vh;
+}
+
+.cajaPrincipal .materialAudio .puntosBlanco {
+    margin-bottom: -5vh;
+}
+
+.cajaPrincipal .evaluacionMateriales .puntosBlanco {
+    width: 80%;
+    margin-left: -5vw;
+    margin-bottom: -3vh;
+}
+
+.cajaPrincipal .recomendacionesA .puntosBlanco {
+    width: 80%;
+    margin-left: -5vw;
+    margin-bottom: 0vh;
+}
+
+.cajaPrincipal .referencias .bombillos {
+    width: 83%;
+    margin-left: -2vh;
+}
+
 .cajaPrincipal .contentWeb .contentVsg {
     margin-left: 15vw;
 }
 
-.cajaPrincipal .contentVsg .svgIntroduccion {
+.cajaPrincipal .contentVsg .svgIntroduccion,
+.cajaPrincipal .contentVsg .svgLenguaje,
+.cajaPrincipal .contentVsg .svgAccesibilidad,
+.cajaPrincipal .contentVsg .svgMaterialAudio,
+.cajaPrincipal .contentVsg .svgEvalucion,
+.cajaPrincipal .contentVsg .svgRecomendaciones,
+.cajaPrincipal .contentVsg .svgReferencias,
+.cajaPrincipal .contentVsg .svgInfoAdicional {
     position: relative;
     z-index: 10;
+}
+
+.cajaPrincipal .contentVsg .svgIntroduccion {
     width: 95%;
     margin-top: -48vh;
+}
+
+.cajaPrincipal .contentVsg .svgLenguaje {
+    margin: -70vh 0 0 -3vw;
+    width: 84%;
+}
+
+.cajaPrincipal .contentVsg .svgAccesibilidad {
+    margin: -72vh 0 0 -4vw;
+    width: 84%;
+}
+
+.cajaPrincipal .contentVsg .svgMaterialAudio {
+    margin: -70vh 0 0 -4vw;
+    width: 96%;
+}
+
+.cajaPrincipal .contentVsg .svgEvalucion {
+    margin: -70vh 0 0 -4vw;
+    width: 76%;
+}
+
+.cajaPrincipal .contentVsg .svgRecomendaciones {
+    margin: -56vh 0 -10vh -4vw;
+    width: 94%;
+}
+
+.cajaPrincipal .contentVsg .svgReferencias {
+    margin: -58vh 0 0vh -1.9vw;
+    width: 86%;
+}
+
+.cajaPrincipal .contentVsg .svgInfoAdicional {
+    margin: 2vh 0 0 0;
+    width: 86%;
 }
