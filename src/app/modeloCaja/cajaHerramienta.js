@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', async event => {
 
 let gestionarMetodos = () => {
     cambiarColorMenu();
+    indicarSeccionWeb();
     abrirMarcoNormativo();
     abrirRecomendaciones();
     abrirLenguajeUno();
@@ -35,28 +36,60 @@ let gestionarMetodos = () => {
     abrirBibliografia();
 }
 
-let cambiarColorMenu = () =>{
+let cambiarColorMenu = () => {
     let menu = document.querySelector(".navbar-toggler");
     let menuWebUno = document.querySelector(".uno");
     let menuWebDos = document.querySelector(".dos");
-    window.addEventListener('scroll',()=>{
+    window.addEventListener('scroll', () => {
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 2470 && scrollTop < 5920) {
             menu.style.color = "#000000";
-        }else{
+        } else {
             menu.style.color = "#ffff";
         }
     });
-    window.addEventListener('scroll',()=>{
+    window.addEventListener('scroll', () => {
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 880 && scrollTop < 2300) {
             menuWebUno.classList.add("oculto");
             menuWebDos.classList.remove("oculto");
-        }else{
+        } else {
             menuWebUno.classList.remove("oculto");
             menuWebDos.classList.add("oculto");
         }
     });
+}
+
+let indicarSeccionWeb = () => {
+    let tuercaIndicada = document.getElementById("svgTuerca");
+    window.addEventListener('scroll', () => {
+        let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop > 0 && scrollTop < 200) {
+            tuercaIndicada.style.marginTop = "-71.7vh";
+        }
+        if (scrollTop > 200 && scrollTop < 400) {
+            tuercaIndicada.style.marginTop = "-63.5vh";
+        }
+        if (scrollTop > 1200 && scrollTop < 1800) {
+            tuercaIndicada.style.marginTop = "-54.5vh";
+        }
+        if (scrollTop > 1800 && scrollTop < 2500) {
+            tuercaIndicada.style.marginTop = "-46.5vh";
+        }
+        if (scrollTop > 2500 && scrollTop < 3200) {
+            tuercaIndicada.style.marginTop = "-37.5vh";
+        }
+        if (scrollTop > 3200 && scrollTop < 3900) {
+            tuercaIndicada.style.marginTop = "-29.5vh";
+        }
+        if (scrollTop > 3900 && scrollTop < 4300) {
+            tuercaIndicada.style.marginTop = "-20.5vh";
+        }
+        if (scrollTop > 4300) {
+            tuercaIndicada.style.marginTop = "-12.5vh";
+        }
+    });
+
 }
 
 let abrirMarcoNormativo = () => {
@@ -64,6 +97,16 @@ let abrirMarcoNormativo = () => {
         event.preventDefault();
         Modal.desplegarMarcoNormativo();
     });
+
+    let vsgIntroduccion = document.getElementById("svgIntroduccion");
+    vsgIntroduccion.addEventListener("load", () => {
+        let svgDoc = vsgIntroduccion.contentDocument;
+        let imgIntroduccion = svgDoc.getElementById("MARCONORMATIVOINTERNACIONAL");
+        imgIntroduccion.style.cursor = "pointer";
+        imgIntroduccion.addEventListener('click', () => {
+            Modal.desplegarMarcoNormativo();
+        });
+    }, false);
 }
 
 let abrirRecomendaciones = () => {
@@ -80,7 +123,7 @@ let abrirRecomendaciones = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);  
+        }, 20);
     });
 }
 
@@ -105,7 +148,7 @@ let abrirLenguajeDos = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20); 
+        }, 20);
     });
 }
 
@@ -123,7 +166,7 @@ let abrirAccesoTexto = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20); 
+        }, 20);
     });
 }
 
@@ -148,7 +191,7 @@ let abrirElaborarVideos = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20); 
+        }, 20);
     });
 }
 
@@ -180,7 +223,7 @@ let abrirRecomendacionAUno = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20); 
+        }, 20);
     });
 }
 
@@ -202,7 +245,7 @@ let abrirGlosario = () => {
     document.getElementById("btnGlosario").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarGlosario();
-        
+
     });
 }
 
@@ -212,4 +255,8 @@ let abrirBibliografia = () => {
         Modal.desplegarBibliografia();
     });
 }
+
+
+
+
 

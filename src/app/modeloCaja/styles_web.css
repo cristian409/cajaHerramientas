@@ -123,6 +123,7 @@
 
 .cajaPrincipal .introduccion .parrafoTituloWeb,
 .cajaPrincipal .introduccion .contentWeb,
+.cajaPrincipal .introduccion .svgTuerca,
 .cajaPrincipal .lenguaje .parrafoTituloWeb,
 .cajaPrincipal .lenguaje .contentWeb,
 .cajaPrincipal .accesibilidad .parrafoTituloWeb,
@@ -283,4 +284,135 @@
 .cajaPrincipal .contentVsg .svgInfoAdicional {
     margin: 2vh 0 0 0;
     width: 86%;
+}
+
+.modal-dialog {
+    max-width: 1300px;
+    margin: 0.75rem auto;
+}
+
+.cajaPrincipal .svgTuerca {
+    width: 53%;
+    margin-left: -2.1vw;
+}
+
+
+/* SYTLES MODALES */
+.modal .modal-content .btnClose {
+    top: 5vh;
+    left: 88vw;
+    font-size: 40px;
+    z-index: 10;
+}
+
+.primerDivMarco .tituloPrincipal,
+.primerDivLenguaje .tituloPrincipal,
+.segundoDivLenguaje .tituloPrincipal,
+.terceroDivLenguaje .tituloPrincipal,
+.cuartoDivLenguaje .tituloPrincipal,
+.primerDivAccesImagen .tituloPrincipal,
+.segundoDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen .tituloPrincipal,
+.cuartoDivAccesImagen .tituloPrincipal,
+.cincoDivAccesImagen .tituloPrincipal,
+.primerDivUsoImg .tituloPrincipal,
+.segundoDivUsoImg .tituloPrincipal,
+.terceroDivUsoImg .tituloPrincipal,
+.cuartoDivUsoImg .tituloPrincipal,
+.cincoDivUsoImg .tituloPrincipal,
+.seisDivUsoImg .tituloPrincipal,
+.primerDivEvaluacionM .tituloPrincipal,
+.segundoDivEvaluacionM .tituloPrincipal,
+.terceroDivEvaluacionM .tituloPrincipal,
+.DivRecomendacionUno .tituloPrincipal,
+.primerRecomendacionDos .tituloPrincipal,
+.segundoRecomendacionDos .tituloPrincipal,
+.terceroRecomendacionDos .tituloPrincipal,
+.cincoRecomendacionDos .tituloPrincipal,
+.seisRecomendacionDos .tituloPrincipal,
+.sieteRecomendacionDos .tituloPrincipal,
+.ochoRecomendacionDos .tituloPrincipal,
+.nueveRecomendacionDos .tituloPrincipal,
+.primerRecomendacionTres .tituloPrincipal,
+.segundoRecomendacionTres .tituloPrincipal,
+.primerDivGlosario .tituloPrincipal,
+.primerDivBibliografia .tituloPrincipal,
+.segundoDivBibliografia .tituloPrincipal,
+.terceroDivBibliografia .tituloPrincipal {
+    font-size: 3.6vw;
+}
+
+.primerDivMarco .estrellaIzquierda {
+    width: 3%;
+    left: -170px;
+    top: 30px;
+}
+
+.primerDivMarco .estrellaDerecha {
+    width: 3%;
+    left: 165px;
+    top: -40px;
+}
+
+.primerDivMarco article {
+    line-height: 22px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 15vw;
+}
+
+.primerDivMarco .parrafoWeb {
+    padding: 0 66px;
+}
+
+.primerDivMarco .parrafoWeb.adicion {
+    padding-left: 14vw;
+}
+
+
+.primerDivMarco .imgWebIzq {
+    display: block !important;
+}
+
+.primerDivMarco .imgWebIzq {
+    width: 36%;
+    position: absolute;
+    left: 66vw;
+    top: 12vh;
+}
+
+.primerDivMarco .foto1 {
+    margin-left: -2.6vw;
+    margin-bottom: -1vh;
+    width: 34%;
+    margin-top: -25vh;
+}
+
+.segundoDivMarco .estrellaRojas {
+    width: 3%;
+    left: 3vw;
+}
+
+.segundoDivMarco .numero {
+    font-size: 18px;
+    padding: 0px 20px;
+    margin: 10px 0 10px -88px;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-item .accordion-body {
+    font-size: 15px;
+}
+
+.segundoDivMarco .lineaPunteada .accordion-button {
+    font-size: 16px;
+}
+
+.segundoDivMarco .lineaPunteada {
+    padding: 0 12vw 0 4vw;
+}
+
+.segundoDivMarco .foto2 {
+    width: 102%;
+    margin-left: 0vw;
+    margin-top: -24vh;
 }
