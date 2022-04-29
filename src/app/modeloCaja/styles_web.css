@@ -2,6 +2,10 @@
     display: none;
 }
 
+.cajaPrincipal .svgMenuWeb {
+    min-height: 90vh;
+}
+
 .cajaPrincipal .introduccion,
 .cajaPrincipal .lenguaje,
 .cajaPrincipal .accesibilidad,
@@ -40,85 +44,110 @@
 .cajaPrincipal .referencias .estrellaIzquierda,
 .cajaPrincipal .referencias .estrellaDerecha,
 .cajaPrincipal .infoAdicional .estrellaIzquierda,
-.cajaPrincipal .infoAdicional .estrellaDerecha {
+.cajaPrincipal .infoAdicional .estrellaDerecha,
+.DivRecomendaciones .estrellaIzquierda,
+.DivRecomendaciones .estrellaDerecha,
+.primerDivAccesImagen .estrellaIzquierda,
+.primerDivAccesImagen .estrellaDerecha {
     width: 2%;
 }
 
 .cajaPrincipal .introduccion .estrellaIzquierda {
-    left: -144px;
-    top: 38px;
+    left: -10vw;
+    top: 5vh;
 }
 
 .cajaPrincipal .lenguaje .estrellaIzquierda {
-    left: -110px;
-    top: 38px;
+    left: -8vw;
+    top: 4vh;
 }
 
 .cajaPrincipal .accesibilidad .estrellaIzquierda {
-    left: -150px;
-    top: 38px;
+    left: -11vw;
+    top: 3vh;
 }
 
 .cajaPrincipal .materialAudio .estrellaIzquierda {
-    left: -220px;
-    top: 38px;
+    left: -16vw;
+    top: 4vh;
 }
 
 .cajaPrincipal .evaluacionMateriales .estrellaIzquierda {
-    left: -255px;
-    top: 38px;
+    left: -19vw;
+    top: 4vh
 }
 
 .cajaPrincipal .recomendacionesA .estrellaIzquierda {
-    left: -330px;
-    top: 38px;
+    left: -24vw;
+    top: 4vh;
 }
 
 .cajaPrincipal .referencias .estrellaIzquierda {
-    left: -145px;
-    top: 38px;
+    left: -10vw;
+    top: 4vh;
 }
 
 .cajaPrincipal .infoAdicional .estrellaIzquierda {
-    left: -230px;
-    top: 38px;
+    left: -16vw;
+    top: 4vh;
+}
+
+.DivRecomendaciones .estrellaIzquierda {
+    left: -14vw;
+    top: 6vh;
+}
+
+.primerDivAccesImagen .estrellaIzquierda {
+    left: -18vw;
+    top: 3vh;
 }
 
 .cajaPrincipal .introduccion .estrellaDerecha {
-    left: 142px;
+    left: 10vw;
 }
 
 .cajaPrincipal .lenguaje .estrellaDerecha {
-    left: 104px;
+    left: 7vw;
 }
 
 .cajaPrincipal .accesibilidad .estrellaDerecha {
-    left: 148px;
+    left: 11vw;
+    top: -4vh;
 }
 
 .cajaPrincipal .materialAudio .estrellaDerecha {
-    left: 210px;
-    top: -30px;
+    left: 15vw;
+    top: -4vh;
 }
 
 .cajaPrincipal .evaluacionMateriales .estrellaDerecha {
-    left: 250px;
-    top: -36px;
+    left: 18vw;
+    top: -4vh;
 }
 
 .cajaPrincipal .recomendacionesA .estrellaDerecha {
-    left: 320px;
-    top: -36px;
+    left: 24vw;
+    top: -4vh;
 }
 
 .cajaPrincipal .referencias .estrellaDerecha {
-    left: 134px;
-    top: -36px;
+    left: 10vw;
+    top: -4vh;
 }
 
 .cajaPrincipal .infoAdicional .estrellaDerecha {
-    left: 230px;
-    top: -36px;
+    left: 16vw;
+    top: -4vh;
+}
+
+.DivRecomendaciones .estrellaDerecha {
+    left: 12vw;
+    top: -3vh;
+}
+
+.primerDivAccesImagen .estrellaDerecha {
+    left: 18vw;
+    top: -2vh;
 }
 
 .cajaPrincipal .introduccion .parrafoTituloWeb,
@@ -137,7 +166,31 @@
 .cajaPrincipal .referencias .parrafoTituloWeb,
 .cajaPrincipal .referencias .contentWeb,
 .cajaPrincipal .infoAdicional .parrafoTituloWeb,
-.cajaPrincipal .infoAdicional .contentWeb {
+.cajaPrincipal .infoAdicional .contentWeb,
+.DivRecomendaciones .foto1.izquierda,
+.DivRecomendaciones .foto1.derecha,
+.DivRecomendaciones .imgWeb,
+.divLenguajeWeb,
+.primerDivAccesImagen .foto2,
+.primerDivAccesImagen .foto3,
+.terceroDivAccesImagen .accesoImgWeb,
+.primerDivUsoImg .retratoDos,
+.segundoDivUsoImg .infoInterna .mostrarWeb,
+.terceroDivUsoImg .infoInterna .mostrarWeb,
+.cuartoDivUsoImg .infoInterna .mostrarWeb,
+.cincoDivUsoImg .infoInterna .mostrarWeb,
+.seisDivUsoImg .infoInterna .mostrarWeb,
+.primerDivEvaluacionM .foto1.imgWeb,
+.terceroDivEvaluacionM .imgWeb,
+.primerRecomendacionTres .imgWeb,
+.segundoRecomendacionTres .imgWeb,
+.primerRecomendacionDos .imgWeb,
+.seisRecomendacionDos .imgWeb,
+.sieteRecomendacionDos .imgWeb,
+.ochoRecomendacionDos .imgWeb,
+.primerDivGlosario .imgWeb,
+.DivElaboracionV .imgWeb,
+.DivRecomendacionUno .imgWeb {
     display: block !important;
 }
 
@@ -149,8 +202,8 @@
 .cajaPrincipal .recomendacionesA .parrafoTituloWeb,
 .cajaPrincipal .referencias .parrafoTituloWeb,
 .cajaPrincipal .infoAdicional .parrafoTituloWeb {
-    line-height: 20px;
-    font-size: 18px;
+    line-height: 2.4vh;
+    font-size: 1.4vw;
     padding: 0 32vw;
 }
 
@@ -196,7 +249,7 @@
 .cajaPrincipal .introduccion .contentMenu {
     margin-top: -26vh;
     position: fixed;
-    padding: 20px;
+    padding: 2vh 2vw;
 }
 
 .cajaPrincipal .introduccion .puntosBlanco {
@@ -287,21 +340,65 @@
 }
 
 .modal-dialog {
-    max-width: 1300px;
+    max-width: 98%;
     margin: 0.75rem auto;
 }
 
 .cajaPrincipal .svgTuerca {
-    width: 53%;
-    margin-left: -2.1vw;
+    width: 7.3vw;
+    position: relative;
 }
 
+.inicial {
+    left: -2.2vw;
+    top: 1vh;
+}
+
+.introduccionScroll {
+    left: -2.1vw;
+    top: -74.6vh;
+}
+
+.lenguajeScroll {
+    left: -2.1vw;
+    top: -65.8vh;
+}
+
+.accesicibilidadScroll {
+    left: -2.2vw;
+    top: -56.9vh;
+}
+
+.materialScroll {
+    left: -2.2vw;
+    top: -47.9vh;
+}
+
+.evalucionScroll {
+    left: -2.2vw;
+    top: -38.9vh;
+}
+
+.recomendacionScroll {
+    left: -2.2vw;
+    top: -29.9vh;
+}
+
+.referenciaScroll {
+    left: -2.2vw;
+    top: -20.9vh;
+}
+
+.glosarioScroll {
+    left: -2.2vw;
+    top: -12.2vh;
+}
 
 /* SYTLES MODALES */
 .modal .modal-content .btnClose {
     top: 5vh;
-    left: 88vw;
-    font-size: 40px;
+    left: 91vw;
+    font-size: 2.9vw;
     z-index: 10;
 }
 
@@ -342,42 +439,414 @@
     font-size: 3.6vw;
 }
 
-.primerDivMarco .estrellaIzquierda {
+.primerDivMarco .estrellaIzquierda,
+.primerDivLenguaje .estrellaIzquierda,
+.terceroDivLenguaje .estrellaIzquierda,
+.cuartoDivLenguaje .estrellaIzquierda,
+.cincoDivAccesImagen .estrellaIzquierda,
+.primerDivUsoImg .estrellaIzquierda,
+.primerDivEvaluacionM .estrellaIzquierda,
+.primerRecomendacionTres .estrellaIzquierda,
+.primerRecomendacionDos .estrellaIzquierda,
+.primerDivGlosario .estrellaIzquierda,
+.primerDivBibliografia .estrellaIzquierda,
+.segundoDivBibliografia .estrellaIzquierda,
+.terceroDivBibliografia .estrellaIzquierda,
+.DivElaboracionV .estrellaIzquierda,
+.DivRecomendacionUno .estrellaIzquierda {
     width: 3%;
-    left: -170px;
-    top: 30px;
+    left: -12vw;
+    top: 4vh;
 }
 
-.primerDivMarco .estrellaDerecha {
-    width: 3%;
-    left: 165px;
-    top: -40px;
+.primerDivLenguaje .estrellaIzquierda {
+    left: -7vw;
 }
 
-.primerDivMarco article {
-    line-height: 22px;
-    font-size: 20px;
+.terceroDivLenguaje .estrellaIzquierda {
+    width: 4%;
+    left: -6vw;
+}
+
+.cuartoDivLenguaje .estrellaIzquierda {
+    width: 4%;
+    left: -9vw;
+}
+
+.cincoDivLenguaje .estrellaIzquierda {
+    width: 5%;
+    position: relative;
+    top: 6vh;
+    left: 8vw;
+}
+
+.cincoDivAccesImagen .estrellaIzquierda {
+    top: 6vh;
+    left: -34vw;
+}
+
+.primerDivUsoImg .estrellaIzquierda {
+    top: 3vh;
+    left: -31vw;
+}
+
+.primerDivEvaluacionM .estrellaIzquierda {
+    top: 3vh;
+    left: -16vw;
+}
+
+.primerRecomendacionTres .estrellaIzquierda {
+    top: 3vh;
+    left: -13vw;
+}
+
+.primerRecomendacionDos .estrellaIzquierda {
+    top: -6vh;
+    left: -23vw;
+}
+
+.primerDivGlosario .estrellaIzquierda {
+    top: 5vh;
+    left: -7vw;
+}
+
+.primerDivBibliografia .estrellaIzquierda {
+    top: 5vh;
+    left: -17vw;
+}
+
+.segundoDivBibliografia .estrellaIzquierda {
+    top: 9vh !important;
+    left: -16vw !important;
+}
+
+.terceroDivBibliografia .estrellaIzquierda {
+    top: 5vh;
+    left: -14vw;
+}
+
+.DivElaboracionV .estrellaIzquierda {
+    top: 5vh;
+    left: -36vw;
+}
+
+.DivRecomendacionUno .estrellaIzquierda {
+    top: 5vh;
+    left: -34vw;
+}
+
+.DivRecomendacionUno .itemSliderDos .estrellaIzquierda {
+    top: 5vh;
+    left: -31vw;
+}
+
+.primerDivMarco .estrellaDerecha,
+.primerDivLenguaje .estrellaDerecha,
+.terceroDivLenguaje .estrellaDerecha,
+.cuartoDivLenguaje .estrellaDerecha,
+.cincoDivAccesImagen .estrellaDerecha,
+.primerDivUsoImg .estrellaDerecha,
+.primerDivEvaluacionM .estrellaDerecha,
+.primerRecomendacionTres .estrellaDerecha,
+.primerRecomendacionDos .estrellaDerecha,
+.primerDivGlosario .estrellaDerecha,
+.primerDivBibliografia .estrellaDerecha,
+.segundoDivBibliografia .estrellaDerecha,
+.terceroDivBibliografia .estrellaDerecha,
+.DivElaboracionV .estrellaDerecha,
+.DivRecomendacionUno .estrellaDerecha {
+    width: 3%;
+    left: 12vw;
+    top: -4vh;
+}
+
+.primerDivLenguaje .estrellaDerecha {
+    left: 7vw;
+}
+
+.terceroDivLenguaje .estrellaDerecha {
+    width: 4%;
+    left: 6vw;
+    top: -3vh;
+}
+
+.cuartoDivLenguaje .estrellaDerecha {
+    width: 4%;
+    left: 8vw;
+    top: -3vh;
+}
+
+.cincoDivLenguaje .estrellaDerecha {
+    width: 5%;
+    position: relative;
+    top: -10vh;
+    left: -9vw;
+}
+
+.cincoDivAccesImagen .estrellaDerecha {
+    top: -5vh;
+    left: 34vw;
+}
+
+.primerDivUsoImg .estrellaDerecha {
+    top: -5vh;
+    left: 31vw;
+}
+
+.primerDivEvaluacionM .estrellaDerecha {
+    top: -5vh;
+    left: 16vw;
+}
+
+.primerRecomendacionTres .estrellaDerecha {
+    top: -5vh;
+    left: 12vw;
+}
+
+.primerRecomendacionDos .estrellaDerecha {
+    top: -5vh;
+    left: 20vw;
+}
+
+.primerDivGlosario .estrellaDerecha {
+    top: -5vh;
+    left: 7vw;
+}
+
+.primerDivBibliografia .estrellaDerecha {
+    top: -5vh;
+    left: 17vw;
+}
+
+.segundoDivBibliografia .estrellaDerecha {
+    top: -5vh !important;
+    left: 16vw !important;
+}
+
+.terceroDivBibliografia .estrellaDerecha {
+    top: -5vh;
+    left: 14vw;
+}
+
+.DivElaboracionV .estrellaDerecha {
+    top: -5vh;
+    left: 36vw;
+}
+
+.DivRecomendacionUno .estrellaDerecha {
+    top: -5vh;
+    left: 24vw;
+}
+
+.DivRecomendacionUno .itemSliderDos .estrellaDerecha {
+    top: -5vh;
+    left: 22vw;
+}
+
+.primerDivMarco article,
+.primerDivLenguaje article,
+.cincoDivLenguaje article,
+.primerDivAccesImagen article,
+.primerDivUsoImg article,
+.primerDivEvaluacionM article,
+.segundoDivEvaluacionM article,
+.terceroDivEvaluacionM article,
+.primerRecomendacionTres article,
+.segundoRecomendacionTres article,
+.primerRecomendacionDos article,
+.cincoRecomendacionDos article,
+.seisRecomendacionDos article,
+.sieteRecomendacionDos article,
+.ochoRecomendacionDos article,
+.nueveRecomendacionDos article,
+.primerDivGlosario article,
+.segundoDivGlosario article,
+.primerDivBibliografia article,
+.segundoDivBibliografia article,
+.terceroDivBibliografia article {
+    line-height: 2.8vh;
+    font-size: 1.4vw;
     text-align: center;
     padding: 0 15vw;
 }
 
+.terceroDivLenguaje article,
+.cuartoDivLenguaje article,
+.segundoDivEvaluacionM article,
+.terceroDivEvaluacionM article,
+.terceroDivEvaluacionM article,
+.cincoRecomendacionDos article,
+.seisRecomendacionDos article,
+.sieteRecomendacionDos article,
+.ochoRecomendacionDos article,
+.nueveRecomendacionDos article,
+.segundoDivGlosario article,
+.primerDivBibliografia article,
+.segundoDivBibliografia article,
+.terceroDivBibliografia article {
+    text-align: start;
+}
+
+.primerDivGlosario .modal-body {
+    margin-top: -2vh;
+}
+
+.cuartoDivLenguaje article {
+    padding: 0 8vw;
+}
+
+.primerDivAccesImagen article {
+    padding: 0 24vw;
+}
+
+.primerDivEvaluacionM article {
+    padding: 0 20vw;
+}
+
+.primerRecomendacionTres article {
+    padding: 0 18vw;
+}
+
+.primerRecomendacionDos article {
+    padding: 0 18vw;
+}
+
 .primerDivMarco .parrafoWeb {
-    padding: 0 66px;
+    padding: 0 5vw
 }
 
 .primerDivMarco .parrafoWeb.adicion {
     padding-left: 14vw;
 }
 
+.segundoDivEvaluacionM article,
+.terceroDivEvaluacionM article {
+    padding: 0 8vw;
+    margin-top: 7vh;
+}
+
+.seisRecomendacionDos article,
+.sieteRecomendacionDos article,
+.ochoRecomendacionDos article,
+.nueveRecomendacionDos article,
+.segundoDivGlosario article {
+    padding: 0 6vw;
+    margin: 4vh 0;
+}
+
+.primerDivGlosario article {
+    line-height: 2.5vh;
+    font-size: 1.3vw;
+}
+
+.segundoDivLenguaje article,
+.terceroDivLenguaje article,
+.cuartoDivLenguaje article {
+    line-height: 2.5vh;
+    font-size: 1.3vw;
+}
+
+.terceroDivAccesImagen article {
+    line-height: 2.5vh;
+    font-size: 1.3vw;
+}
+
+.segundoRecomendacionTres .tituloPrincipal {
+    margin-left: -9vw;
+    text-align: start;
+    margin-right: 25vw;
+    line-height: 5.5vh;
+    margin-bottom: 5vh;
+}
+
+.segundoRecomendacionTres article {
+    text-align: start;
+    padding: 0 6vw;
+}
+
+.terceroRecomendacionDos article {
+    text-align: start;
+}
+
+.segundoRecomendacionDos article {
+    padding: 0 6vw;
+}
+
+.cincoRecomendacionDos article {
+    padding-left: 8vw;
+    padding-right: 6vw;
+    margin-bottom: 8vh;
+}
+
+.seisRecomendacionDos .tituloPrincipal,
+.sieteRecomendacionDos .tituloPrincipal,
+.ochoRecomendacionDos .tituloPrincipal,
+.nueveRecomendacionDos .tituloPrincipal {
+    text-align: start;
+    margin-left: -7vw;
+}
+
+.segundoRecomendacionDos article .contentVineta,
+.terceroRecomendacionDos article .contentVineta,
+.cuartoRecomendacionDos article .contentVineta {
+    margin-left: 2vw;
+    line-height: 2.5vh;
+    font-size: 1.3vw;
+}
+
+.segundoRecomendacionDos article .vinetaStart::before,
+.terceroRecomendacionDos article .vinetaStart::before,
+.cuartoRecomendacionDos article .vinetaStart::before,
+.seisRecomendacionDos article .vinetaStart::before,
+.sieteRecomendacionDos article .vinetaStart::before,
+.ochoRecomendacionDos article .vinetaStart::before,
+.nueveRecomendacionDos article .vinetaStart::before {
+    left: -3vw;
+    width: 1.3vw;
+    height: 3.7vh;
+}
+
+.segundoRecomendacionTres article .contentVineta {
+    line-height: 2.5vh;
+    font-size: 1.3vw;
+}
+
+.segundoRecomendacionDos .tituloPrincipal {
+    text-align: start;
+    margin-right: 14vw;
+    line-height: 5.5vh;
+    margin-top: 6vh;
+}
+
+.cincoRecomendacionDos .pFalse,
+.cincoRecomendacionDos .pTrue {
+    padding-left: 8vw;
+}
+
+.cincoRecomendacionDos article .False,
+.cincoRecomendacionDos article .True {
+    background-size: 100%;
+    margin-left: 3vw;
+}
+
+.segundoRecomendacionTres article .content {
+    padding-right: 4vw;
+}
+
+.primerRecomendacionDos .tituloPrincipal {
+    padding: 0 18vw;
+    line-height: 5.5vh;
+    margin-top: -13vh;
+}
 
 .primerDivMarco .imgWebIzq {
     display: block !important;
 }
 
 .primerDivMarco .imgWebIzq {
-    width: 36%;
+    width: 34%;
     position: absolute;
-    left: 66vw;
+    left: 68vw;
     top: 12vh;
 }
 
@@ -385,7 +854,56 @@
     margin-left: -2.6vw;
     margin-bottom: -1vh;
     width: 34%;
-    margin-top: -25vh;
+    margin-top: -23vh;
+}
+
+.primerDivLenguaje .foto1 {
+    margin-left: 6vw;
+    width: 90%;
+}
+
+.segundoDivLenguaje .foto1 {
+    margin-top: 11vh;
+}
+
+.segundoRecomendacionTres .foto1 {
+    margin-top: 0vh;
+    margin-bottom: 12vh;
+    width: 70%;
+}
+
+.segundoRecomendacionTres .foto2 {
+    margin-left: -15vw;
+    margin-top: -8vh;
+    margin-bottom: 6vh;
+    width: 84%;
+}
+
+.primerRecomendacionDos .foto1 {
+    margin-left: 0vw;
+    margin-bottom: -1vh;
+    width: 100%;
+}
+
+.primerRecomendacionDos .foto1 {
+    margin-top: -20vh;
+}
+
+.segundoRecomendacionDos .foto1 {
+    margin-left: -5vw;
+    margin-bottom: 1vh;
+    width: 64%;
+}
+
+.terceroRecomendacionDos .foto1 {
+    width: 94%;
+    margin-left: -3vw;
+    margin-top: 3vh;
+}
+
+.cuartoRecomendacionDos .foto1 {
+    width: 100%;
+    margin-left: -3vw;
 }
 
 .segundoDivMarco .estrellaRojas {
@@ -394,17 +912,18 @@
 }
 
 .segundoDivMarco .numero {
-    font-size: 18px;
-    padding: 0px 20px;
-    margin: 10px 0 10px -88px;
+    font-size: 1.3vw;
+    padding: 0 2vw;
+    margin: 1vh 0 1vh -7vw;
 }
 
 .segundoDivMarco .lineaPunteada .accordion-item .accordion-body {
-    font-size: 15px;
+    font-size: 1.1vw;
+    line-height: 2.3vh;
 }
 
 .segundoDivMarco .lineaPunteada .accordion-button {
-    font-size: 16px;
+    font-size: 1.3vw;
 }
 
 .segundoDivMarco .lineaPunteada {
@@ -416,3 +935,593 @@
     margin-left: 0vw;
     margin-top: -24vh;
 }
+
+.primerDivAccesImagen .foto2 {
+    width: 39%;
+    margin-left: 1vw;
+    margin-top: -27vh;
+}
+
+.primerDivAccesImagen .foto3 {
+    width: 43%;
+    margin-left: 52vw;
+    margin-top: -58vh;
+    margin-bottom: -1vh;
+}
+
+.DivRecomendaciones .tituloPrincipal,
+.DivLenguajeDos .tituloPrincipal,
+.DivAccesibilidadTxt .tituloPrincipal,
+.DivElaboracionV .tituloPrincipal {
+    font-family: DIN Condensed Bold;
+    font-size: 4vw;
+    line-height: 5.9vh;
+}
+
+.DivRecomendaciones article,
+.DivLenguajeDos article,
+.DivAccesibilidadTxt article,
+.segundoDivAccesImagen article,
+.DivElaboracionV article,
+.DivRecomendacionUno article {
+    line-height: 2.5vh;
+    font-size: 1.3vw;
+    text-align: center;
+    padding: 0 7vw;
+}
+
+.DivElaboracionV .primero  {
+    text-align: center;
+}
+
+.DivRecomendaciones article {
+    padding: 0px 14vw 0 19vw;
+}
+
+.terceroDivAccesImagen .tituloPrincipal,
+.terceroDivAccesImagen article {
+    text-align: end;
+}
+
+.terceroDivAccesImagen .tituloPrincipal {
+    padding-right: 6vw;
+    line-height: 4.9vh;
+    margin-bottom: 8vh;
+}
+
+.cincoDivAccesImagen .tituloPrincipal {
+    line-height: 2.5vh;
+}
+
+.primerRecomendacionTres .tituloPrincipal {
+    padding: 0 19vw;
+    line-height: 5.2vh;
+}
+
+.terceroDivAccesImagen article p {
+    padding-left: 8vw;
+}
+
+.cincoDivAccesImagen article {
+    padding-left: 12vw;
+    font-size: 1.3vw;
+    line-height: 2.8vh;
+}
+
+.DivRecomendaciones .foto1.izquierda {
+    float: left;
+    width: 88%;
+    margin-top: -40vh;
+    margin-left: -30vw;
+}
+
+.DivRecomendaciones .foto1.derecha {
+    float: left;
+    width: 74%;
+    margin-top: -52vh;
+    margin-left: 29vw;
+}
+
+.DivRecomendaciones .segundoParrafo {
+    padding: 0 10vw;
+}
+
+.DivRecomendaciones .item,
+.DivLenguajeDos .item,
+.DivAccesibilidadTxt .item,
+.DivElaboracionV .item,
+.DivRecomendacionUno .item {
+    padding-top: 2vh;
+}
+
+.DivRecomendaciones .itemSlider article .tituloSlider,
+.DivElaboracionV .itemSlider article .tituloSlider {
+    font-size: 2.8vw;
+    line-height: 4.4vh !important;
+    margin-bottom: 2vh;
+}
+
+.DivRecomendaciones .itemSlider article {
+    text-align: start;
+    padding: 0 4vw;
+}
+
+.DivRecomendaciones .itemSlider article p::before {
+    left: -1.7vw;
+}
+
+.DivRecomendaciones .itemSlider article p {
+    margin-left: 2vw;
+}
+
+.DivRecomendaciones .itemSlider .imgWeb .imgItemS {
+    margin-top: 10vh;
+}
+
+.DivRecomendaciones .itemSlider .imgWeb .bajarImg {
+    margin-top: 16vh;
+}
+
+.DivRecomendaciones .articuloWeb {
+    margin-top: 8vh;
+}
+
+.DivRecomendaciones .articuloWebDos {
+    margin-top: 8vh;
+}
+
+.DivRecomendaciones .titiloweb {
+    line-height: 2.5vh !important;
+}
+
+.DivRecomendaciones .articuloWebDos {
+    margin-top: 6vh;
+}
+
+.DivRecomendaciones .titilowebUno {
+    margin-right: -15vw;
+    line-height: 38px !important;
+}
+
+.DivElaboracionV article {
+    text-align: start;
+    margin-left: -4vw;
+    padding-left: 12vw !important;
+    padding-right: 6vw !important;
+    margin-top: -8vh;
+}
+
+.DivElaboracionV .itemSlider article .tituloSlider {
+    margin-bottom: 5vh;
+}
+
+.DivElaboracionV .itemSlider article p {
+    padding: 0 0;
+    font-size: 1.3vw;
+    line-height: 2.8vh;
+}
+
+.DivElaboracionV .itemSlider article .textImg {
+    padding: 0 8vw;
+}
+
+.DivElaboracionV .itemUno {
+    width: 45vw;
+    margin-left: -4vw;
+}
+
+.DivElaboracionV .itemSlider .itemTres {
+    width: 51vw;
+    margin-left: -6vw;
+    margin-top: -14vh;
+}
+
+.DivElaboracionV .itemSlider .itemCinco {
+    width: 42vw;
+    margin-left: -6vw;
+    margin-top: -10vh;
+}
+
+.DivElaboracionV .itemSlider .itemSeis {
+    width: 42vw;
+    margin-left: -6vw;
+    margin-top: -10vh;
+    margin-bottom: -40vh;
+}
+
+.DivElaboracionV .itemSlider article .imgInterna {
+    width: 20vw;
+}
+
+.DivElaboracionV .itemSlider article .imgInterna.imgCuatro {
+    margin-top: 6.8vh;
+}
+
+.DivElaboracionV .itemSlider article a {
+    font-size: 1.2vw;
+    line-height: 2.3vh;
+    padding: 3%;
+    width: 16vw;
+    height: 8.6vh;
+    background-size: 88%;
+}
+
+.DivElaboracionV .itemSlider article .cuatro {
+    padding: 4%;
+}
+
+.DivRecomendacionUno .tituloPrincipal {
+    line-height: 5vh;
+}
+
+.DivRecomendacionUno article {
+    padding: 0 15vw;
+    line-height: 2.8vh;
+    font-size: 1.5vw;
+}
+
+.DivRecomendacionUno .foto1 {
+    width: 70vw;
+    margin-left: 12vw;
+    margin-top: 8vh;
+}
+
+.DivRecomendacionUno .itemSlider {
+    margin-top: 10vh;
+}
+.DivRecomendacionUno .itemSlider article {
+    text-align: start;
+    margin-left: -5vw;
+    padding-left: 10vw !important;
+    padding-right: 6vw !important;
+    line-height: 2.7vh;
+}
+
+.DivRecomendacionUno .itemSlider article .vinetaStart::before {
+    background-size: 90%;
+    width: 1.5vw;
+    height: 4.2vh;
+    left: -3vw;
+    top: 3vh;
+}
+
+.DivRecomendacionUno .itemSlider .foto2 {
+    width: 37vw;
+    margin-top: -6vh;
+    margin-left: 0vw;
+}
+
+.DivRecomendacionUno .itemSlider .foto3 {
+    width: 42vw;
+    margin-left: -1vw;
+    margin-top: -11vh
+}
+
+.DivRecomendacionUno .itemSlider .foto5 {
+    width: 42vw;
+    margin-left: -1vw;
+    margin-top: -11vh
+}
+
+.DivRecomendacionUno .itemSlider .foto6 {
+    width: 34vw;
+    margin-left: 4vw;
+    margin-top: -11vh
+}
+
+.lenguajeRow {
+    --bs-gutter-x: 0;
+}
+
+.lenguajeRow .modal-content {
+    margin-bottom: -3vh;
+}
+
+.terceroDivLenguaje article .startBefore::before,
+.cuartoDivLenguaje article .startBefore::before {
+    width: 1.2vw;
+    height: 1.2vh;
+    left: -2vw;
+}
+
+.terceroDivLenguaje .foto1,
+.cuartoDivLenguaje .foto1 {
+    margin-left: 6vw;
+    margin-bottom: -2vh;
+    width: 70%;
+}
+
+.segundoDivAccesImagen .modal-body,
+.terceroDivAccesImagen .modal-body {
+    padding: 8vh 3vw 0 4vw;
+}
+
+.segundoDivAccesImagen article {
+    padding: 1vh 0 0 1vw;
+    text-align: start;
+}
+
+.segundoDivAccesImagen .columnaUno {
+    padding-left: 8vw;
+}
+
+.segundoDivAccesImagen article .vinetaBeforeS::before {
+    left: -2vw;
+}
+
+.segundoDivAccesImagen .foto1 {
+    margin-left: -10vw;
+    width: 96%;
+    margin-top: -6vh;
+}
+
+.terceroDivAccesImagen .foto1 {
+    margin-top: -13vh;
+    width: 94%;
+}
+
+.segundoDivAccesImagen .tituloPrincipal {
+    margin-right: -10vw;
+}
+
+.terceroDivAccesImagen .modal-body .contentInfo {
+    margin-top: 6vh;
+}
+
+.cuartoDivAccesImagen .tituloPrincipal {
+    font-size: 2.3vw;
+    text-align: start;
+}
+
+.cuartoDivAccesImagen .txt {
+    text-align: left;
+}
+
+.cuartoDivAccesImagen article {
+    padding-top: 7vh;
+    font-size: 1.3vw;
+    line-height: 3vh;
+}
+
+.cuartoDivAccesImagen .instagram,
+.cuartoDivAccesImagen .facebook,
+.cuartoDivAccesImagen .twitter {
+    width: 36%;
+    margin-top: -1vh;
+    margin-bottom: 4vh;
+}
+
+.cuartoDivAccesImagen .row .col-md-10 div {
+    margin-left: -6vw;
+}
+
+.cincoDivAccesImagen article .vinetaBeforeT::before {
+    width: 1.3vw;
+    height: 2.4vh;
+    left: -2vw;
+    top: 2vh;
+}
+
+.primerDivUsoImg .retrato,
+.primerDivEvaluacionM .foto1 {
+    margin-left: -1.1vw;
+    width: 102.3%;
+}
+
+.DivElaboracionV article p {
+    padding: 0 8vw;
+}
+
+.segundoDivUsoImg .imgEstrellaI,
+.terceroDivUsoImg .imgEstrellaI,
+.cuartoDivUsoImg .imgEstrellaI,
+.cincoDivUsoImg .imgEstrellaI,
+.seisDivUsoImg .imgEstrellaI,
+.DivElaboracionV .itemSlider .imgEstrellaI {
+    width: 7%;
+}
+
+.segundoDivUsoImg .imgEstrellaD,
+.terceroDivUsoImg .imgEstrellaD,
+.cuartoDivUsoImg .imgEstrellaD,
+.cincoDivUsoImg .imgEstrellaD,
+.seisDivUsoImg .imgEstrellaD,
+.DivElaboracionV .itemSlider .imgEstrellaD {
+    width: 7%;
+}
+
+.segundoDivUsoImg .tituloPrincipal,
+.terceroDivUsoImg .tituloPrincipal,
+.cuartoDivUsoImg .tituloPrincipal,
+.cincoDivUsoImg .tituloPrincipal,
+.seisDivUsoImg .tituloPrincipal {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.segundoDivUsoImg article,
+.terceroDivUsoImg article,
+.cuartoDivUsoImg article,
+.cincoDivUsoImg article,
+.seisDivUsoImg article {
+    font-size: 1.4vw;
+    margin-right: 5vw;
+    line-height: 3vh;
+}
+
+.segundoDivUsoImg article .parrafoUso,
+.terceroDivUsoImg article .parrafoUso,
+.cuartoDivUsoImg article .parrafoUso,
+.cincoDivUsoImg article .parrafoUso,
+.seisDivUsoImg article .parrafoUso {
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.segundoDivUsoImg .infoInterna .pFalse,
+.terceroDivUsoImg .infoInterna .pFalse,
+.cuartoDivUsoImg .infoInterna .pFalse,
+.cincoDivUsoImg .infoInterna .pFalse,
+.seisDivUsoImg .infoInterna .pFalse,
+.segundoDivUsoImg .infoInterna .pTrue,
+.terceroDivUsoImg .infoInterna .pTrue,
+.cuartoDivUsoImg .infoInterna .pTrue,
+.cincoDivUsoImg .infoInterna .pTrue,
+.seisDivUsoImg .infoInterna .pTrue {
+    padding-left: 3vw !important;
+    padding-right: 5vw;
+    line-height: 2.8vh;
+}
+
+.segundoDivEvaluacionM .modal-body {
+    margin-top: 14vh;
+}
+
+.segundoDivEvaluacionM article .checkBefore::before,
+.terceroDivEvaluacionM article .checkBefore::before {
+    background-size: 90%;
+    width: 1.5vw;
+    height: 2.2vh;
+    left: -3vw;
+    top: 3vh;
+}
+
+.segundoDivEvaluacionM .foto1 {
+    width: 105%;
+    margin-left: -9vw;
+}
+
+.terceroDivEvaluacionM .foto1 {
+    width: 70%;
+    margin: -4vh 0 -2vh 9vw;
+}
+
+.modal-content.primerRecomendacionTres {
+    background-color: #C63D96;
+}
+
+.primerRecomendacionTres .modal-body {
+    margin-top: -1vh;
+}
+
+.primerRecomendacionTres .foto1 {
+    margin-left: -1vw;
+}
+
+.cincoRecomendacionDos .tituloPrincipal.opcionA {
+    margin-left: 8vw;
+}
+
+.cincoRecomendacionDos .bombillo {
+    width: 2.3vw;
+    left: 1.8vw;
+    top: 4vh;
+}
+
+.cincoRecomendacionDos .modal-body {
+    margin-top: -3vh;
+}
+
+.seisRecomendacionDos .paddingWeb,
+.sieteRecomendacionDos .paddingWeb,
+.nueveRecomendacionDos .paddingWeb {
+    padding-right: 32vw;
+}
+
+.sieteRecomendacionDos .paddingWeb,
+.ochoRecomendacionDos .paddingWeb {
+    padding-right: 42vw;
+}
+
+.seisRecomendacionDos .foto1,
+.sieteRecomendacionDos .foto1 {
+    margin-left: 50vw;
+    margin-top: -19vh;
+    margin-bottom: -1vh;
+    width: 36%;
+    position: absolute;
+}
+
+.sieteRecomendacionDos .foto1 {
+    margin-top: 1vh;
+    width: 36vw;
+    margin-left: 45vw;
+}
+
+.ochoRecomendacionDos .foto1 {
+    margin-left: 50vw;
+    margin-top: -64vh;
+    margin-bottom: -1vh;
+    width: 42%;
+}
+
+.nueveRecomendacionDos .foto1 {
+    margin-left: 57vw;
+    margin-top: -45vh;
+    margin-bottom: -1vh;
+    width: 34%;
+}
+
+.nueveRecomendacionDos article p {
+    margin-left: 2vw;
+}
+
+.primerDivGlosario .foto1 {
+    margin-top: 3vh;
+    margin-left: -2.3vw;
+    margin-bottom: -1vh;
+    width: 103.9%;
+}
+
+.segundoDivGlosario .chispasDerecha {
+    width: 9%;
+}
+
+.segundoDivGlosario .chispasIzquierda {
+    top: -8vh;
+    left: -4vw;
+    width: 9%;
+}
+
+.primerDivBibliografia article h2,
+.segundoDivBibliografia article h2,
+.terceroDivBibliografia article h2 {
+    font-size: 26px;
+}
+
+.primerDivBibliografia article a,
+.segundoDivBibliografia article a,
+.terceroDivBibliografia article a {
+    font-size: 20px !important;
+}
+
+.terceroDivBibliografia .foto1 {
+    margin-top: 2vh;
+    margin-left: -1.3vw;
+    margin-bottom: -2vh;
+    width: 102.7%;
+}
+
+.segundoRecomendacionTres .content .numero {
+    padding-right: 0vw;
+}
+
+.DivElaboracionV .modal-body {
+    margin-top: 2vh;
+}
+
+.DivElaboracionV .foto1 {
+    width: 102%;
+}
+
+.DivElaboracionV .itemSlider .imgEstrellaD,
+.segundoDivUsoImg .imgEstrellaD,
+.terceroDivUsoImg .imgEstrellaD,
+.cuartoDivUsoImg .imgEstrellaD,
+.cincoDivUsoImg .imgEstrellaD,
+.seisDivUsoImg .imgEstrellaD,
+.DivRecomendacionUno .imgEstrellaD {
+    margin-right: 2vw;
+}
+

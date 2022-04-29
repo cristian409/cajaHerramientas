@@ -148,3 +148,11 @@ body strong {
 }
 
 
+.contentInterna .parrafosPresentacion .parrafoUno,
+.contentInterna .parrafosPresentacion .parrafoTres {
+    padding: 0 19vw;
+}
+
+.contentInterna .parrafosPresentacion .parrafoDos {
+    margin: 2vh 20vw;
+}

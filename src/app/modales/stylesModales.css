@@ -1182,7 +1182,7 @@
     margin-bottom: -2px;
 }
 
-.DivElaboracionV .itemSlider article .text-center p {
+.DivElaboracionV .itemSlider article p {
     font-size: 14px;
 }
 
@@ -1512,7 +1512,7 @@
     top: 2vh;
 }
 
-.cuartoDivAccesImagen article .text-center div a {
+.cuartoDivAccesImagen article div a {
     color: #000000;
 }
 
@@ -1529,7 +1529,7 @@
     top: 2vh;
 }
 
-.DivElaboracionV .itemSlider article .text-center a {
+.DivElaboracionV .itemSlider article a {
     cursor: pointer;
     color: #ffff;
     padding: 22px;
