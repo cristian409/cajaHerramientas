@@ -26,12 +26,14 @@ let gestionarMetodos = () => {
     botonesMaterialAudio();
     botonesEvaluacionMaterial();
     botonesRecomendacion();
+    botonRecomendacion();
     botonesInfoAdicional();
     botonesIntroduccionWeb();
     botonesLenguajeWeb();
     botonesAccesibilidadWeb();
     botonesMaterialAudioWeb();
     botonesEvaluacionWeb();
+    botonesReferenciasWeb();
     botonesRecomendacionWeb();
     botonesInfoAdicionalWeb();
 }
@@ -128,6 +130,10 @@ let botonesIntroduccion = () => {
             });
         }, 20);
     });
+    document.getElementById("btnGuiaVerificacion").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
+    });
 }
 
 
@@ -153,6 +159,11 @@ let botonesLenguaje = () => {
             });
         }, 20);
     });
+
+    document.getElementById("btnGuiaVerificacionL").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/002 LENGUAJE GUÍA DE VERIFICACIÓN.pdf")
+    });
 }
 
 
@@ -176,6 +187,11 @@ let botonesAccesibilidad = () => {
     document.getElementById("btnAccessImg").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarAccesoImg();
+    });
+
+    document.getElementById("btnGuiaVerificacionA").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/003 ACCESIBILIDAD GUÍA DE VERIFICACIÓN.pdf")
     });
 }
 
@@ -201,12 +217,32 @@ let botonesMaterialAudio = () => {
         event.preventDefault();
         Modal.desplegarUsoImagenes();
     });
+
+    document.getElementById("btnGuiaVerificacionV").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_2 MATERIAL AUD AUDIOVISUAL GUÍA DE VERIFICACIÓN.pdf")
+    });
+
+    document.getElementById("btnGuiaVerificacionI").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_1 MATERIAL AUD IMÁGENES GUÍA DE VERIFICACIÓN.pdf")
+    });
 }
 
 let botonesEvaluacionMaterial = () => {
     document.getElementById("btnEvaluacionM").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarEvaluacionMaterial();
+    });
+
+    document.getElementById("btnEvaluacionA").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL AUDIOVISUAL.pdf");
+    });
+
+    document.getElementById("btnEvaluacionD").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL DOCUMENTAL.pdf");
     });
 }
 
@@ -238,6 +274,13 @@ let botonesRecomendacion = () => {
     });
 }
 
+let botonRecomendacion = () => {
+    document.getElementById("btnDescargaRe").addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open("../../assets/imagenes/RECURSOS MOBILE/REFERENCIAS.pdf");
+    });
+}
+
 
 let botonesInfoAdicional = () => {
     document.getElementById("btnGlosario").addEventListener('click', (event) => {
@@ -258,9 +301,11 @@ let botonesIntroduccionWeb = () => {
         let svgDoc = vsgIntroduccion.contentDocument;
         let imgIntroduccion = svgDoc.getElementById("MARCONORMATIVOINTERNACIONAL");
         let imgRecomendaciones = svgDoc.getElementById("DESCUBRELASRECOMENDACIONES");
+        let imgGuiaVerifica = svgDoc.getElementById("GUIADEVERIFICACION");
         imgIntroduccion.style.cursor = "pointer";
         imgRecomendaciones.style.cursor = "pointer";
-        
+        imgGuiaVerifica.style.cursor = "pointer";
+
         imgIntroduccion.addEventListener('click', () => {
             Modal.desplegarMarcoNormativo();
         });
@@ -278,6 +323,9 @@ let botonesIntroduccionWeb = () => {
                 });
             }, 20);
         });
+        imgGuiaVerifica.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
+        });
     }, false);
 }
 
@@ -288,10 +336,15 @@ let botonesLenguajeWeb = () => {
         let svgDoc = vsgLenguaje.contentDocument;
         let imgLenguajeUno = svgDoc.getElementById("GLOBOLENGUAJECOMOLUCHA");
         // let imgLenguajeDos = svgDoc.getElementById("");
+        let imgLenguajeTres = svgDoc.getElementById("DESCARGAVERIFICACION");
         imgLenguajeUno.style.cursor = "pointer";
         // imgLenguajeDos.style.cursor = "pointer";
+        imgLenguajeTres.style.cursor = "pointer";
         imgLenguajeUno.addEventListener('click', () => {
             Modal.desplegarLenguajeUno();
+        });
+        imgLenguajeTres.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/002 LENGUAJE GUÍA DE VERIFICACIÓN.pdf")
         });
     });
 }
@@ -302,10 +355,16 @@ let botonesAccesibilidadWeb = () => {
         let svgDoc = vsgAccesibilidad.contentDocument;
         let imgAccesibilidadImg = svgDoc.getElementById("MUÑECOACCESOIMAGENES");
         // let imgAccesibilidadTxt = svgDoc.getElementById("");
+        let imgAccesibilidadVerificacion = svgDoc.getElementById("MUÑECOGUIAVERIFICACION");
         imgAccesibilidadImg.style.cursor = "pointer";
         // imgLenguajeDos.style.cursor = "pointer";
+        imgAccesibilidadVerificacion.style.cursor = "pointer";
         imgAccesibilidadImg.addEventListener('click', () => {
             Modal.desplegarAccesoImg();
+        });
+
+        imgAccesibilidadVerificacion.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/003 ACCESIBILIDAD GUÍA DE VERIFICACIÓN.pdf")
         });
     });
 }
@@ -316,8 +375,14 @@ let botonesMaterialAudioWeb = () => {
         let svgDoc = svgMaterialAudio.contentDocument;
         let imgMaterialAudioUno = svgDoc.getElementById("USOIMAGENES");
         let imgMaterialAudioDos = svgDoc.getElementById("USOVIDEOS");
+        let imgMaterialAudioTres = svgDoc.getElementById("GUIAIMAGENES");
+        let imgMaterialAudioCuatro = svgDoc.getElementById("GUIAVIDEO");
+
         imgMaterialAudioUno.style.cursor = "pointer";
         imgMaterialAudioDos.style.cursor = "pointer";
+        imgMaterialAudioTres.style.cursor = "pointer";
+        imgMaterialAudioCuatro.style.cursor = "pointer";
+
         imgMaterialAudioUno.addEventListener('click', () => {
             Modal.desplegarUsoImagenes();
         });
@@ -336,6 +401,14 @@ let botonesMaterialAudioWeb = () => {
                 });
             }, 20);
         });
+
+        imgMaterialAudioTres.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_1 MATERIAL AUD IMÁGENES GUÍA DE VERIFICACIÓN.pdf");
+        });
+
+        imgMaterialAudioCuatro.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_2 MATERIAL AUD AUDIOVISUAL GUÍA DE VERIFICACIÓN.pdf");
+        });
     });
 }
 
@@ -344,11 +417,63 @@ let botonesEvaluacionWeb = () => {
     svgEvalucion.addEventListener('load', () => {
         let svgDoc = svgEvalucion.contentDocument;
         let imgEvaluacion = svgDoc.getElementById("EVALUACIONMATERIAL");
-        // let imgAccesibilidadTxt = svgDoc.getElementById("");
+        let imgEvalucionAudio = svgDoc.getElementById("EVALUACIONAUDIOVISUAL");
+        let imgEvalucionDocu = svgDoc.getElementById("EVALUACIONDOCUMENTAL");
         imgEvaluacion.style.cursor = "pointer";
-        // imgLenguajeDos.style.cursor = "pointer";
+        imgEvalucionAudio.style.cursor = "pointer";
+        imgEvalucionDocu.style.cursor = "pointer";
         imgEvaluacion.addEventListener('click', () => {
             Modal.desplegarEvaluacionMaterial();
+        });
+        imgEvalucionAudio.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL AUDIOVISUAL.pdf");
+        });
+        imgEvalucionDocu.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL DOCUMENTAL.pdf");
+        });
+    });
+}
+
+let botonesReferenciasWeb = () => {
+    let svgReferencias = document.getElementById("svgReferencias");
+    svgReferencias.addEventListener('load', () => {
+        let svgDoc = svgReferencias.contentDocument;
+        let imgBombilloUno = svgDoc.getElementById("DOCUMENTOBOMBILLO");
+        let imgBombilloDos = svgDoc.getElementById("RECURSOSEDUCATIVOSBOMBILLO");
+        let imgBombilloTres = svgDoc.getElementById("TALLERISTASBOMBILLO");
+        let imgBombilloCuatro = svgDoc.getElementById("RECURSOSWEBBOMBILLO");
+        let imgBombilloCinco = svgDoc.getElementById("MATERIALAUDIOVISUALBOMBILLO");
+        let imgBombilloSeis = svgDoc.getElementById("ORGANIZACIONESYPROYECTOSBOMBILLO");
+        let imgBombilloSiete = svgDoc.getElementById("ARTICULOSBOMBILLO");
+
+        imgBombilloUno.style.cursor = "pointer";
+        imgBombilloDos.style.cursor = "pointer";
+        imgBombilloTres.style.cursor = "pointer";
+        imgBombilloCuatro.style.cursor = "pointer";
+        imgBombilloCinco.style.cursor = "pointer";
+        imgBombilloSeis.style.cursor = "pointer";
+        imgBombilloSiete.style.cursor = "pointer";
+
+        imgBombilloUno.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/DOCUMENTOS.pdf");
+        });
+        imgBombilloDos.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/RECURSOS EDUCATIVOS.pdf");
+        });
+        imgBombilloTres.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/TALLERISTAS.pdf");
+        });
+        imgBombilloCuatro.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/RECURSOS WEB.pdf");
+        });
+        imgBombilloCinco.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/MATERIAL AUDIOVISUAL.pdf");
+        });
+        imgBombilloSeis.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/ORGANIZACIONES Y PROYECTOS.pdf");
+        });
+        imgBombilloSiete.addEventListener('click', () => {
+            window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/ARTICULOS.pdf");
         });
     });
 }
