@@ -48,3 +48,22 @@ body strong {
     font-weight: normal !important;
 }
 
+*::-webkit-scrollbar {
+    width: 1vw;
+    height: auto;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+* {
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}

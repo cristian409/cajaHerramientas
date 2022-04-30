@@ -19,7 +19,9 @@
     <link rel="stylesheet" type="text/css" href="../../styles.css">
     <link rel="stylesheet" type="text/css" href="../../efects.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="styles_web.css" media="(min-width: 720px)" />
+    <link rel="stylesheet" type="text/css" href="styles_web.css" media="screen and (min-device-width: 720px)" />
+    <link rel="stylesheet" type="text/css" href="style_web_adicion.css" media="screen and (min-device-width: 1700px)" />
+
 
     <link rel="stylesheet" type="text/css" href="../../assets/css/owl.carousel.css" media="all">
     <link rel="stylesheet" type="text/css" href="../../assets/css/owl.theme.css" media="all">
@@ -91,15 +93,14 @@
             <div class="container-fluid contentWeb" style="display: none;">
                 <div class="row">
                     <div class="col-2 contentMenu">
-                        <object id="svgMenuWeb" class="svgMenuWeb uno inicial"
+                        <object id="svgMenuWeb" class="svgMenuWeb uno"
                             data="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/002_MENU/SVG/005_MENU_COMPLETO_BLANCO.svg"
                             type="image/svg+xml"></object>
                         <object id="svgMenuWeb" class="svgMenuWeb dos oculto"
                             data="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/002_MENU/SVG/006_MENU_COMPLETO_NEGRO.svg"
                             type="image/svg+xml"></object>
-                        <object id="svgTuerca" class="svgTuerca oculto"
-                            data="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/002_MENU/SVG/003_TUERCA_ENCENDIDA.svg"
-                            type="image/svg+xml"></object>
+                        <img id="svgTuerca" class="svgTuerca oculto inicial"
+                            src="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/002_MENU/PNG/002_HERRAMIENTA_ENCENDIDA.png"></img>
                     </div>
                     <div class="col-10 contentVsg">
                         <img class="puntosBlanco"
@@ -165,7 +166,7 @@
                             src="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/004_LENGUAJE/PNG/007_PUNTOS.png"
                             alt="punto">
                         <object id="svgLenguaje" class="vsgWeb svgLenguaje"
-                            data="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/004_LENGUAJE/SVG/002_IMAGEN_COMPLETA.svg"
+                            data="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/004_LENGUAJE/SVG/GLOBORecurso 91.svg"
                             type="image/svg+xml"></object>
                     </div>
                 </div>
@@ -435,7 +436,7 @@
                 <p>Haz clic en las bombillas para descargar toda la información acerca de
                     los referentes para la transversalización del enfoque de género.</p>
             </div>
-            
+
             <div class="descargaReferencias oculto">
                 <img class="puntosBlanco"
                     src="../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/0014. Puntos blancos-11.png" alt="punto">
@@ -448,7 +449,7 @@
                 <div class="row">
                     <div class="col-2 contentMenu"></div>
                     <div class="col-10 contentVsg">
-                        <object class="bombillos"
+                        <object id="svgBombillos" class="svgBombillos"
                             data="../../assets/imagenes/RECURSOS PC/EXPORTADOS_PORTADAS_PNG_SVG/009_REFERENCIAS/SVG/001_LUZPRENDIDA.svg"
                             type="image/svg+xml"></object>
                         <object id="svgReferencias" class="vsgWeb svgReferencias"

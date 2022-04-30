@@ -25,11 +25,17 @@
 .contentInterna .parrafosPresentacion .btn {
     cursor: pointer;
     color: #ffff;
-    margin: -20px 0 4vh;
+    margin: -2vh 0 4vw;
     padding: 36px;
     font-family: DIN Condensed Bold;
     background-image: url("../../assets/imagenes/RECURSOS MOBILE/PNG PORTADAS/006. Boton rosado-11.png");
-    background-size: contain;
+    background-size: 100%;
+    width: 9vw;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.contentInterna .parrafosPresentacion .btn:hover {
+    width: 9.8vw;
+    transition: all 0.2s ease;
 }

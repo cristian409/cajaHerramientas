@@ -1,0 +1,9 @@
+.cajaPrincipal .svgTuerca {
+    width: 6.7vw !important;
+    position: relative;
+}
+
+.introduccionScroll {
+    left: -1vw !important;
+    top: -74.9vh !important;
+}
