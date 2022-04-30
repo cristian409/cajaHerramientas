@@ -307,41 +307,49 @@
     width: 95%;
     max-width: 95%;
     margin-top: -52vh;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgLenguaje {
     margin: -70vh 0 0 -3vw;
     width: 84%;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgAccesibilidad {
     margin: -72vh 0 0 -4vw;
     width: 84%;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgMaterialAudio {
     margin: -70vh 0 0 -4vw;
     width: 96%;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgEvalucion {
     margin: -70vh 0 0 -4vw;
     width: 76%;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgRecomendaciones {
     margin: -56vh 0 -10vh -4vw;
     width: 94%;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgReferencias {
     margin: -58vh 0 0vh -1.9vw;
     width: 86%;
+    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgInfoAdicional {
     margin: 2vh 0 0 0;
     width: 86%;
+    max-height: 58vh;
 }
 
 .modal-dialog {
