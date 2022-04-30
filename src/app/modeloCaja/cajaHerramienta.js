@@ -543,7 +543,7 @@ let botonesReferenciasWeb = (svgDoc, svgDocB) => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/ARTICULOS.pdf");
     });
 
-    eventoBombillos(imgBombilloUno, imgBombilloDos, imgBombilloTres, imgBombilloCuatro, imgBombilloCinco, imgBombilloSeis, imgBombilloSiete, svgDocB);
+    // eventoBombillos(imgBombilloUno, imgBombilloDos, imgBombilloTres, imgBombilloCuatro, imgBombilloCinco, imgBombilloSeis, imgBombilloSiete, svgDocB);
 }
 
 let botonesRecomendacionWeb = (svgDoc) => {

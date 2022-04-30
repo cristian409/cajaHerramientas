@@ -305,7 +305,8 @@
 
 .cajaPrincipal .contentVsg .svgIntroduccion {
     width: 95%;
-    margin-top: -48vh;
+    max-width: 95%;
+    margin-top: -52vh;
 }
 
 .cajaPrincipal .contentVsg .svgLenguaje {
