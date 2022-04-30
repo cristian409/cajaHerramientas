@@ -7,3 +7,67 @@
     left: -1vw !important;
     top: -74.9vh !important;
 }
+
+.lenguajeScroll {
+    left: -0.9vw !important;
+    top: -66.5vh !important;
+}
+
+.accesicibilidadScroll {
+    left: -0.9vw !important;
+    top: -57.2vh !important;
+}
+
+.materialScroll {
+    left: -0.9vw !important;
+    top: -48.2vh !important;
+}
+
+.evalucionScroll {
+    left: -0.9vw !important;
+    top: -39.2vh !important;
+}
+
+.recomendacionScroll {
+    left: -0.9vw !important;
+    top: -30.4vh !important;
+}
+
+.referenciaScroll {
+    left: -0.9vw !important;
+    top: -21.6vh !important;
+}
+
+.glosarioScroll {
+    left: -0.9vw !important;
+    top: -12.8vh !important;
+}
+
+.cajaPrincipal .contentVsg .svgIntroduccion {
+    margin-top: -60vh !important;
+}
+
+.cajaPrincipal .contentVsg .svgAccesibilidad {
+    margin: -78vh 0 0 -4vw !important;
+}
+
+.cajaPrincipal .contentVsg .svgMaterialAudio {
+    margin: -80vh 0 0 -4vw !important;
+}
+
+.cajaPrincipal .contentVsg .svgEvalucion {
+    margin: -74vh 0 0 -4vw !important;
+}
+
+.cajaPrincipal .contentVsg .svgRecomendaciones {
+    margin: -65vh 0 -10vh -4vw !important;
+}
+
+.cajaPrincipal .contentVsg .svgReferencias {
+    margin: -67vh 0 0vh -1.9vw !important;
+}
+
+.sieteRecomendacionDos .foto1 {
+    margin-top: -5vh !important;
+    width: 34vw !important;
+}

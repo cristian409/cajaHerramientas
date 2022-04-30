@@ -117,3 +117,11 @@ and open the template in the editor.
     100% {   opacity: 1;  }
 }
 
+
+@keyframes botones {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+

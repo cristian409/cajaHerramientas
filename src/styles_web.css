@@ -135,7 +135,7 @@ body strong {
 /*DENTO DE LA LLAVE*/
 #contentPaginaInicio #contentInterna {
     height: 100vh;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .contentInterna .seccion {
@@ -144,7 +144,9 @@ body strong {
 
 /* PORTADA INTERNA */
 .contentInterna .parrafosPresentacion .btn {
-    font-size: 24px;
+    font-size: 1.2vw;
+    width: 12vw;
+    margin: -2vh 0 0vw;
 }
 
 
@@ -155,4 +157,28 @@ body strong {
 
 .contentInterna .parrafosPresentacion .parrafoDos {
     margin: 2vh 20vw;
+}
+
+
+@media screen and (min-device-width: 1700px) {
+    .contentPortada .container.contentImg {
+        width: 50% !important;
+    }
+
+    .contentInterna .seccion {
+        padding: 10vh 0 0vw;
+        font-size: 1.4vw;
+    }
+
+    .contentInterna .parrafosPresentacion .btn {
+        padding: 20px !important;
+        margin: 0 !important;
+        font-size: 18px !important;
+        width: 10vw;
+    }
+
+    .contentInterna .nube.derecha {
+        top: 87% !important; 
+    }
+
 }

@@ -1241,8 +1241,7 @@
 }
 
 .DivElaboracionV .itemSlider article a:hover {
-    background-size: 76%;
-    transition: all 0.2s ease;
+    animation: botones 2s;
 }
 
 .DivElaboracionV .itemSlider article .cuatro {
