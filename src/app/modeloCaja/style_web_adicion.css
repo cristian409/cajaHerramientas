@@ -1,70 +1,40 @@
-.cajaPrincipal .svgTuerca {
-    width: 6.7vw !important;
-    position: relative;
-}
-
-.introduccionScroll {
-    left: -1vw !important;
-    top: -74.9vh !important;
-}
-
-.lenguajeScroll {
-    left: -0.9vw !important;
-    top: -66.5vh !important;
-}
-
-.accesicibilidadScroll {
-    left: -0.9vw !important;
-    top: -57.2vh !important;
-}
-
-.materialScroll {
-    left: -0.9vw !important;
-    top: -48.2vh !important;
-}
-
-.evalucionScroll {
-    left: -0.9vw !important;
-    top: -39.2vh !important;
-}
-
-.recomendacionScroll {
-    left: -0.9vw !important;
-    top: -30.4vh !important;
-}
-
-.referenciaScroll {
-    left: -0.9vw !important;
-    top: -21.6vh !important;
-}
-
-.glosarioScroll {
-    left: -0.9vw !important;
-    top: -12.8vh !important;
-}
-
 .cajaPrincipal .contentVsg .svgIntroduccion {
     margin-top: -65vh !important;
+    max-height: 62vh;
+}
+
+.cajaPrincipal .contentVsg .svgLenguaje {
+    max-height: 74vh;
 }
 
 .cajaPrincipal .contentVsg .svgAccesibilidad {
     margin: -78vh 0 0 -4vw !important;
+    max-height: 80vh;
 }
 
 .cajaPrincipal .contentVsg .svgMaterialAudio {
     margin: -80vh 0 0 -4vw !important;
+    max-height: 75vh;
 }
 
 .cajaPrincipal .contentVsg .svgEvalucion {
     margin: -74vh 0 0 -4vw !important;
+    max-height: 75vh;
 }
 
 .cajaPrincipal .contentVsg .svgRecomendaciones {
-    margin: -65vh 0 -10vh -4vw !important;
+    margin: -65vh 0 -8vh -4vw !important;
+    max-height: 75vh;
 }
 
 .cajaPrincipal .contentVsg .svgReferencias {
-    margin: -67vh 0 0vh -1.9vw !important;
+    margin: -9vh 0 0vh -1.9vw !important;
+    max-height: 75vh;
+}
+
+.cajaPrincipal .contentVsg .svgInfoAdicional {
+    max-height: 58vh;
+    margin-left: -9vw;
 }
 
 .sieteRecomendacionDos .foto1 {

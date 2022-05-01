@@ -3,8 +3,8 @@
 }
 
 .cajaPrincipal .svgMenuWeb {
-    min-height: 90vh;
-    height: 90vh;
+    min-height: 80vh;
+    height: 88vh;
 }
 
 .cajaPrincipal .introduccion,
@@ -251,7 +251,7 @@
 }
 
 .cajaPrincipal .introduccion .contentMenu {
-    margin-top: -26vh;
+    margin-top: -29vh;
     position: fixed;
     padding: 1vh 1vw;
 }
@@ -307,49 +307,41 @@
     width: 95%;
     max-width: 95%;
     margin-top: -52vh;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgLenguaje {
     margin: -70vh 0 0 -3vw;
     width: 84%;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgAccesibilidad {
     margin: -72vh 0 0 -4vw;
     width: 84%;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgMaterialAudio {
     margin: -70vh 0 0 -4vw;
     width: 96%;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgEvalucion {
     margin: -70vh 0 0 -4vw;
     width: 76%;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgRecomendaciones {
     margin: -56vh 0 -10vh -4vw;
     width: 94%;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgReferencias {
-    margin: -58vh 0 0vh -1.9vw;
+    margin: -8vh 0 0vh -1.9vw;
     width: 86%;
-    max-height: 58vh;
 }
 
 .cajaPrincipal .contentVsg .svgInfoAdicional {
     margin: 2vh 0 0 0;
     width: 86%;
-    max-height: 58vh;
 }
 
 .modal-dialog {
@@ -357,55 +349,6 @@
     margin: 0.75rem auto;
 }
 
-.cajaPrincipal .svgTuerca {
-    width: 7.3vw;
-    position: relative;
-}
-
-.inicial {
-    left: -2.2vw;
-    top: 1vh;
-}
-
-.introduccionScroll {
-    left: -2.1vw;
-    top: -74.6vh;
-}
-
-.lenguajeScroll {
-    left: -2.1vw;
-    top: -65.8vh;
-}
-
-.accesicibilidadScroll {
-    left: -2.2vw;
-    top: -56.9vh;
-}
-
-.materialScroll {
-    left: -2.2vw;
-    top: -47.9vh;
-}
-
-.evalucionScroll {
-    left: -2.2vw;
-    top: -38.9vh;
-}
-
-.recomendacionScroll {
-    left: -2.2vw;
-    top: -29.9vh;
-}
-
-.referenciaScroll {
-    left: -2.2vw;
-    top: -20.9vh;
-}
-
-.glosarioScroll {
-    left: -2.2vw;
-    top: -12.2vh;
-}
 
 /* SYTLES MODALES */
 .modal .modal-content .btnClose {
@@ -414,7 +357,6 @@
     font-size: 2.9vw;
     z-index: 10;
 }
-
 
 .primerDivMarco .tituloPrincipal,
 .primerDivLenguaje .tituloPrincipal,

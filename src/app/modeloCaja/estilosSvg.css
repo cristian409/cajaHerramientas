@@ -57,13 +57,3 @@
 #PERSONASCONDISCAPACIDAD:hover {
     filter: opacity(.5);
 }
-
-.mostrar {
-    position: relative;
-    z-index: 20;
-}
-
-.ocultar {
-    position: relative;
-    z-index: -1;
-}

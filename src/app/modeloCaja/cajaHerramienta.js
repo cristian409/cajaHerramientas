@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', async event => {
 
 let gestionarMetodos = () => {
     cambiarColorMenu();
-    indicarSeccionWeb();
 
     botonesIntroduccion();
     botonesLenguaje();
@@ -35,8 +34,7 @@ let gestionarMetodos = () => {
 
 let cambiarColorMenu = () => {
     let menu = document.querySelector(".navbar-toggler");
-    let menuWebUno = document.querySelector(".uno");
-    let menuWebDos = document.querySelector(".dos");
+
     window.addEventListener('scroll', () => {
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 2470 && scrollTop < 5920) {
@@ -45,64 +43,6 @@ let cambiarColorMenu = () => {
             menu.style.color = "#ffff";
         }
     });
-    window.addEventListener('scroll', () => {
-        let scrollTop = document.documentElement.scrollTop;
-        if (scrollTop > 880 && scrollTop < 3000) {
-            menuWebUno.classList.add("oculto");
-            menuWebDos.classList.remove("oculto");
-        } else {
-            menuWebUno.classList.remove("oculto");
-            menuWebDos.classList.add("oculto");
-        }
-    });
-}
-
-let indicarSeccionWeb = () => {
-    let tuercaIndicada = document.getElementById("svgTuerca");
-    window.addEventListener('scroll', () => {
-        let scrollTop = document.documentElement.scrollTop;
-        if (scrollTop > 0 && scrollTop < 250) {
-            tuercaIndicada.classList.remove("inicial", "lenguajeScroll", "accesicibilidadScroll",
-                "materialScroll", "evalucionScroll", "recomendacionScroll", "referenciaScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("introduccionScroll");
-        }
-        if (scrollTop > 250 && scrollTop < 1000) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "accesicibilidadScroll",
-                "materialScroll", "evalucionScroll", "recomendacionScroll", "referenciaScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("lenguajeScroll");
-        }
-        if (scrollTop > 1000 && scrollTop < 1950) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "lenguajeScroll",
-                "materialScroll", "evalucionScroll", "recomendacionScroll", "referenciaScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("accesicibilidadScroll");
-        }
-        if (scrollTop > 1950 && scrollTop < 2600) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "lenguajeScroll", "accesicibilidadScroll",
-                "evalucionScroll", "recomendacionScroll", "referenciaScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("materialScroll");
-        }
-        if (scrollTop > 2600 && scrollTop < 3500) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "lenguajeScroll", "accesicibilidadScroll",
-                "materialScroll", "recomendacionScroll", "referenciaScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("evalucionScroll");
-        }
-        if (scrollTop > 3500 && scrollTop < 4200) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "lenguajeScroll", "accesicibilidadScroll",
-                "materialScroll", "evalucionScroll", "referenciaScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("recomendacionScroll");
-        }
-        if (scrollTop > 4200 && scrollTop < 5000) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "lenguajeScroll", "accesicibilidadScroll",
-                "materialScroll", "evalucionScroll", "recomendacionScroll", "glosarioScroll");
-            tuercaIndicada.classList.add("referenciaScroll");
-        }
-        if (scrollTop > 5000) {
-            tuercaIndicada.classList.remove("inicial", "introduccionScroll", "lenguajeScroll", "accesicibilidadScroll",
-                "materialScroll", "evalucionScroll", "recomendacionScroll", "referenciaScroll");
-            tuercaIndicada.classList.add("glosarioScroll");
-        }
-    });
-
 }
 
 let botonesIntroduccion = () => {
@@ -296,33 +236,42 @@ let botonesInfoAdicional = () => {
 }
 
 let leerSvg = () => {
-    let vsgIntroduccion = document.getElementById("svgIntroduccion");
-    let vsgLenguaje = document.getElementById("svgLenguaje");
-    let vsgAccesibilidad = document.getElementById("svgAccesibilidad");
+
+    let svgIntroduccion = document.getElementById("svgIntroduccion");
+    let svgLenguaje = document.getElementById("svgLenguaje");
+    let svgAccesibilidad = document.getElementById("svgAccesibilidad");
     let svgMaterialAudio = document.getElementById("svgMaterialAudio");
     let svgEvalucion = document.getElementById("svgEvalucion");
     let svgRecomendaciones = document.getElementById("svgRecomendaciones");
     let svgReferencias = document.getElementById("svgReferencias");
     let svgInfoAdicional = document.getElementById("svgInfoAdicional");
     let svgDoc;
-    let svgBombillos = document.getElementById("svgBombillos");
+    let svgMenuWeb = document.getElementById("svgMenuWeb");
 
-    vsgIntroduccion.addEventListener("load", () => {
-        svgDoc = vsgIntroduccion.contentDocument;
+    svgMenuWeb.addEventListener("load", () => {
+        svgDoc = svgMenuWeb.contentDocument;
+
+        abrirCssSvg(svgDoc);
+        cambiarColorMenuWeb(svgDoc);
+        // indicarSeccionWeb(svgDoc);
+    }, false);
+
+    svgIntroduccion.addEventListener("load", () => {
+        svgDoc = svgIntroduccion.contentDocument;
 
         abrirCssSvg(svgDoc);
         botonesIntroduccionWeb(svgDoc);
     }, false);
 
-    vsgLenguaje.addEventListener('load', () => {
-        svgDoc = vsgLenguaje.contentDocument;
+    svgLenguaje.addEventListener('load', () => {
+        svgDoc = svgLenguaje.contentDocument;
 
         abrirCssSvg(svgDoc);
         botonesLenguajeWeb(svgDoc);
     }, false);
 
-    vsgAccesibilidad.addEventListener('load', () => {
-        svgDoc = vsgAccesibilidad.contentDocument;
+    svgAccesibilidad.addEventListener('load', () => {
+        svgDoc = svgAccesibilidad.contentDocument;
 
         abrirCssSvg(svgDoc);
         botonesAccesibilidadWeb(svgDoc);
@@ -350,19 +299,12 @@ let leerSvg = () => {
     }, false);
 
 
-    svgBombillos.addEventListener('load', () => {
-        let svgDocB = svgBombillos.contentDocument;
-        abrirCssSvg(svgDocB);
+    svgReferencias.addEventListener('load', () => {
+        svgDoc = svgReferencias.contentDocument;
 
-        svgReferencias.addEventListener('load', () => {
-            svgDoc = svgReferencias.contentDocument;
-
-            abrirCssSvg(svgDoc);
-            botonesReferenciasWeb(svgDoc, svgDocB);
-        }, false);
+        abrirCssSvg(svgDoc);
+        botonesReferenciasWeb(svgDoc);
     }, false);
-
-
 
     svgInfoAdicional.addEventListener('load', () => {
         svgDoc = svgInfoAdicional.contentDocument;
@@ -370,6 +312,77 @@ let leerSvg = () => {
         abrirCssSvg(svgDoc);
         botonesInfoAdicionalWeb(svgDoc);
     }, false);
+}
+
+let cambiarColorMenuWeb = (svgDoc) => {
+
+    window.addEventListener('scroll', () => {
+        let scrollTop = document.documentElement.scrollTop;
+        let txtsMenus = svgDoc.getElementById("MENU").getElementsByTagName('text');
+        if (scrollTop > 880 && scrollTop < 2800) {
+            for (let i = 0; i < txtsMenus.length; i++) {
+                txtsMenus[i].style.fill = "#000"; 
+            }
+        } else {
+            for (let i = 0; i < txtsMenus.length; i++) {
+                txtsMenus[i].style.fill = "#ffff";
+            }
+        }
+    });
+}
+
+let indicarSeccionWeb = (svgDoc) => {
+
+    window.addEventListener('scroll', () => {
+        let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop > 0 && scrollTop < 250) {
+            svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDAINTRODUCCION").style.display = "block";
+        }
+        if (scrollTop > 250 && scrollTop < 1000) {
+            svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDAINTRODUCCION").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADALENGUAJE").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDALENGUAJE").style.display = "block";
+        }
+        if (scrollTop > 1000 && scrollTop < 1950) {
+            svgDoc.getElementById("TUERCAAPAGADALENGUAJE").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDALENGUAJE").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADAACCESIBILIDAD").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDAACCESIBILIDAD").style.display = "block";
+        }
+        if (scrollTop > 1950 && scrollTop < 2600) {
+            svgDoc.getElementById("TUERCAAPAGADAACCESIBILIDAD").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDAACCESIBILIDAD").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADAMATERIAL").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDAMATERIAL").style.display = "block";
+        }
+        if (scrollTop > 2600 && scrollTop < 3500) {
+            svgDoc.getElementById("TUERCAAPAGADAMATERIAL").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDAMATERIAL").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADAEVALUACION").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDAEVALUACION").style.display = "block";
+        }
+        if (scrollTop > 3500 && scrollTop < 4200) {
+            svgDoc.getElementById("TUERCAAPAGADAEVALUACION").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDAEVALUACION").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADARECOMENDACION").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDARECOMENDACION").style.display = "block";
+        }
+        if (scrollTop > 4200 && scrollTop < 5000) {
+            svgDoc.getElementById("TUERCAAPAGADARECOMENDACION").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDARECOMENDACION").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADAREFERENCIA").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDAREFERENCIA").style.display = "block";
+        }
+        if (scrollTop > 5000) {
+            svgDoc.getElementById("TUERCAAPAGADAREFERENCIA").style.display = "block";
+            svgDoc.getElementById("TUERCAENCENDIDAREFERENCIA").style.display = "none";
+            svgDoc.getElementById("TUERCAAPAGADAINFOADICIONAL").style.display = "none";
+            svgDoc.getElementById("TUERCAENCENDIDAINFOADICIONAL").style.display = "block";
+        }
+    });
+
 }
 
 let botonesIntroduccionWeb = (svgDoc) => {
@@ -511,15 +524,15 @@ let botonesEvaluacionWeb = (svgDoc) => {
 
 }
 
-let botonesReferenciasWeb = (svgDoc, svgDocB) => {
+let botonesReferenciasWeb = (svgDoc) => {
 
-    let imgBombilloUno = svgDoc.getElementById("DOCUMENTOBOMBILLO");
-    let imgBombilloDos = svgDoc.getElementById("RECURSOSEDUCATIVOSBOMBILLO");
-    let imgBombilloTres = svgDoc.getElementById("TALLERISTASBOMBILLO");
-    let imgBombilloCuatro = svgDoc.getElementById("RECURSOSWEBBOMBILLO");
-    let imgBombilloCinco = svgDoc.getElementById("MATERIALAUDIOVISUALBOMBILLO");
-    let imgBombilloSeis = svgDoc.getElementById("ORGANIZACIONESYPROYECTOSBOMBILLO");
-    let imgBombilloSiete = svgDoc.getElementById("ARTICULOSBOMBILLO");
+    let imgBombilloUno = svgDoc.getElementById("DOCUMENTOBOMBILLOAPAGADO");
+    let imgBombilloDos = svgDoc.getElementById("RECURSOSEDUCATIVOSBOMBILLOAPAGADO");
+    let imgBombilloTres = svgDoc.getElementById("TALLERISTASBOMBILLOAPAGADO");
+    let imgBombilloCuatro = svgDoc.getElementById("RECURSOSWEBBOMBILLOAPAGADO");
+    let imgBombilloCinco = svgDoc.getElementById("MATERIALAUDIOVISUALBOMBILLOAPAGADO");
+    let imgBombilloSeis = svgDoc.getElementById("ORGANIZACIONESYPROYECTOSBOMBILLOAPAGADO");
+    let imgBombilloSiete = svgDoc.getElementById("ARTICULOSBOMBILLOAPAGADO");
 
     imgBombilloUno.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/DOCUMENTOS.pdf");
@@ -594,21 +607,69 @@ let botonesInfoAdicionalWeb = (svgDoc) => {
 
 let eventoBombillos = (bombilloOffUno, bombilloOffDos, bombilloOffTres, bombilloOffCuatro, bombilloOffCinco, bombilloOffSeis, bombilloOffSiete, svgDocB) => {
 
-    let bombilloOnUno = svgDocB.getElementById("DOCUMENTOS");
-    let bombilloOnDos = svgDocB.getElementById("RECURSOSEDUCATIVOS");
-    let bombilloOnTres = svgDocB.getElementById("TALLERISTAS");
-    let bombilloOnCuatro = svgDocB.getElementById("ARTICULOS");
-    let bombilloOnCinco = svgDocB.getElementById("RECURSOSWEB");
-    let bombilloOnSeis = svgDocB.getElementById("MATERIALAUDIOVISUAL");
-    let bombilloOnSiete = svgDocB.getElementById("ORGANIZACIONESYPROYECTOS");
+    let bombilloOnUno = svgDocB.getElementById("DOCUMENTOSENBOMBILLOENCENDIDO");
+    let bombilloOnDos = svgDocB.getElementById("RECURSOSEDUCATIVOSENBOMBILLOENCENDIDO");
+    let bombilloOnTres = svgDocB.getElementById("TALLERISTASENBOMBILLOENCENDIDO");
+    let bombilloOnCuatro = svgDocB.getElementById("ARTICULOSENBOMBILLOENCENDIDO");
+    let bombilloOnCinco = svgDocB.getElementById("RECURSOSWEBENBOMBILLOENCENDIDO");
+    let bombilloOnSeis = svgDocB.getElementById("MATERIALAUDIOVISUALENBOMBILLOENCENDIDO");
+    let bombilloOnSiete = svgDocB.getElementById("ORGANIZACIONESYPROYECTOSENBOMBILLOENCENDIDO");
 
     bombilloOffUno.addEventListener("mouseover", () => {
-        // bombilloOnUno.style.position = "relative";
-        // bombilloOnUno.style.zIndex = "99";
-        console.log("hola mundo");
+        bombilloOffUno.style.opacity = "0";
+        bombilloOnUno.style.opacity = "1"
     });
     bombilloOffUno.addEventListener('mouseout', () => {
-        console.log("hola mundo");
+        bombilloOffUno.style.opacity = "1";
+        bombilloOnUno.style.opacity = "0"
+    });
+    bombilloOffDos.addEventListener("mouseover", () => {
+        bombilloOffDos.style.opacity = "0";
+        bombilloOnDos.style.opacity = "1"
+    });
+    bombilloOffDos.addEventListener('mouseout', () => {
+        bombilloOffDos.style.opacity = "1";
+        bombilloOnDos.style.opacity = "0"
+    });
+    bombilloOffTres.addEventListener("mouseover", () => {
+        bombilloOffTres.style.opacity = "0";
+        bombilloOnTres.style.opacity = "1"
+    });
+    bombilloOffTres.addEventListener('mouseout', () => {
+        bombilloOffTres.style.opacity = "1";
+        bombilloOnTres.style.opacity = "0"
+    });
+    bombilloOffCuatro.addEventListener("mouseover", () => {
+        bombilloOffCuatro.style.opacity = "0";
+        bombilloOnCuatro.style.opacity = "1"
+    });
+    bombilloOffCuatro.addEventListener('mouseout', () => {
+        bombilloOffCuatro.style.opacity = "1";
+        bombilloOnCuatro.style.opacity = "0"
+    });
+    bombilloOffCinco.addEventListener("mouseover", () => {
+        bombilloOffCinco.style.opacity = "0";
+        bombilloOnCinco.style.opacity = "1"
+    });
+    bombilloOffCinco.addEventListener('mouseout', () => {
+        bombilloOffCinco.style.opacity = "1";
+        bombilloOnCinco.style.opacity = "0"
+    });
+    bombilloOffSeis.addEventListener("mouseover", () => {
+        bombilloOffSeis.style.opacity = "0";
+        bombilloOnSeis.style.opacity = "1"
+    });
+    bombilloOffSeis.addEventListener('mouseout', () => {
+        bombilloOffSeis.style.opacity = "1";
+        bombilloOnSeis.style.opacity = "0"
+    });
+    bombilloOffSiete.addEventListener("mouseover", () => {
+        bombilloOffSiete.style.opacity = "0";
+        bombilloOnSiete.style.opacity = "1"
+    });
+    bombilloOffSiete.addEventListener('mouseout', () => {
+        bombilloOffSiete.style.opacity = "1";
+        bombilloOnSiete.style.opacity = "0"
     });
 
 }
