@@ -253,7 +253,8 @@ let leerSvg = () => {
 
         abrirCssSvg(svgDoc);
         cambiarColorMenuWeb(svgDoc);
-        // indicarSeccionWeb(svgDoc);
+        indicarSeccionWeb(svgDoc);
+        botonesMenuWeb(svgDoc);
     }, false);
 
     svgIntroduccion.addEventListener("load", () => {
@@ -321,7 +322,7 @@ let cambiarColorMenuWeb = (svgDoc) => {
         let txtsMenus = svgDoc.getElementById("MENU").getElementsByTagName('text');
         if (scrollTop > 880 && scrollTop < 2800) {
             for (let i = 0; i < txtsMenus.length; i++) {
-                txtsMenus[i].style.fill = "#000"; 
+                txtsMenus[i].style.fill = "#000";
             }
         } else {
             for (let i = 0; i < txtsMenus.length; i++) {
@@ -381,7 +382,85 @@ let indicarSeccionWeb = (svgDoc) => {
             svgDoc.getElementById("TUERCAAPAGADAINFOADICIONAL").style.display = "none";
             svgDoc.getElementById("TUERCAENCENDIDAINFOADICIONAL").style.display = "block";
         }
-    });
+    }, false);
+
+}
+
+let botonesMenuWeb = (svgDoc) => {
+
+    let introduccion = svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION");
+    let lenguaje = svgDoc.getElementById("TUERCAAPAGADALENGUAJE");
+    let accesibilidad = svgDoc.getElementById("TUERCAAPAGADAACCESIBILIDAD");
+    let material = svgDoc.getElementById("TUERCAAPAGADAMATERIAL");
+    let evaluacion = svgDoc.getElementById("TUERCAAPAGADAEVALUACION");
+    let recomendacion = svgDoc.getElementById("TUERCAAPAGADARECOMENDACION");
+    let referencia = svgDoc.getElementById("TUERCAAPAGADAREFERENCIA");
+    let infoAdiconal = svgDoc.getElementById("TUERCAAPAGADAINFOADICIONAL");
+    let txtsMenus = svgDoc.getElementById("MENU").getElementsByTagName('text');
+
+    introduccion.addEventListener('click', () => {
+        location.hash = "#introduccionSeccion";
+    }, false);
+
+    lenguaje.addEventListener('click', () => {
+        location.hash = "#lenguajeSeccion";
+    }, false);
+
+    accesibilidad.addEventListener('click', () => {
+        location.hash = "#accesibilidadSeccion";
+    }, false);
+
+    material.addEventListener('click', () => {
+        location.hash = "#materialAudioSeccion";
+    }, false);
+
+    evaluacion.addEventListener('click', () => {
+        location.hash = "#evaluacionMaterialesSeccion";
+    }, false);
+
+    recomendacion.addEventListener('click', () => {
+        location.hash = "#recomendacionesASeccion";
+    }, false);
+
+    referencia.addEventListener('click', () => {
+        location.hash = "#referenciasSeccion";
+    }, false);
+
+    infoAdiconal.addEventListener('click', () => {
+        location.hash = "#infoAdicionalSeccion";
+    }, false);
+
+    txtsMenus[0].addEventListener('click', () => {
+        location.hash = "#introduccionSeccion";
+    }, false);
+
+    txtsMenus[1].addEventListener('click', () => {
+        location.hash = "#lenguajeSeccion";
+    }, false);
+
+    txtsMenus[2].addEventListener('click', () => {
+        location.hash = "#accesibilidadSeccion";
+    }, false);
+
+    txtsMenus[3].addEventListener('click', () => {
+        location.hash = "#materialAudioSeccion";
+    }, false);
+
+    txtsMenus[4].addEventListener('click', () => {
+        location.hash = "#evaluacionMaterialesSeccion";
+    }, false);
+
+    txtsMenus[5].addEventListener('click', () => {
+        location.hash = "#recomendacionesASeccion";
+    }, false);
+
+    txtsMenus[6].addEventListener('click', () => {
+        location.hash = "#referenciasSeccion";
+    }, false);
+
+    txtsMenus[7].addEventListener('click', () => {
+        location.hash = "#infoAdicionalSeccion";
+    }, false);
 
 }
 
@@ -393,7 +472,7 @@ let botonesIntroduccionWeb = (svgDoc) => {
 
     imgIntroduccion.addEventListener('click', () => {
         Modal.desplegarMarcoNormativo();
-    });
+    }, false);
     imgRecomendaciones.addEventListener('click', () => {
         Modal.desplegarRecomendaciones();
         setTimeout(() => {
@@ -407,10 +486,10 @@ let botonesIntroduccionWeb = (svgDoc) => {
                 });
             });
         }, 20);
-    });
+    }, false);
     imgGuiaVerifica.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 }
 
 
