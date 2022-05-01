@@ -493,12 +493,10 @@ if (typeof Object.create !== "function") {
             base.checkPagination();
         },
         checkPagination: function () {
-            console.log(77)
             var base = this;
             if (base.options.pagination === false) {
                 return false;
             }
-            console.log(88)
             base.paginationWrapper.find(".owl-page").each(function () {
                 if ($(this).data("owl-roundPages") === $(base.$owlItems[base.currentItem]).data("owl-roundPages")) {
                     base.paginationWrapper
@@ -509,13 +507,10 @@ if (typeof Object.create !== "function") {
 
                     //cambiar de color verde a blanco
                     var dis = this;
-                    console.log(0)
                     setTimeout((function() {
-                        console.log(1)
                         if (dis.parentElement && dis.parentElement.parentElement 
                             && dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
                             && dis.parentElement.parentElement.parentElement.id == "owl-introRecomen") {
-                            console.log(2)
                             var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
                             var cont_mo = dis.parentElement.parentElement.parentElement;
                             if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
