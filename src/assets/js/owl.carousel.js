@@ -493,10 +493,12 @@ if (typeof Object.create !== "function") {
             base.checkPagination();
         },
         checkPagination: function () {
+            console.log(77)
             var base = this;
             if (base.options.pagination === false) {
                 return false;
             }
+            console.log(88)
             base.paginationWrapper.find(".owl-page").each(function () {
                 if ($(this).data("owl-roundPages") === $(base.$owlItems[base.currentItem]).data("owl-roundPages")) {
                     base.paginationWrapper
@@ -507,41 +509,136 @@ if (typeof Object.create !== "function") {
 
                     //cambiar de color verde a blanco
                     var dis = this;
-                    if (dis.parentElement && dis.parentElement.parentElement 
-                        && dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
-                        && dis.parentElement.parentElement.parentElement.id == "owl-introRecomen") {
+                    console.log(0)
+                    setTimeout((function() {
+                        console.log(1)
+                        if (dis.parentElement && dis.parentElement.parentElement 
+                            && dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
+                            && dis.parentElement.parentElement.parentElement.id == "owl-introRecomen") {
+                            console.log(2)
+                            var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
+                            var cont_mo = dis.parentElement.parentElement.parentElement;
+                            if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                                && cont_mo.parentElement.parentElement.id == "modalRecomendaciones") {
+                                console.log(3)
+                                    if (act_item != dis) {
+                                        cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                                        var bt = document.getElementById('btnIntroRecomendaciones');
+                                        if (bt) bt.setAttribute('style', 'color:#000 !important');
+                                    } else {
+                                        cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
+                                        var bt = document.getElementById('btnIntroRecomendaciones');
+                                        if (bt) bt.setAttribute('style', 'color:#fff  !important');
+                                    }
+
+                            }
+                        }
                         
-                        var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
-                        var cont_mo = dis.parentElement.parentElement.parentElement;
-                        if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
-                            && cont_mo.parentElement.parentElement.id == "modalRecomendaciones") {
-                        
-                            setTimeout((function() {
-                                if (act_item != dis) {
+                        //cambiar de color azulClaro a blanco
+                        if (dis.parentElement && dis.parentElement.parentElement 
+                            && dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
+                            && dis.parentElement.parentElement.parentElement.id == "owl-lenguajeDos") {
+                            var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
+                            var act_item1 = dis.parentElement.getElementsByClassName('owl-page')[5];
+                            var act_item2 = dis.parentElement.getElementsByClassName('owl-page')[7];
+                            var cont_mo = dis.parentElement.parentElement.parentElement;
+                            if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                                && cont_mo.parentElement.parentElement.id == "LenguajeDos") {
+                                if (act_item == dis) {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#1B75BB";
+                                    var bt = document.getElementById('btnLenguajeDos');
+                                    if (bt) bt.setAttribute('style', 'color:#fff !important');
+                                } else {
+                                    if (act_item1 == dis || act_item2 == dis) {
+                                        cont_mo.parentElement.parentElement.style.backgroundColor = "#1B2F72";
+                                        var bt = document.getElementById('btnLenguajeDos');
+                                        if (bt) bt.setAttribute('style', 'color:#fff !important');
+                                    } else {
+                                        cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                                        var bt = document.getElementById('btnLenguajeDos');
+                                        if (bt) bt.setAttribute('style', 'color:#000  !important');
+                                    }
+
+                                }
+                            }
+                        }
+
+                        //cambiar de color azulClaro a blanco
+                        if (dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
+                            && dis.parentElement.parentElement.parentElement.id == "owl-AccessTexto") {
+                            var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
+                            var cont_mo = dis.parentElement.parentElement.parentElement;
+                            if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                                && cont_mo.parentElement.parentElement.id == "modalAccessTexto") {
+                                if (act_item == dis) {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#1B75BB";
+                                    var bt = document.getElementById('btnIntroRecomendaciones');
+                                    if (bt) bt.setAttribute('style', 'color:#fff !important');
+                                } else {
                                     cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
                                     var bt = document.getElementById('btnIntroRecomendaciones');
-                                    if (bt) bt.setAttribute('style', 'color:#000 !important');
-                                } else {
-                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
-                                    var bt = document.getElementById('btnIntroRecomendaciones');
-                                    if (bt) bt.setAttribute('style', 'color:#fff  !important');
+                                    if (bt) bt.setAttribute('style', 'color:#000  !important');
                                 }
-                            }), 50);
+                            }
                         }
-                    }
-                    
+
+                        //cambiar de color azulClaro a blanco
+                        if (dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
+                            && dis.parentElement.parentElement.parentElement.id == "owl-ElaboracionV") {
+                            var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
+                            var cont_mo = dis.parentElement.parentElement.parentElement;
+                            if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                                && cont_mo.parentElement.parentElement.id == "elaboracionVideos") {
+                                if (act_item == dis) {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
+                                    var bt = document.getElementById('btnElaboracionV');
+                                    if (bt) bt.setAttribute('style', 'color:#fff !important');
+                                } else {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                                    var bt = document.getElementById('btnElaboracionV');
+                                    if (bt) bt.setAttribute('style', 'color:#000  !important');
+                                }
+                            }
+                        }
+
+                        //cambiar de color azulClaro a blanco
+                        if (dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.id
+                            && dis.parentElement.parentElement.parentElement.id == "owl-RecomendacionUno") {
+                            var act_item = dis.parentElement.getElementsByClassName('owl-page')[0];
+                            var act_item1 = dis.parentElement.getElementsByClassName('owl-page')[3];
+                            var cont_mo = dis.parentElement.parentElement.parentElement;
+                            if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
+                                && cont_mo.parentElement.parentElement.id == "recomendacionAUno") {
+                                if (act_item == dis) {
+                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
+                                    var bt = document.getElementById('btnRecomendacionUno');
+                                    if (bt) bt.setAttribute('style', 'color:#fff !important');
+                                } else {
+                                    if (act_item1 == dis) {
+                                        cont_mo.parentElement.parentElement.style.backgroundColor = "#1B2F72";
+                                        var bt = document.getElementById('btnRecomendacionUno');
+                                        if (bt) bt.setAttribute('style', 'color:#fff !important');
+                                    } else {
+                                        cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
+                                        var bt = document.getElementById('btnRecomendacionUno');
+                                        if (bt) bt.setAttribute('style', 'color:#000  !important');
+                                    }
+                                }
+                            }
+                        }
+                    }), 200);
                     //hacer largos de slider del tamaño de la modal
-                    if(this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement
-                            && this.parentElement.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.parentElement.parentElement
-                            && this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement
-                            && this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.id == "modalDialog"){
+                    if(dis.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement
+                            && dis.parentElement.parentElement.parentElement.parentElement && dis.parentElement.parentElement.parentElement.parentElement.parentElement
+                            && dis.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement
+                            && dis.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.id == "modalDialog"){
                         
-                        var cont_btns_cont =this.parentElement.parentElement.parentElement; //contenedor de silider y bolitas
+                        var cont_btns_cont =dis.parentElement.parentElement.parentElement; //contenedor de silider y bolitas
                         var itmess = cont_btns_cont.getElementsByClassName('owl-item'); // todos los items del slider
-                        var conten_b = this.parentElement;     //contenedor bolitas
+                        var conten_b = dis.parentElement;     //contenedor bolitas
                         var btnsss = conten_b.getElementsByClassName('owl-page'); //todas las bolitas
                         for(var i =0; i< btnsss.length; i++){
-                            if(btnsss[i] == this){//cuando la bolita esté activa, igualar al item del slider
+                            if(btnsss[i] == dis){//cuando la bolita esté activa, igualar al item del slider
                                 var ahora = itmess[i]; //item de slider activo
                                 break;       
                             }
@@ -557,97 +654,7 @@ if (typeof Object.create !== "function") {
                         //modalDialog
                     }
 
-                    //cambiar de color azulClaro a blanco
-                    if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
-                        && this.parentElement.parentElement.parentElement.id == "owl-lenguajeDos") {
-                        var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
-                        var act_item1 = this.parentElement.getElementsByClassName('owl-page')[5];
-                        var act_item2 = this.parentElement.getElementsByClassName('owl-page')[7];
-                        var cont_mo = this.parentElement.parentElement.parentElement;
-                        if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
-                            && cont_mo.parentElement.parentElement.id == "LenguajeDos") {
-                            if (act_item == this) {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#1B75BB";
-                                var bt = document.getElementById('btnLenguajeDos');
-                                if (bt) bt.setAttribute('style', 'color:#fff !important');
-                            } else {
-                                if (act_item1 == this || act_item2 == this) {
-                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#1B2F72";
-                                    var bt = document.getElementById('btnLenguajeDos');
-                                    if (bt) bt.setAttribute('style', 'color:#fff !important');
-                                } else {
-                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
-                                    var bt = document.getElementById('btnLenguajeDos');
-                                    if (bt) bt.setAttribute('style', 'color:#000  !important');
-                                }
-
-                            }
-                        }
-                    }
-
-                    //cambiar de color azulClaro a blanco
-                    if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
-                        && this.parentElement.parentElement.parentElement.id == "owl-AccessTexto") {
-                        var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
-                        var cont_mo = this.parentElement.parentElement.parentElement;
-                        if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
-                            && cont_mo.parentElement.parentElement.id == "modalAccessTexto") {
-                            if (act_item == this) {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#1B75BB";
-                                var bt = document.getElementById('btnIntroRecomendaciones');
-                                if (bt) bt.setAttribute('style', 'color:#fff !important');
-                            } else {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
-                                var bt = document.getElementById('btnIntroRecomendaciones');
-                                if (bt) bt.setAttribute('style', 'color:#000  !important');
-                            }
-                        }
-                    }
-
-                    //cambiar de color azulClaro a blanco
-                    if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
-                        && this.parentElement.parentElement.parentElement.id == "owl-ElaboracionV") {
-                        var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
-                        var cont_mo = this.parentElement.parentElement.parentElement;
-                        if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
-                            && cont_mo.parentElement.parentElement.id == "elaboracionVideos") {
-                            if (act_item == this) {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
-                                var bt = document.getElementById('btnElaboracionV');
-                                if (bt) bt.setAttribute('style', 'color:#fff !important');
-                            } else {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
-                                var bt = document.getElementById('btnElaboracionV');
-                                if (bt) bt.setAttribute('style', 'color:#000  !important');
-                            }
-                        }
-                    }
-
-                    //cambiar de color azulClaro a blanco
-                    if (this.parentElement.parentElement.parentElement && this.parentElement.parentElement.parentElement.id
-                        && this.parentElement.parentElement.parentElement.id == "owl-RecomendacionUno") {
-                        var act_item = this.parentElement.getElementsByClassName('owl-page')[0];
-                        var act_item1 = this.parentElement.getElementsByClassName('owl-page')[3];
-                        var cont_mo = this.parentElement.parentElement.parentElement;
-                        if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
-                            && cont_mo.parentElement.parentElement.id == "recomendacionAUno") {
-                            if (act_item == this) {
-                                cont_mo.parentElement.parentElement.style.backgroundColor = "#237D34";
-                                var bt = document.getElementById('btnRecomendacionUno');
-                                if (bt) bt.setAttribute('style', 'color:#fff !important');
-                            } else {
-                                if (act_item1 == this) {
-                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#1B2F72";
-                                    var bt = document.getElementById('btnRecomendacionUno');
-                                    if (bt) bt.setAttribute('style', 'color:#fff !important');
-                                } else {
-                                    cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
-                                    var bt = document.getElementById('btnRecomendacionUno');
-                                    if (bt) bt.setAttribute('style', 'color:#000  !important');
-                                }
-                            }
-                        }
-                    }
+                        
                 }
             });
         },

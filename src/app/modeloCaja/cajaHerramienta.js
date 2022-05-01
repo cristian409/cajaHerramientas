@@ -3,12 +3,13 @@
 import Ayudas from "../../assets/js/ayudas.js";
 import Modal from "../modales/modal.js";
 
+
 document.addEventListener('DOMContentLoaded', async event => {
     await Ayudas.cargarPagina(
         "menuMobile",
         "../mobile/menuMobile.html"
     ).then(
-        gestionarMetodos,
+       gestionarMetodos,
     ).catch(error => {
         Ayudas.alerta("cajaPrincipal",
             "Imposible acceder al menu", error);
@@ -485,7 +486,7 @@ let botonesIntroduccionWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 5000);
     }, false);
     imgGuiaVerifica.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
