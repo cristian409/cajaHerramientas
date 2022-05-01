@@ -515,8 +515,8 @@ if (typeof Object.create !== "function") {
                             var cont_mo = dis.parentElement.parentElement.parentElement;
                             if (cont_mo.parentElement.parentElement && cont_mo.parentElement.parentElement.id
                                 && cont_mo.parentElement.parentElement.id == "modalRecomendaciones") {
-                                console.log(3)
-                                    if (act_item != dis) {
+
+                                if (act_item != dis) {
                                         cont_mo.parentElement.parentElement.style.backgroundColor = "#fff";
                                         var bt = document.getElementById('btnIntroRecomendaciones');
                                         if (bt) bt.setAttribute('style', 'color:#000 !important');

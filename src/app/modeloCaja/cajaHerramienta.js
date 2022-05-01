@@ -65,7 +65,7 @@ let botonesIntroduccion = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
     document.getElementById("btnGuiaVerificacion").addEventListener('click', (event) => {
         event.preventDefault();
@@ -94,7 +94,7 @@ let botonesLenguaje = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
 
     document.getElementById("btnGuiaVerificacionL").addEventListener('click', (event) => {
@@ -118,7 +118,7 @@ let botonesAccesibilidad = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
 
     document.getElementById("btnAccessImg").addEventListener('click', (event) => {
@@ -147,7 +147,7 @@ let botonesMaterialAudio = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
 
     document.getElementById("btnUso").addEventListener('click', (event) => {
@@ -197,7 +197,7 @@ let botonesRecomendacion = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
 
     document.getElementById("btnDiscapacidad").addEventListener('click', (event) => {
@@ -486,7 +486,7 @@ let botonesIntroduccionWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 5000);
+        }, 300);
     }, false);
     imgGuiaVerifica.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
@@ -515,7 +515,7 @@ let botonesLenguajeWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
     imgLenguajeTres.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/002 LENGUAJE GUÍA DE VERIFICACIÓN.pdf")
@@ -543,7 +543,7 @@ let botonesAccesibilidadWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
     imgAccesibilidadVerificacion.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/003 ACCESIBILIDAD GUÍA DE VERIFICACIÓN.pdf")
@@ -574,7 +574,7 @@ let botonesMaterialAudioWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
 
     imgMaterialAudioTres.addEventListener('click', () => {
@@ -660,7 +660,7 @@ let botonesRecomendacionWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 20);
+        }, 300);
     });
     imgRecomendacionDiscapacidad.addEventListener('click', () => {
         Modal.desplegarRecomendacionAtencionDos();
