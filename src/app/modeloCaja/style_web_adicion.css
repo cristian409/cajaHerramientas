@@ -41,3 +41,8 @@
     margin-top: -5vh !important;
     width: 34vw !important;
 }
+
+.contentPortada .container .nube.derecha, .contentInterna .nube.derecha {
+    left: 55%;
+    top: -47px;
+}
