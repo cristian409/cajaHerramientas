@@ -56,9 +56,9 @@ body strong {
 }
 
 .contentPortada .container.contentImg {
-    width: 50%;
-    margin-top: -21vh;
-    max-height: 60vh;
+    width: 44%;
+    margin-top: 0;
+    max-height: 43vh;
 }
 
 .contentPortada .contentTitulo {
@@ -162,7 +162,7 @@ body strong {
 
 @media screen and (min-device-width: 1700px) {
     .contentPortada .container.contentImg {
-        width: 46% !important;
+        width: 44% !important;
     }
 
     .contentInterna .seccion {
