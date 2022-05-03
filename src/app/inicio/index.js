@@ -62,11 +62,25 @@ let abrirSeccionInterna = elemento => {
         let l_l_ave = svg_opening.getElementById('LLAVE');
         if(l_l_ave){
             l_l_ave.addEventListener("mouseover", () => {
-                l_l_ave.style.filter = "drop-shadow(-4px 10px 12px #fff) brightness(1)"
+                l_l_ave.style.filter = "drop-shadow(-5px 10px 10px #fff) brightness(1)"
                 l_l_ave.style.cursor = "pointer";
             });
             l_l_ave.addEventListener('mouseout', () => {
                 l_l_ave.style.filter = ""
+            });
+            l_l_ave.addEventListener('click', (event) => {
+                event.preventDefault;
+                setTimeout(() => {
+                    Ayudas.cargarPagina(
+                        `${elemento}`,
+                        "app/paginaPortada/portadaInterna.html"
+                    ).then(
+                        abrirCajaHerramientas
+                    ).catch(error => {
+                        Ayudas.alerta("contentPaginaInicio",
+                            "No se encuentra la página de seccion interna", error);
+                    });
+                }, 1000);
             });
         }
     }, 1000);
