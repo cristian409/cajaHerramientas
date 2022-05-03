@@ -54,7 +54,7 @@
 }
 #EVALUACIONMATERIAL:hover,
 #EVALUACIONAUDIOVISUAL:hover,
-#EVALUACIONDOCUMENTAL:hover{filter: drop-shadow(0px 0px 50px #000) brightness(2);}
+#EVALUACIONDOCUMENTAL:hover{filter: drop-shadow(0px 0px 50px #ffe000) brightness(2);}
 
 #MUÑECOACCESOIMAGENES:hover,
 #MUÑECOACCESIBILIDADTEXTOS:hover,
@@ -94,6 +94,9 @@
 #RECOMENDACIONESPARALATENCION:hover,
 /*#REFERENCIAS:hover,*/
 #GLOSARIOYBIBLIOGRAFIA:hover,
-.tuerca_alumbra{filter: drop-shadow(2px 0px 5px #fff) brightness(1.15);;}
+.tuerca_alumbra{
+    filter: drop-shadow(2px 0px 5px #fff) brightness(1.15);
+    cursor: pointer;
+}
 
 .menu_cambio path.cls-1 {    fill: #000;}
