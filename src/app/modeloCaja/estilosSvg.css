@@ -48,14 +48,15 @@
 #USOVIDEOS:hover,
 #GUIAIMAGENES:hover,
 #GUIAVIDEO:hover,
-#EVALUACIONMATERIAL:hover,
-#EVALUACIONAUDIOVISUAL:hover,
-#EVALUACIONDOCUMENTAL:hover,
 #GLOSARIO:hover,
 #BIBLIOGRAFIA:hover,
 #PROCESOSDECUALIFICACION:hover  {
-    filter: grayscale(100%);
+    /*filter: grayscale(100%);*/
+    filter: drop-shadow(0px 0px 70px #fff) brightness(1.2);
 }
+#EVALUACIONMATERIAL:hover,
+#EVALUACIONAUDIOVISUAL:hover,
+#EVALUACIONDOCUMENTAL:hover{filter: drop-shadow(0px 0px 50px #000) brightness(2);}
 
 #GLOBOLENGUAJECOMOLUCHA:hover,
 #RECOMENDACIONES:hover,
@@ -63,5 +64,31 @@
 #ATENCIONINCLUSIVA:hover,
 #PERSONASTRANSYNOBINARIAS:hover,
 #PERSONASCONDISCAPACIDAD:hover {
-    filter: opacity(.5);
+    /*filter: opacity(.5);*/
+    animation: example 1s infinite;
 }
+
+
+@keyframes example {
+  0%   {filter: drop-shadow(0px 0px 10px #000) brightness(.5);}
+  50%  {filter: drop-shadow(0px 0px 20px #fff) brightness(1.5);}
+  100%   {filter: drop-shadow(0px 0px 10px #000) brightness(.5);}
+}
+
+#ORGANIZACIONESYPROYECTOSBOMBILLO:hover, #ORGANIZACIONESYPROYECTOSAPAGADO:hover,
+#MATERIALAUDIOVISUALBOMBILLO:hover,
+#RECURSOSWEBBOMBILLO:hover,
+#ARTICULOSBOMBILLO:hover,
+#TALLERISTASBOMBILLO:hover,
+#RECURSOSEDUCATIVOSBOMBILLO:hover,
+#DOCUMENTOBOMBILLO:hover{filter: drop-shadow(0px 0px 50px #ffe000) brightness(10);}
+
+
+#INTRODUCCION:hover,
+#LENGUAJE-2:hover,
+#ACCESIBILIDAD:hover,
+#MATERIALAUDIOVISUAL:hover,
+#EVALUACIONDELOSMATERIALES:hover,
+#RECOMENDACIONESPARALATENCION:hover,
+/*#REFERENCIAS:hover,*/
+#GLOSARIOYBIBLIOGRAFIA:hover{filter: drop-shadow(2px 0px 5px #fff);}

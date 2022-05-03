@@ -3,8 +3,8 @@
 import Ayudas from "../../assets/js/ayudas.js";
 import Modal from "../modales/modal.js";
 
-
 document.addEventListener('DOMContentLoaded', async event => {
+
     await Ayudas.cargarPagina(
         "menuMobile",
         "../mobile/menuMobile.html"
@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', async event => {
     });
 
     await Modal.crear();
+
 });
+
 
 let gestionarMetodos = () => {
     cambiarColorMenu();
@@ -31,6 +33,41 @@ let gestionarMetodos = () => {
     botonesInfoAdicional();
 
     leerSvg();
+    
+    
+   
+    
+    setTimeout((function() {
+        console.log(20);
+        cambiarColorMenu();
+
+        botonesIntroduccion();
+        botonesLenguaje();
+        botonesAccesibilidad();
+        botonesMaterialAudio();
+        botonesEvaluacionMaterial();
+        botonesRecomendacion();
+        botonRecomendacion();
+        botonesInfoAdicional();
+
+        leerSvg();
+    }), 20000);
+    setTimeout((function() {
+        console.log(60);
+        cambiarColorMenu();
+
+        botonesIntroduccion();
+        botonesLenguaje();
+        botonesAccesibilidad();
+        botonesMaterialAudio();
+        botonesEvaluacionMaterial();
+        botonesRecomendacion();
+        botonRecomendacion();
+        botonesInfoAdicional();
+
+        leerSvg();
+    }), 60000);
+        
 }
 
 let cambiarColorMenu = () => {
@@ -65,7 +102,7 @@ let botonesIntroduccion = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
     document.getElementById("btnGuiaVerificacion").addEventListener('click', (event) => {
         event.preventDefault();
@@ -94,7 +131,7 @@ let botonesLenguaje = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
 
     document.getElementById("btnGuiaVerificacionL").addEventListener('click', (event) => {
@@ -118,7 +155,7 @@ let botonesAccesibilidad = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
 
     document.getElementById("btnAccessImg").addEventListener('click', (event) => {
@@ -147,7 +184,7 @@ let botonesMaterialAudio = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
 
     document.getElementById("btnUso").addEventListener('click', (event) => {
@@ -197,7 +234,7 @@ let botonesRecomendacion = () => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
 
     document.getElementById("btnDiscapacidad").addEventListener('click', (event) => {
@@ -242,13 +279,15 @@ let leerSvg = () => {
     let svgLenguaje = document.getElementById("svgLenguaje");
     let svgAccesibilidad = document.getElementById("svgAccesibilidad");
     let svgMaterialAudio = document.getElementById("svgMaterialAudio");
+    
     let svgEvalucion = document.getElementById("svgEvalucion");
     let svgRecomendaciones = document.getElementById("svgRecomendaciones");
     let svgReferencias = document.getElementById("svgReferencias");
     let svgInfoAdicional = document.getElementById("svgInfoAdicional");
+    console.log('svgInfoAdicional',svgInfoAdicional);
     let svgDoc;
     let svgMenuWeb = document.getElementById("svgMenuWeb");
-
+    /*
     svgMenuWeb.addEventListener("load", () => {
         svgDoc = svgMenuWeb.contentDocument;
 
@@ -278,8 +317,9 @@ let leerSvg = () => {
         abrirCssSvg(svgDoc);
         botonesAccesibilidadWeb(svgDoc);
     }, false);
-
+    console.log('11111111');
     svgMaterialAudio.addEventListener('load', () => {
+        console.log('aquii');
         svgDoc = svgMaterialAudio.contentDocument;
 
         abrirCssSvg(svgDoc);
@@ -313,7 +353,53 @@ let leerSvg = () => {
 
         abrirCssSvg(svgDoc);
         botonesInfoAdicionalWeb(svgDoc);
-    }, false);
+    }, false);*/
+    
+        svgDoc = svgMenuWeb.contentDocument;
+        abrirCssSvg(svgDoc);
+        /*cambiarColorMenuWeb(svgDoc);
+        indicarSeccionWeb(svgDoc);
+        botonesMenuWeb(svgDoc);*/
+
+
+        svgDoc = svgIntroduccion.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesIntroduccionWeb(svgDoc);
+
+        svgDoc = svgLenguaje.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesLenguajeWeb(svgDoc);
+
+
+        svgDoc = svgAccesibilidad.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesAccesibilidadWeb(svgDoc);
+
+        
+        svgDoc = svgMaterialAudio.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesMaterialAudioWeb(svgDoc);
+
+
+        svgDoc = svgEvalucion.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesEvaluacionWeb(svgDoc);
+
+        svgDoc = svgRecomendaciones.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesRecomendacionWeb(svgDoc);
+
+
+        svgDoc = svgReferencias.contentDocument;
+        abrirCssSvg(svgDoc);
+        //botonesReferenciasWeb(svgDoc);
+
+        svgDoc = svgInfoAdicional.contentDocument;
+        abrirCssSvg(svgDoc);
+        botonesInfoAdicionalWeb(svgDoc);
+        
+        
+        
 }
 
 let cambiarColorMenuWeb = (svgDoc) => {
@@ -486,7 +572,7 @@ let botonesIntroduccionWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     }, false);
     imgGuiaVerifica.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
@@ -515,7 +601,7 @@ let botonesLenguajeWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
     imgLenguajeTres.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/002 LENGUAJE GUÍA DE VERIFICACIÓN.pdf")
@@ -543,7 +629,7 @@ let botonesAccesibilidadWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
     imgAccesibilidadVerificacion.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/003 ACCESIBILIDAD GUÍA DE VERIFICACIÓN.pdf")
@@ -574,7 +660,7 @@ let botonesMaterialAudioWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
 
     imgMaterialAudioTres.addEventListener('click', () => {
@@ -660,7 +746,7 @@ let botonesRecomendacionWeb = (svgDoc) => {
                     itemsDesktopSmall: [414, 4]
                 });
             });
-        }, 300);
+        }, 500);
     });
     imgRecomendacionDiscapacidad.addEventListener('click', () => {
         Modal.desplegarRecomendacionAtencionDos();

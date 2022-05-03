@@ -58,6 +58,7 @@ body strong {
 .contentPortada .container.contentImg {
     width: 50%;
     margin-top: -21vh;
+    max-height: 60vh;
 }
 
 .contentPortada .contentTitulo {
@@ -110,7 +111,6 @@ body strong {
 .contentPortada .container .nube.derecha,
 .contentInterna .nube.derecha {
     left: 55%;
-    top: -10px;
 }
 
 .contentInterna .nube.izquierda,
@@ -162,7 +162,7 @@ body strong {
 
 @media screen and (min-device-width: 1700px) {
     .contentPortada .container.contentImg {
-        width: 50% !important;
+        width: 46% !important;
     }
 
     .contentInterna .seccion {
