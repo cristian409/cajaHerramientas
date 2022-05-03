@@ -91,4 +91,5 @@
 #EVALUACIONDELOSMATERIALES:hover,
 #RECOMENDACIONESPARALATENCION:hover,
 /*#REFERENCIAS:hover,*/
-#GLOSARIOYBIBLIOGRAFIA:hover{filter: drop-shadow(2px 0px 5px #fff);}
+#GLOSARIOYBIBLIOGRAFIA:hover,
+.tuerca_alumbra{filter: drop-shadow(2px 0px 5px #fff);}
