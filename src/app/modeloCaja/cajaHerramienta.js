@@ -34,10 +34,7 @@ let gestionarMetodos = () => {
 
     leerSvg();
     
-    
-   
-    
-    setTimeout((function() {
+    /*setTimeout((function() {
         console.log(20);
         cambiarColorMenu();
 
@@ -51,22 +48,8 @@ let gestionarMetodos = () => {
         botonesInfoAdicional();
 
         leerSvg();
-    }), 20000);
-    setTimeout((function() {
-        console.log(60);
-        cambiarColorMenu();
-
-        botonesIntroduccion();
-        botonesLenguaje();
-        botonesAccesibilidad();
-        botonesMaterialAudio();
-        botonesEvaluacionMaterial();
-        botonesRecomendacion();
-        botonRecomendacion();
-        botonesInfoAdicional();
-
-        leerSvg();
-    }), 60000);
+    }), 20000);*/
+    
         
 }
 
@@ -284,7 +267,6 @@ let leerSvg = () => {
     let svgRecomendaciones = document.getElementById("svgRecomendaciones");
     let svgReferencias = document.getElementById("svgReferencias");
     let svgInfoAdicional = document.getElementById("svgInfoAdicional");
-    console.log('svgInfoAdicional',svgInfoAdicional);
     let svgDoc;
     let svgMenuWeb = document.getElementById("svgMenuWeb");
     /*
@@ -357,9 +339,9 @@ let leerSvg = () => {
     
         svgDoc = svgMenuWeb.contentDocument;
         abrirCssSvg(svgDoc);
-        /*cambiarColorMenuWeb(svgDoc);
-        indicarSeccionWeb(svgDoc);
-        botonesMenuWeb(svgDoc);*/
+        cambiarColorMenuWeb(svgDoc);
+        //indicarSeccionWeb(svgDoc);
+        botonesMenuWeb(svgDoc);
 
 
         svgDoc = svgIntroduccion.contentDocument;
@@ -403,26 +385,22 @@ let leerSvg = () => {
 }
 
 let cambiarColorMenuWeb = (svgDoc) => {
+    let scrollTop = document.documentElement.scrollTop;
+    indicarSeccionWeb(svgDoc, scrollTop);
 
     window.addEventListener('scroll', () => {
         let scrollTop = document.documentElement.scrollTop;
-        let txtsMenus = svgDoc.getElementById("MENU").getElementsByTagName('text');
-        if (scrollTop > 880 && scrollTop < 2800) {
-            for (let i = 0; i < txtsMenus.length; i++) {
-                txtsMenus[i].style.fill = "#000";
-            }
-        } else {
-            for (let i = 0; i < txtsMenus.length; i++) {
-                txtsMenus[i].style.fill = "#ffff";
-            }
-        }
+        let txtsMenus = svgDoc.getElementById("MENÚ");
+        if (scrollTop > 1500 && scrollTop < 3300) txtsMenus.classList.add("menu_cambio");
+        else txtsMenus.classList.remove("menu_cambio");
+        indicarSeccionWeb(svgDoc, scrollTop);
+
     });
 }
 
-let indicarSeccionWeb = (svgDoc) => {
+let indicarSeccionWeb = (svgDoc, scrollTop) => {
 
-    window.addEventListener('scroll', () => {
-        let scrollTop = document.documentElement.scrollTop;
+        /*let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 0 && scrollTop < 250) {
             svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION").style.display = "none";
             svgDoc.getElementById("TUERCAENCENDIDAINTRODUCCION").style.display = "block";
@@ -468,22 +446,81 @@ let indicarSeccionWeb = (svgDoc) => {
             svgDoc.getElementById("TUERCAENCENDIDAREFERENCIA").style.display = "none";
             svgDoc.getElementById("TUERCAAPAGADAINFOADICIONAL").style.display = "none";
             svgDoc.getElementById("TUERCAENCENDIDAINFOADICIONAL").style.display = "block";
+        }*/
+        var arr_nodos_menu = [ 'INTRODUCCION', 'LENGUAJE-2', 'ACCESIBILIDAD',
+                               'MATERIALAUDIOVISUAL', 'EVALUACIONDELOSMATERIALES', 
+                               'RECOMENDACIONESPARALATENCION', 'REFERENCIAS','GLOSARIOYBIBLIOGRAFIA']
+
+        if (scrollTop >= 0 && scrollTop <= 400) {
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 0) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
         }
-    }, false);
+        else if (scrollTop > 400 && scrollTop <= 1500) {//lenguaje
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 1) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
+        else if (scrollTop > 1500 && scrollTop <= 2500) {//accesibilidad
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 2) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
+        else if (scrollTop > 2500 && scrollTop <= 3300) {//material
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 3) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
+        else if (scrollTop > 3300 && scrollTop <= 4600) {//evaluacion
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 4) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
+        else if (scrollTop > 4600 && scrollTop <= 5600) {//Recomenda
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 5) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
+        else if (scrollTop > 5600 && scrollTop <= 6500) {//referencias
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 6) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
+        else  if (scrollTop > 6500){//glosario
+            for(var i in arr_nodos_menu){
+                var iddd= arr_nodos_menu[i];
+                if(i == 7) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
+            }
+        }
 
 }
 
 let botonesMenuWeb = (svgDoc) => {
 
-    let introduccion = svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION");
-    let lenguaje = svgDoc.getElementById("TUERCAAPAGADALENGUAJE");
-    let accesibilidad = svgDoc.getElementById("TUERCAAPAGADAACCESIBILIDAD");
-    let material = svgDoc.getElementById("TUERCAAPAGADAMATERIAL");
-    let evaluacion = svgDoc.getElementById("TUERCAAPAGADAEVALUACION");
-    let recomendacion = svgDoc.getElementById("TUERCAAPAGADARECOMENDACION");
-    let referencia = svgDoc.getElementById("TUERCAAPAGADAREFERENCIA");
-    let infoAdiconal = svgDoc.getElementById("TUERCAAPAGADAINFOADICIONAL");
-    let txtsMenus = svgDoc.getElementById("MENU").getElementsByTagName('text');
+    let introduccion = svgDoc.getElementById("INTRODUCCION");
+    let lenguaje = svgDoc.getElementById("LENGUAJE-2");
+    let accesibilidad = svgDoc.getElementById("ACCESIBILIDAD");
+    let material = svgDoc.getElementById("MATERIALAUDIOVISUAL");
+    let evaluacion = svgDoc.getElementById("EVALUACIONDELOSMATERIALES");
+    let recomendacion = svgDoc.getElementById("RECOMENDACIONESPARALATENCION");
+    let referencia = svgDoc.getElementById("REFERENCIAS");
+    let infoAdiconal = svgDoc.getElementById("GLOSARIOYBIBLIOGRAFIA");
+    let txtsMenus = svgDoc.getElementById("MENÚ").getElementsByTagName('text');
 
     introduccion.addEventListener('click', () => {
         location.hash = "#introduccionSeccion";
@@ -516,7 +553,7 @@ let botonesMenuWeb = (svgDoc) => {
     infoAdiconal.addEventListener('click', () => {
         location.hash = "#infoAdicionalSeccion";
     }, false);
-
+    /*
     txtsMenus[0].addEventListener('click', () => {
         location.hash = "#introduccionSeccion";
     }, false);
@@ -547,7 +584,7 @@ let botonesMenuWeb = (svgDoc) => {
 
     txtsMenus[7].addEventListener('click', () => {
         location.hash = "#infoAdicionalSeccion";
-    }, false);
+    }, false);*/
 
 }
 
