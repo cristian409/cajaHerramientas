@@ -16,6 +16,7 @@
 .cajaPrincipal .referencias,
 .cajaPrincipal .infoAdicional {
     padding: 4vh 0 0 0;
+    min-height: 100vh;
 }
 
 
@@ -206,7 +207,7 @@
 .cajaPrincipal .recomendacionesA .parrafoTituloWeb,
 .cajaPrincipal .referencias .parrafoTituloWeb,
 .cajaPrincipal .infoAdicional .parrafoTituloWeb {
-    line-height: 2.4vh;
+    line-height: 3vh;
     font-size: 1.4vw;
     padding: 0 32vw;
 }

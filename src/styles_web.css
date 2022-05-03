@@ -56,8 +56,9 @@ body strong {
 }
 
 .contentPortada .container.contentImg {
-    width: 50%;
-    margin-top: -21vh;
+    width: 44%;
+    margin-top: 0;
+    max-height: 43vh;
 }
 
 .contentPortada .contentTitulo {
@@ -110,7 +111,10 @@ body strong {
 .contentPortada .container .nube.derecha,
 .contentInterna .nube.derecha {
     left: 55%;
+<<<<<<< HEAD
     top: -46px;
+=======
+>>>>>>> a69a4009ce799212b29ff093691f0d569def7254
 }
 
 .contentInterna .nube.izquierda,
@@ -162,7 +166,7 @@ body strong {
 
 @media screen and (min-device-width: 1700px) {
     .contentPortada .container.contentImg {
-        width: 50% !important;
+        width: 44% !important;
     }
 
     .contentInterna .seccion {
