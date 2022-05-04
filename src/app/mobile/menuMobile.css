@@ -3,12 +3,36 @@
 }
 
 .cajaPrincipal .menuMobile .navbar-nav {
-    padding-top: 6vh !important;
-    padding-left: 5vw;
+    padding: 7vh 0 7vh 5vw;
 }
 
 .cajaPrincipal .menuMobile {
-    padding: 1vh 4vw 0 0;
+    padding-left: 2vw;
+}
+
+.cajaPrincipal .colorMenu {
+    background-color: #C63D96;
+}
+
+.cajaPrincipal .nav-item .estrellaMobile {
+    width: 4vw;
+    margin: 9px 0;
+}
+
+.cajaPrincipal .navbar-nav .nav-item {
+    font-family: Myriad Pro Bold;
+    margin-left: 12vw;
+    font-size: 6.3vw;
+    line-height: 3vh;
+}
+
+.cajaPrincipal .navbar-nav a {
+    color: #fff;
+}
+
+.cajaPrincipal .navbar-nav .nav-item.evaluacion,
+.cajaPrincipal .navbar-nav .nav-item.recomendacion {
+    padding: 0 9vw;
 }
 
 @media (min-width:768px) {

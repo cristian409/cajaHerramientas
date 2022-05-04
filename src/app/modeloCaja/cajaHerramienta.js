@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async event => {
         "menuMobile",
         "../mobile/menuMobile.html"
     ).then(
-       gestionarMetodos,
+        gestionarMetodos,
     ).catch(error => {
         Ayudas.alerta("cajaPrincipal",
             "Imposible acceder al menu", error);
@@ -32,25 +32,7 @@ let gestionarMetodos = () => {
     botonRecomendacion();
     botonesInfoAdicional();
 
-    leerSvg();
-    
-    /*setTimeout((function() {
-        console.log(20);
-        cambiarColorMenu();
-
-        botonesIntroduccion();
-        botonesLenguaje();
-        botonesAccesibilidad();
-        botonesMaterialAudio();
-        botonesEvaluacionMaterial();
-        botonesRecomendacion();
-        botonRecomendacion();
-        botonesInfoAdicional();
-
-        leerSvg();
-    }), 20000);*/
-    
-        
+    if(screen.width > 1024) leerSvg();
 }
 
 let cambiarColorMenu = () => {
@@ -63,14 +45,14 @@ let cambiarColorMenu = () => {
         } else {
             menu.style.color = "#ffff";
         }
-    });
+    }, false);
 }
 
 let botonesIntroduccion = () => {
     document.getElementById("btnMarco").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarMarcoNormativo();
-    });
+    }, false);
 
     document.getElementById("btnRecomendaciones").addEventListener('click', (event) => {
         event.preventDefault();
@@ -86,11 +68,11 @@ let botonesIntroduccion = () => {
                 });
             });
         }, 500);
-    });
+    }, false);
     document.getElementById("btnGuiaVerificacion").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/001 INTRODUCCION GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 }
 
 
@@ -99,7 +81,7 @@ let botonesLenguaje = () => {
     document.getElementById("btnLenguaje").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarLenguajeUno();
-    });
+    }, false);
 
     document.getElementById("btnRecomendacionesL").addEventListener('click', (event) => {
         event.preventDefault();
@@ -115,12 +97,12 @@ let botonesLenguaje = () => {
                 });
             });
         }, 500);
-    });
+    }, false);
 
     document.getElementById("btnGuiaVerificacionL").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/002 LENGUAJE GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 }
 
 
@@ -139,17 +121,17 @@ let botonesAccesibilidad = () => {
                 });
             });
         }, 500);
-    });
+    }, false);
 
     document.getElementById("btnAccessImg").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarAccesoImg();
-    });
+    }, false);
 
     document.getElementById("btnGuiaVerificacionA").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/003 ACCESIBILIDAD GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 }
 
 
@@ -168,39 +150,39 @@ let botonesMaterialAudio = () => {
                 });
             });
         }, 500);
-    });
+    }, false);
 
     document.getElementById("btnUso").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarUsoImagenes();
-    });
+    }, false);
 
     document.getElementById("btnGuiaVerificacionV").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_2 MATERIAL AUD AUDIOVISUAL GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 
     document.getElementById("btnGuiaVerificacionI").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_1 MATERIAL AUD IMÁGENES GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 }
 
 let botonesEvaluacionMaterial = () => {
     document.getElementById("btnEvaluacionM").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarEvaluacionMaterial();
-    });
+    }, false);
 
     document.getElementById("btnEvaluacionA").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL AUDIOVISUAL.pdf");
-    });
+    }, false);
 
     document.getElementById("btnEvaluacionD").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL DOCUMENTAL.pdf");
-    });
+    }, false);
 }
 
 let botonesRecomendacion = () => {
@@ -218,24 +200,24 @@ let botonesRecomendacion = () => {
                 });
             });
         }, 500);
-    });
+    }, false);
 
     document.getElementById("btnDiscapacidad").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarRecomendacionAtencionDos();
-    });
+    }, false);
 
     document.getElementById("btnClaves").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarRecomendacionAtencionTres();
-    });
+    }, false);
 }
 
 let botonRecomendacion = () => {
     document.getElementById("btnDescargaRe").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS MOBILE/REFERENCIAS.pdf");
-    });
+    }, false);
 }
 
 
@@ -243,17 +225,17 @@ let botonesInfoAdicional = () => {
     document.getElementById("btnProceso").addEventListener('click', (event) => {
         event.preventDefault();
         window.open("../../assets/imagenes/RECURSOS PC/008_RECOMENDACIONES PROCESO DE CUALIFICACION.pdf");
-    });
+    }, false);
 
     document.getElementById("btnGlosario").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarGlosario();
-    });
+    }, false);
 
     document.getElementById("btnBibliografia").addEventListener('click', (event) => {
         event.preventDefault();
         Modal.desplegarBibliografia();
-    });
+    }, false);
 }
 
 let leerSvg = () => {
@@ -262,126 +244,56 @@ let leerSvg = () => {
     let svgLenguaje = document.getElementById("svgLenguaje");
     let svgAccesibilidad = document.getElementById("svgAccesibilidad");
     let svgMaterialAudio = document.getElementById("svgMaterialAudio");
-    
+
     let svgEvalucion = document.getElementById("svgEvalucion");
     let svgRecomendaciones = document.getElementById("svgRecomendaciones");
     let svgReferencias = document.getElementById("svgReferencias");
     let svgInfoAdicional = document.getElementById("svgInfoAdicional");
     let svgDoc;
     let svgMenuWeb = document.getElementById("svgMenuWeb");
-    /*
-    svgMenuWeb.addEventListener("load", () => {
-        svgDoc = svgMenuWeb.contentDocument;
 
-        abrirCssSvg(svgDoc);
-        cambiarColorMenuWeb(svgDoc);
-        indicarSeccionWeb(svgDoc);
-        botonesMenuWeb(svgDoc);
-    }, false);
-
-    svgIntroduccion.addEventListener("load", () => {
-        svgDoc = svgIntroduccion.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesIntroduccionWeb(svgDoc);
-    }, false);
-
-    svgLenguaje.addEventListener('load', () => {
-        svgDoc = svgLenguaje.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesLenguajeWeb(svgDoc);
-    }, false);
-
-    svgAccesibilidad.addEventListener('load', () => {
-        svgDoc = svgAccesibilidad.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesAccesibilidadWeb(svgDoc);
-    }, false);
-    console.log('11111111');
-    svgMaterialAudio.addEventListener('load', () => {
-        console.log('aquii');
-        svgDoc = svgMaterialAudio.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesMaterialAudioWeb(svgDoc);
-    }, false);
-
-    svgEvalucion.addEventListener('load', () => {
-        svgDoc = svgEvalucion.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesEvaluacionWeb(svgDoc);
-    }, false);
-
-    svgRecomendaciones.addEventListener('load', () => {
-        svgDoc = svgRecomendaciones.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesRecomendacionWeb(svgDoc);
-    }, false);
+    svgDoc = svgMenuWeb.contentDocument;
+    abrirCssSvg(svgDoc);
+    cambiarColorMenuWeb(svgDoc);
+    botonesMenuWeb(svgDoc);
 
 
-    svgReferencias.addEventListener('load', () => {
-        svgDoc = svgReferencias.contentDocument;
+    svgDoc = svgIntroduccion.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesIntroduccionWeb(svgDoc);
 
-        abrirCssSvg(svgDoc);
-        botonesReferenciasWeb(svgDoc);
-    }, false);
-
-    svgInfoAdicional.addEventListener('load', () => {
-        svgDoc = svgInfoAdicional.contentDocument;
-
-        abrirCssSvg(svgDoc);
-        botonesInfoAdicionalWeb(svgDoc);
-    }, false);*/
-    
-        svgDoc = svgMenuWeb.contentDocument;
-        abrirCssSvg(svgDoc);
-        cambiarColorMenuWeb(svgDoc);
-        //indicarSeccionWeb(svgDoc);
-        botonesMenuWeb(svgDoc);
+    svgDoc = svgLenguaje.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesLenguajeWeb(svgDoc);
 
 
-        svgDoc = svgIntroduccion.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesIntroduccionWeb(svgDoc);
-
-        svgDoc = svgLenguaje.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesLenguajeWeb(svgDoc);
+    svgDoc = svgAccesibilidad.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesAccesibilidadWeb(svgDoc);
 
 
-        svgDoc = svgAccesibilidad.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesAccesibilidadWeb(svgDoc);
-
-        
-        svgDoc = svgMaterialAudio.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesMaterialAudioWeb(svgDoc);
+    svgDoc = svgMaterialAudio.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesMaterialAudioWeb(svgDoc);
 
 
-        svgDoc = svgEvalucion.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesEvaluacionWeb(svgDoc);
+    svgDoc = svgEvalucion.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesEvaluacionWeb(svgDoc);
 
-        svgDoc = svgRecomendaciones.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesRecomendacionWeb(svgDoc);
+    svgDoc = svgRecomendaciones.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesRecomendacionWeb(svgDoc);
 
 
-        svgDoc = svgReferencias.contentDocument;
-        abrirCssSvg(svgDoc);
-        //botonesReferenciasWeb(svgDoc);
+    svgDoc = svgReferencias.contentDocument;
+    abrirCssSvg(svgDoc);
+    //botonesReferenciasWeb(svgDoc);
 
-        svgDoc = svgInfoAdicional.contentDocument;
-        abrirCssSvg(svgDoc);
-        botonesInfoAdicionalWeb(svgDoc);
-        
-        
-        
+    svgDoc = svgInfoAdicional.contentDocument;
+    abrirCssSvg(svgDoc);
+    botonesInfoAdicionalWeb(svgDoc);
+
 }
 
 let cambiarColorMenuWeb = (svgDoc) => {
@@ -395,118 +307,71 @@ let cambiarColorMenuWeb = (svgDoc) => {
         else txtsMenus.classList.remove("menu_cambio");
         indicarSeccionWeb(svgDoc, scrollTop);
 
-    });
+    }, false);
 }
 
 let indicarSeccionWeb = (svgDoc, scrollTop) => {
 
-        /*let scrollTop = document.documentElement.scrollTop;
-        if (scrollTop > 0 && scrollTop < 250) {
-            svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDAINTRODUCCION").style.display = "block";
-        }
-        if (scrollTop > 250 && scrollTop < 1000) {
-            svgDoc.getElementById("TUERCAAPAGADAINTRODUCCION").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDAINTRODUCCION").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADALENGUAJE").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDALENGUAJE").style.display = "block";
-        }
-        if (scrollTop > 1000 && scrollTop < 1950) {
-            svgDoc.getElementById("TUERCAAPAGADALENGUAJE").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDALENGUAJE").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADAACCESIBILIDAD").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDAACCESIBILIDAD").style.display = "block";
-        }
-        if (scrollTop > 1950 && scrollTop < 2600) {
-            svgDoc.getElementById("TUERCAAPAGADAACCESIBILIDAD").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDAACCESIBILIDAD").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADAMATERIAL").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDAMATERIAL").style.display = "block";
-        }
-        if (scrollTop > 2600 && scrollTop < 3500) {
-            svgDoc.getElementById("TUERCAAPAGADAMATERIAL").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDAMATERIAL").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADAEVALUACION").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDAEVALUACION").style.display = "block";
-        }
-        if (scrollTop > 3500 && scrollTop < 4200) {
-            svgDoc.getElementById("TUERCAAPAGADAEVALUACION").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDAEVALUACION").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADARECOMENDACION").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDARECOMENDACION").style.display = "block";
-        }
-        if (scrollTop > 4200 && scrollTop < 5000) {
-            svgDoc.getElementById("TUERCAAPAGADARECOMENDACION").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDARECOMENDACION").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADAREFERENCIA").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDAREFERENCIA").style.display = "block";
-        }
-        if (scrollTop > 5000) {
-            svgDoc.getElementById("TUERCAAPAGADAREFERENCIA").style.display = "block";
-            svgDoc.getElementById("TUERCAENCENDIDAREFERENCIA").style.display = "none";
-            svgDoc.getElementById("TUERCAAPAGADAINFOADICIONAL").style.display = "none";
-            svgDoc.getElementById("TUERCAENCENDIDAINFOADICIONAL").style.display = "block";
-        }*/
-        var arr_nodos_menu = [ 'INTRODUCCION', 'LENGUAJE-2', 'ACCESIBILIDAD',
-                               'MATERIALAUDIOVISUAL', 'EVALUACIONDELOSMATERIALES', 
-                               'RECOMENDACIONESPARALATENCION', 'REFERENCIAS','GLOSARIOYBIBLIOGRAFIA']
+    var arr_nodos_menu = ['INTRODUCCION', 'LENGUAJE-2', 'ACCESIBILIDAD',
+        'MATERIALAUDIOVISUAL', 'EVALUACIONDELOSMATERIALES',
+        'RECOMENDACIONESPARALATENCION', 'REFERENCIAS', 'GLOSARIOYBIBLIOGRAFIA']
 
-        if (scrollTop >= 0 && scrollTop <= 400) {
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 0) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    if (scrollTop >= 0 && scrollTop <= 400) {
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 0) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else if (scrollTop > 400 && scrollTop <= 1500) {//lenguaje
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 1) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 400 && scrollTop <= 1500) {//lenguaje
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 1) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else if (scrollTop > 1500 && scrollTop <= 2500) {//accesibilidad
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 2) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 1500 && scrollTop <= 2500) {//accesibilidad
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 2) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else if (scrollTop > 2500 && scrollTop <= 3300) {//material
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 3) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 2500 && scrollTop <= 3300) {//material
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 3) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else if (scrollTop > 3300 && scrollTop <= 4600) {//evaluacion
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 4) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 3300 && scrollTop <= 4600) {//evaluacion
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 4) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else if (scrollTop > 4600 && scrollTop <= 5600) {//Recomenda
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 5) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 4600 && scrollTop <= 5600) {//Recomenda
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 5) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else if (scrollTop > 5600 && scrollTop <= 6500) {//referencias
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 6) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 5600 && scrollTop <= 6500) {//referencias
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 6) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
-        else  if (scrollTop > 6500){//glosario
-            for(var i in arr_nodos_menu){
-                var iddd= arr_nodos_menu[i];
-                if(i == 7) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-                else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-            }
+    }
+    else if (scrollTop > 6500) {//glosario
+        for (var i in arr_nodos_menu) {
+            var iddd = arr_nodos_menu[i];
+            if (i == 7) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
+            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
         }
+    }
 
 }
 
@@ -520,7 +385,6 @@ let botonesMenuWeb = (svgDoc) => {
     let recomendacion = svgDoc.getElementById("RECOMENDACIONESPARALATENCION");
     let referencia = svgDoc.getElementById("REFERENCIAS");
     let infoAdiconal = svgDoc.getElementById("GLOSARIOYBIBLIOGRAFIA");
-    let txtsMenus = svgDoc.getElementById("MENÚ").getElementsByTagName('text');
 
     introduccion.addEventListener('click', () => {
         location.hash = "#introduccionSeccion";
@@ -553,39 +417,6 @@ let botonesMenuWeb = (svgDoc) => {
     infoAdiconal.addEventListener('click', () => {
         location.hash = "#infoAdicionalSeccion";
     }, false);
-    /*
-    txtsMenus[0].addEventListener('click', () => {
-        location.hash = "#introduccionSeccion";
-    }, false);
-
-    txtsMenus[1].addEventListener('click', () => {
-        location.hash = "#lenguajeSeccion";
-    }, false);
-
-    txtsMenus[2].addEventListener('click', () => {
-        location.hash = "#accesibilidadSeccion";
-    }, false);
-
-    txtsMenus[3].addEventListener('click', () => {
-        location.hash = "#materialAudioSeccion";
-    }, false);
-
-    txtsMenus[4].addEventListener('click', () => {
-        location.hash = "#evaluacionMaterialesSeccion";
-    }, false);
-
-    txtsMenus[5].addEventListener('click', () => {
-        location.hash = "#recomendacionesASeccion";
-    }, false);
-
-    txtsMenus[6].addEventListener('click', () => {
-        location.hash = "#referenciasSeccion";
-    }, false);
-
-    txtsMenus[7].addEventListener('click', () => {
-        location.hash = "#infoAdicionalSeccion";
-    }, false);*/
-
 }
 
 let botonesIntroduccionWeb = (svgDoc) => {
@@ -625,7 +456,7 @@ let botonesLenguajeWeb = (svgDoc) => {
 
     imgLenguajeUno.addEventListener('click', () => {
         Modal.desplegarLenguajeUno();
-    });
+    }, false);
     imgLenguajeDos.addEventListener('click', () => {
         Modal.desplegarLenguajeDos();
         setTimeout(() => {
@@ -639,10 +470,10 @@ let botonesLenguajeWeb = (svgDoc) => {
                 });
             });
         }, 500);
-    });
+    }, false);
     imgLenguajeTres.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/002 LENGUAJE GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 }
 
 let botonesAccesibilidadWeb = (svgDoc) => {
@@ -653,7 +484,7 @@ let botonesAccesibilidadWeb = (svgDoc) => {
 
     imgAccesibilidadImg.addEventListener('click', () => {
         Modal.desplegarAccesoImg();
-    });
+    }, false);
     imgAccesibilidadTxt.addEventListener('click', () => {
         Modal.desplegarAccesoTexto();
         setTimeout(() => {
@@ -667,10 +498,10 @@ let botonesAccesibilidadWeb = (svgDoc) => {
                 });
             });
         }, 500);
-    });
+    }, false);
     imgAccesibilidadVerificacion.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/003 ACCESIBILIDAD GUÍA DE VERIFICACIÓN.pdf")
-    });
+    }, false);
 
 }
 
@@ -683,7 +514,7 @@ let botonesMaterialAudioWeb = (svgDoc) => {
 
     imgMaterialAudioUno.addEventListener('click', () => {
         Modal.desplegarUsoImagenes();
-    });
+    }, false);
 
     imgMaterialAudioDos.addEventListener('click', () => {
         Modal.desplegarElaborarVideos();
@@ -698,15 +529,15 @@ let botonesMaterialAudioWeb = (svgDoc) => {
                 });
             });
         }, 500);
-    });
+    }, false);
 
     imgMaterialAudioTres.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_1 MATERIAL AUD IMÁGENES GUÍA DE VERIFICACIÓN.pdf");
-    });
+    }, false);
 
     imgMaterialAudioCuatro.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/004_2 MATERIAL AUD AUDIOVISUAL GUÍA DE VERIFICACIÓN.pdf");
-    });
+    }, false);
 }
 
 let botonesEvaluacionWeb = (svgDoc) => {
@@ -717,13 +548,13 @@ let botonesEvaluacionWeb = (svgDoc) => {
 
     imgEvaluacion.addEventListener('click', () => {
         Modal.desplegarEvaluacionMaterial();
-    });
+    }, false);
     imgEvalucionAudio.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL AUDIOVISUAL.pdf");
-    });
+    }, false);
     imgEvalucionDocu.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S DE VERIFICACIÓN/005_EVALUACION MATERIAL DOCUMENTAL.pdf");
-    });
+    }, false);
 
 }
 
@@ -739,25 +570,25 @@ let botonesReferenciasWeb = (svgDoc) => {
 
     imgBombilloUno.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/DOCUMENTOS.pdf");
-    });
+    }, false);
     imgBombilloDos.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/RECURSOS EDUCATIVOS.pdf");
-    });
+    }, false);
     imgBombilloTres.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/TALLERISTAS.pdf");
-    });
+    }, false);
     imgBombilloCuatro.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/RECURSOS WEB.pdf");
-    });
+    }, false);
     imgBombilloCinco.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/MATERIAL AUDIOVISUAL.pdf");
-    });
+    }, false);
     imgBombilloSeis.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/ORGANIZACIONES Y PROYECTOS.pdf");
-    });
+    }, false);
     imgBombilloSiete.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/ARTICULOS.pdf");
-    });
+    }, false);
 
     // eventoBombillos(imgBombilloUno, imgBombilloDos, imgBombilloTres, imgBombilloCuatro, imgBombilloCinco, imgBombilloSeis, imgBombilloSiete, svgDocB);
 }
@@ -770,7 +601,7 @@ let botonesRecomendacionWeb = (svgDoc) => {
 
     imgRecomendacionAtencion.addEventListener('click', () => {
         Modal.desplegarRecomendacionAtencionTres();
-    });
+    }, false);
     imgRecomendacionPersonas.addEventListener('click', () => {
         Modal.desplegarRecomendacionAtencionUno();
         setTimeout(() => {
@@ -784,10 +615,10 @@ let botonesRecomendacionWeb = (svgDoc) => {
                 });
             });
         }, 500);
-    });
+    }, false);
     imgRecomendacionDiscapacidad.addEventListener('click', () => {
         Modal.desplegarRecomendacionAtencionDos();
-    });
+    }, false);
 }
 
 
@@ -799,13 +630,13 @@ let botonesInfoAdicionalWeb = (svgDoc) => {
 
     imgGlosario.addEventListener('click', () => {
         Modal.desplegarGlosario();
-    });
+    }, false);
     imgBibliografia.addEventListener('click', () => {
         Modal.desplegarBibliografia();
-    });
+    }, false);
     imgProceso.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/008_RECOMENDACIONES PROCESO DE CUALIFICACION.pdf");
-    });
+    }, false);
 }
 
 let eventoBombillos = (bombilloOffUno, bombilloOffDos, bombilloOffTres, bombilloOffCuatro, bombilloOffCinco, bombilloOffSeis, bombilloOffSiete, svgDocB) => {
@@ -821,59 +652,59 @@ let eventoBombillos = (bombilloOffUno, bombilloOffDos, bombilloOffTres, bombillo
     bombilloOffUno.addEventListener("mouseover", () => {
         bombilloOffUno.style.opacity = "0";
         bombilloOnUno.style.opacity = "1"
-    });
+    },false);
     bombilloOffUno.addEventListener('mouseout', () => {
         bombilloOffUno.style.opacity = "1";
         bombilloOnUno.style.opacity = "0"
-    });
+    },false);
     bombilloOffDos.addEventListener("mouseover", () => {
         bombilloOffDos.style.opacity = "0";
         bombilloOnDos.style.opacity = "1"
-    });
+    },false);
     bombilloOffDos.addEventListener('mouseout', () => {
         bombilloOffDos.style.opacity = "1";
         bombilloOnDos.style.opacity = "0"
-    });
+    },false);
     bombilloOffTres.addEventListener("mouseover", () => {
         bombilloOffTres.style.opacity = "0";
         bombilloOnTres.style.opacity = "1"
-    });
+    },false);
     bombilloOffTres.addEventListener('mouseout', () => {
         bombilloOffTres.style.opacity = "1";
         bombilloOnTres.style.opacity = "0"
-    });
+    },false);
     bombilloOffCuatro.addEventListener("mouseover", () => {
         bombilloOffCuatro.style.opacity = "0";
         bombilloOnCuatro.style.opacity = "1"
-    });
+    },false);
     bombilloOffCuatro.addEventListener('mouseout', () => {
         bombilloOffCuatro.style.opacity = "1";
         bombilloOnCuatro.style.opacity = "0"
-    });
+    },false);
     bombilloOffCinco.addEventListener("mouseover", () => {
         bombilloOffCinco.style.opacity = "0";
         bombilloOnCinco.style.opacity = "1"
-    });
+    },false);
     bombilloOffCinco.addEventListener('mouseout', () => {
         bombilloOffCinco.style.opacity = "1";
         bombilloOnCinco.style.opacity = "0"
-    });
+    },false);
     bombilloOffSeis.addEventListener("mouseover", () => {
         bombilloOffSeis.style.opacity = "0";
         bombilloOnSeis.style.opacity = "1"
-    });
+    },false);
     bombilloOffSeis.addEventListener('mouseout', () => {
         bombilloOffSeis.style.opacity = "1";
         bombilloOnSeis.style.opacity = "0"
-    });
+    },false);
     bombilloOffSiete.addEventListener("mouseover", () => {
         bombilloOffSiete.style.opacity = "0";
         bombilloOnSiete.style.opacity = "1"
-    });
+    },false);
     bombilloOffSiete.addEventListener('mouseout', () => {
         bombilloOffSiete.style.opacity = "1";
         bombilloOnSiete.style.opacity = "0"
-    });
+    },false);
 
 }
 

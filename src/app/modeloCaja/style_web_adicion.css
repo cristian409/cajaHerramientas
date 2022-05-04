@@ -1,40 +1,40 @@
 .cajaPrincipal .contentVsg .svgIntroduccion {
     margin-top: -65vh !important;
-    max-height: 62vh;
+    max-height: 62vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgLenguaje {
-    max-height: 74vh;
+    max-height: 74vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgAccesibilidad {
     margin: -78vh 0 0 -4vw !important;
-    max-height: 80vh;
+    max-height: 80vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgMaterialAudio {
     margin: -80vh 0 0 -4vw !important;
-    max-height: 75vh;
+    max-height: 75vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgEvalucion {
     margin: -74vh 0 0 -4vw !important;
-    max-height: 75vh;
+    max-height: 75vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgRecomendaciones {
     margin: -65vh 0 -8vh -4vw !important;
-    max-height: 75vh;
+    max-height: 75vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgReferencias {
     margin: -9vh 0 0vh -1.9vw !important;
-    max-height: 75vh;
+    max-height: 75vh !important;
 }
 
 .cajaPrincipal .contentVsg .svgInfoAdicional {
-    max-height: 58vh;
-    margin-left: -9vw;
+    max-height: 58vh !important;
+    margin-left: -9vw !important;
 }
 
 .sieteRecomendacionDos .foto1 {
@@ -42,7 +42,159 @@
     width: 34vw !important;
 }
 
-.contentPortada .container .nube.derecha, .contentInterna .nube.derecha {
-    left: 55%;
-    top: -47px;
+.DivRecomendaciones .foto1.derecha {
+    width: 60% !important;
+    margin-top: -50vh !important;
+    margin-left: 37vw !important;
+}
+
+.DivRecomendaciones .foto1.izquierda {
+    width: 69% !important;
+    margin-top: -38vh !important;
+    margin-left: -27vw !important;
+}
+
+.primerDivMarco .foto1,
+.primerDivLenguaje .foto1,
+.segundoDivLenguaje .foto1,
+.primerDivAccesImagen .foto1,
+.segundoDivAccesImagen .foto1,
+.primerDivUsoImg .retrato,
+.primerDivEvaluacionM .foto1 {
+    margin-left: -1vw !important;
+    margin-bottom: -2vh !important;
+    width: 102% !important;
+}
+
+.DivLenguajeDos .item.primero {
+    margin-top: -6vh !important;
+}
+
+.DivLenguajeDos .itemSlider .col-md-6 .torre {
+    width: 38vw !important;
+    margin-left: 0vw !important;
+    margin-top: -10vh !important;
+}
+
+.DivLenguajeDos .itemSlider .col-md-6 .doctora {
+    width: 36vw !important;
+}
+
+.DivLenguajeDos .itemSlider article .divCuarto>div,
+.DivLenguajeDos .itemSlider article .divCinco>div {
+    font-size: 1vw !important;
+}
+
+.DivLenguajeDos .foto1.opcionA {
+    width: 43vw !important;
+    margin-left: 0vw !important;
+    margin-top: -27vh !important;
+    margin-bottom: -12vh !important;
+}
+
+.DivLenguajeDos .itemSlider article .divSeis {
+    line-height: 2vh !important;
+}
+
+.DivLenguajeDos .itemSlider .articleSeis img {
+    width: 80% !important;
+    margin-left: 1vw !important;
+    margin-top: -6vh !important;
+}
+
+.DivLenguajeDos .foto1.opcionB {
+    width: 42vw !important;
+}
+
+.DivAccesibilidadTxt .itemSlider .foto1 {
+    width: 38vw !important;
+}
+
+.DivAccesibilidadTxt .itemSlider .opcionDos {
+    width: 42vw !important;
+    margin-left: -2vw !important;
+    margin-top: 4vh !important;
+}
+
+.DivAccesibilidadTxt .itemSlider .foto1.cuarto {
+    width: 25vw !important;
+    margin-left: 5vw !important;
+    margin-top: 1vh !important;
+}
+
+.primerDivAccesImagen .foto2 {
+    margin-top: -20vh !important;
+}
+
+.primerDivAccesImagen .foto3 {
+    width: 40% !important;
+    margin-top: -65vh !important;
+}
+
+.terceroDivAccesImagen .foto1 {
+    margin-top: -21vh !important;
+    margin-bottom: 1vh !important;
+}
+
+.DivElaboracionV .itemSlider article .imgInterna {
+    width: 15vw !important;
+}
+
+.DivElaboracionV .itemUno {
+    width: 40vw !important;
+    margin-left: -2vw !important;
+    margin-top: -8vh !important;
+}
+
+.DivElaboracionV .itemSlider article a {
+    line-height: 1.9vh !important;
+}
+
+.DivElaboracionV .itemSlider .itemTres {
+    width: 48vw !important;
+    margin-left: -4vw !important;
+}
+
+.DivElaboracionV .itemSlider .itemCinco {
+    width: 34vw !important;
+    margin-left: -1vw !important;
+    margin-top: -5vh !important;
+}
+
+.segundoDivEvaluacionM article .checkBefore::before,
+.terceroDivEvaluacionM article .checkBefore::before {
+    width: 1.3vw !important;
+}
+
+.primerRecomendacionTres .estrellaIzquierda {
+    top: 7vh !important;
+    left: -13vw !important;
+}
+
+.primerRecomendacionTres .tituloPrincipal {
+    padding: 0 20vw !important;
+    line-height: 6vh !important; 
+}
+
+.primerRecomendacionTres .estrellaDerecha {
+    top: -5vh !important;
+    left: 11vw !important;
+}
+
+.segundoRecomendacionTres .foto1 {
+    width: 70% !important;
+}
+
+.segundoRecomendacionTres .foto2 {
+    margin-top: -4vh !important;
+    width: 76% !important;
+}
+
+.DivRecomendacionUno .tituloPrincipal {
+    line-height: 5.6vh !important;
+}
+
+.seisRecomendacionDos .foto1, .sieteRecomendacionDos .foto1 {
+    margin-left: 52vw !important;
+    width: 31% !important;
 }
