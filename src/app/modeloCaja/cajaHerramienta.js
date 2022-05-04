@@ -302,7 +302,7 @@ let cambiarColorMenuWeb = (svgDoc) => {
 
     window.addEventListener('scroll', () => {
         let scrollTop = document.documentElement.scrollTop;
-        let txtsMenus = svgDoc.getElementById("MENÚ");
+        let txtsMenus = svgDoc.getElementById("Capa_2-2");
         if (scrollTop > 1500 && scrollTop < 3300) txtsMenus.classList.add("menu_cambio");
         else txtsMenus.classList.remove("menu_cambio");
         indicarSeccionWeb(svgDoc, scrollTop);
@@ -312,9 +312,11 @@ let cambiarColorMenuWeb = (svgDoc) => {
 
 let indicarSeccionWeb = (svgDoc, scrollTop) => {
 
-    var arr_nodos_menu = ['INTRODUCCION', 'LENGUAJE-2', 'ACCESIBILIDAD',
-        'MATERIALAUDIOVISUAL', 'EVALUACIONDELOSMATERIALES',
-        'RECOMENDACIONESPARALATENCION', 'REFERENCIAS', 'GLOSARIOYBIBLIOGRAFIA']
+    /*var arr_nodos_menu = ['INTRODUCCION-2', 'LENGUAJE-2', 'ACCESIBILIDAD-2',
+        'MATERIALAUDIOVISUAL-2', 'EVALUACIONDELOSMATERIALES-2',
+        'RECOMENDACIONESPARALATENCION-2', 'REFERENCIAS-2', 'GLOSARIOYBIBLIOGRAFIA-2']*/
+    var arr_nodos_menu = ['TUERCA_INTRO', 'TURCO', 'TUERCAACCESIBILIDAD', 'MATERIALAUTUERCA', 
+            'TUERCAEVALUACION', 'TUERCARECOMENDACIONES', 'TUERCAREFERENCIAS', 'TUERCAGLOSARIO']
 
     if (scrollTop >= 0 && scrollTop <= 400) {
         for (var i in arr_nodos_menu) {
@@ -377,14 +379,14 @@ let indicarSeccionWeb = (svgDoc, scrollTop) => {
 
 let botonesMenuWeb = (svgDoc) => {
 
-    let introduccion = svgDoc.getElementById("INTRODUCCION");
+    let introduccion = svgDoc.getElementById("INTRODUCCION-2");
     let lenguaje = svgDoc.getElementById("LENGUAJE-2");
-    let accesibilidad = svgDoc.getElementById("ACCESIBILIDAD");
-    let material = svgDoc.getElementById("MATERIALAUDIOVISUAL");
-    let evaluacion = svgDoc.getElementById("EVALUACIONDELOSMATERIALES");
-    let recomendacion = svgDoc.getElementById("RECOMENDACIONESPARALATENCION");
-    let referencia = svgDoc.getElementById("REFERENCIAS");
-    let infoAdiconal = svgDoc.getElementById("GLOSARIOYBIBLIOGRAFIA");
+    let accesibilidad = svgDoc.getElementById("ACCESIBILIDAD-2");
+    let material = svgDoc.getElementById("MATERIALAUDIOVISUAL-2");
+    let evaluacion = svgDoc.getElementById("EVALUACIONMATERIALES-2");
+    let recomendacion = svgDoc.getElementById("RECOMENDACIONES-2");
+    let referencia = svgDoc.getElementById("REFERENCIAS-2");
+    let infoAdiconal = svgDoc.getElementById("GLOSARIO-2");
 
     introduccion.addEventListener('click', () => {
         location.hash = "#introduccionSeccion";

@@ -86,17 +86,18 @@
 #DOCUMENTOBOMBILLO:hover{filter: drop-shadow(0px 0px 50px #ffe000) brightness(10);}
 
 
-#INTRODUCCION:hover,
+#INTRODUCCION-2:hover,
 #LENGUAJE-2:hover,
-#ACCESIBILIDAD:hover,
-#MATERIALAUDIOVISUAL:hover,
-#EVALUACIONDELOSMATERIALES:hover,
-#RECOMENDACIONESPARALATENCION:hover,
-/*#REFERENCIAS:hover,*/
-#GLOSARIOYBIBLIOGRAFIA:hover,
+#ACCESIBILIDAD-2:hover,
+#MATERIALAUDIOVISUAL-2:hover,
+#EVALUACIONMATERIALES-2:hover,
+#RECOMENDACIONES-2:hover,
+#REFERENCIAS-2:hover,
+#GLOSARIO-2:hover,
 .tuerca_alumbra{
     filter: drop-shadow(2px 0px 5px #fff) brightness(1.15);
     cursor: pointer;
 }
 
 .menu_cambio path.cls-1 {    fill: #000;}
+.menu_cambio image{filter: brightness(0);}
