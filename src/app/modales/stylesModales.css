@@ -1666,3 +1666,22 @@
     font-family: Myriad Pro Bold;
     font-size: 15px;
 }
+
+.DivElaboracionV .itemSlider .itemUno {
+    width: 35vw;
+    margin-left: 4vw;
+}
+
+.DivElaboracionV .itemSlider .itemTres {
+    width: 40vw;
+}
+
+.DivElaboracionV .itemSlider .itemCinco {
+    width: 34vw;
+    margin-left: 5vw;
+}
+
+.DivElaboracionV .itemSlider .itemSeis {
+    width: 84vw;
+    margin-left: 3vw;
+}

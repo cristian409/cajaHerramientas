@@ -640,7 +640,7 @@ if (typeof Object.create !== "function") {
                         }
                         setTimeout((function() {//para alcanzar a leer el alto
                             var it = ahora; //item activo
-                            var largoo = it.clientHeight + 50; //largo del activo mas un poquito de margen
+                            var largoo = it.clientHeight + 10; //largo del activo mas un poquito de margen
                             var div_largo = cont_btns_cont.getElementsByClassName('owl-wrapper-outer')[0]; //item
                             var min_largo = window.innerHeight - 110
                             div_largo.style.minHeight = min_largo+'px'; //minimo de la ventana de largo
