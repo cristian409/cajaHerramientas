@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', async event => {
     ).catch(error => {
         Ayudas.alerta("cajaPrincipal",
             "Imposible acceder al menu", error);
-        location.reload()
+        setTimeout(() => {gestionarMetodos();}, 2500);
+        
     });
 
     await Modal.crear();
@@ -264,7 +265,12 @@ let cambiarColorMenuWeb = (svgDoc) => {
     window.addEventListener('scroll', () => {
         let scrollTop = document.documentElement.scrollTop;
         let txtsMenus = svgDoc.getElementById("Capa_2-2");
-        if (scrollTop > 1500 && scrollTop < 3300) txtsMenus.classList.add("menu_cambio");
+        
+        var sc1 = document.getElementById('accesibilidadSeccion').getBoundingClientRect().top;
+        var scro1 = sc1+screen.height-600;
+        var sc2 = document.getElementById('materialAudioSeccion').getBoundingClientRect().top;
+        var scro2 = sc2+screen.height-600;
+        if((scro1 >=0 && scro1 <screen.height) || (scro2 >=0 && scro2<screen.height) ) txtsMenus.classList.add("menu_cambio");
         else txtsMenus.classList.remove("menu_cambio");
         indicarSeccionWeb(svgDoc, scrollTop);
 
@@ -273,73 +279,27 @@ let cambiarColorMenuWeb = (svgDoc) => {
 
 let indicarSeccionWeb = (svgDoc, scrollTop) => {
 
-    /*var arr_nodos_menu = ['INTRODUCCION-2', 'LENGUAJE-2', 'ACCESIBILIDAD-2',
-        'MATERIALAUDIOVISUAL-2', 'EVALUACIONDELOSMATERIALES-2',
-        'RECOMENDACIONESPARALATENCION-2', 'REFERENCIAS-2', 'GLOSARIOYBIBLIOGRAFIA-2']*/
-    var arr_nodos_menu = ['TUERCA_INTRO', 'TURCO', 'TUERCAACCESIBILIDAD', 'MATERIALAUTUERCA', 
-            'TUERCAEVALUACION', 'TUERCARECOMENDACIONES', 'TUERCAREFERENCIAS', 'TUERCAGLOSARIO']
+    var arr_items_scr_2 ={  "introduccionSeccion"           :"TUERCA_INTRO",
+                            "lenguajeSeccion"               :"TURCO",
+                            "accesibilidadSeccion"          :"TUERCAACCESIBILIDAD",
+                            "materialAudioSeccion"          :"MATERIALAUTUERCA",
+                            "evaluacionMaterialesSeccion"   :"TUERCAEVALUACION",
+                            "recomendacionesASeccion"       :"TUERCARECOMENDACIONES",
+                            "referenciasSeccion"            :"TUERCAREFERENCIAS",
+                            "infoAdicionalSeccion"          :"TUERCAGLOSARIO"}
 
-    if (scrollTop >= 0 && scrollTop <= 400) {
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 0) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
+    for(var i in arr_items_scr_2){
+        var sc = document.getElementById(i).getBoundingClientRect().top;
+        var scro = sc+screen.height-600;
+        if(scro >=0 && scro <screen.height){
+            svgDoc.getElementById(arr_items_scr_2[i]).classList.add("tuerca_alumbra");
+        }else svgDoc.getElementById(arr_items_scr_2[i]).classList.remove("tuerca_alumbra");
     }
-    else if (scrollTop > 400 && scrollTop <= 1500) {//lenguaje
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 1) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-    else if (scrollTop > 1500 && scrollTop <= 2500) {//accesibilidad
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 2) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-    else if (scrollTop > 2500 && scrollTop <= 3300) {//material
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 3) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-    else if (scrollTop > 3300 && scrollTop <= 4600) {//evaluacion
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 4) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-    else if (scrollTop > 4600 && scrollTop <= 5600) {//Recomenda
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 5) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-    else if (scrollTop > 5600 && scrollTop <= 6500) {//referencias
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 6) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-    else if (scrollTop > 6500) {//glosario
-        for (var i in arr_nodos_menu) {
-            var iddd = arr_nodos_menu[i];
-            if (i == 7) svgDoc.getElementById(iddd).classList.add("tuerca_alumbra");
-            else svgDoc.getElementById(iddd).classList.remove("tuerca_alumbra");
-        }
-    }
-
+    
 }
 
 let botonesMenuWeb = (svgDoc) => {
-
+    
     let introduccion = svgDoc.getElementById("INTRODUCCION-2");
     let lenguaje = svgDoc.getElementById("LENGUAJE-2");
     let accesibilidad = svgDoc.getElementById("ACCESIBILIDAD-2");

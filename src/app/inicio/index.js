@@ -80,7 +80,9 @@ let abrirSeccionInterna = elemento => {
                     ).catch(error => {
                         Ayudas.alerta("contentPaginaInicio",
                             "No se encuentra la página de seccion interna", error);
-                        location.reload();
+                        setTimeout(() => {abrirCajaHerramientas();}, 2500);
+                            
+                        //location.reload();
                     });
                 }, 2500);
             });
