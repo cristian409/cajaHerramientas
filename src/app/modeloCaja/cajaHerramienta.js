@@ -267,9 +267,10 @@ let cambiarColorMenuWeb = (svgDoc) => {
         let txtsMenus = svgDoc.getElementById("Capa_2-2");
         
         var sc1 = document.getElementById('accesibilidadSeccion').getBoundingClientRect().top;
-        var scro1 = sc1+screen.height-600;
+        var scro1 = sc1+screen.height;
         var sc2 = document.getElementById('materialAudioSeccion').getBoundingClientRect().top;
-        var scro2 = sc2+screen.height-600;
+        var scro2 = sc2+screen.height-200;
+        
         if((scro1 >=0 && scro1 <screen.height) || (scro2 >=0 && scro2<screen.height) ) txtsMenus.classList.add("menu_cambio");
         else txtsMenus.classList.remove("menu_cambio");
         indicarSeccionWeb(svgDoc, scrollTop);
@@ -290,7 +291,7 @@ let indicarSeccionWeb = (svgDoc, scrollTop) => {
 
     for(var i in arr_items_scr_2){
         var sc = document.getElementById(i).getBoundingClientRect().top;
-        var scro = sc+screen.height-600;
+        var scro = sc+screen.height-200;
         if(scro >=0 && scro <screen.height){
             svgDoc.getElementById(arr_items_scr_2[i]).classList.add("tuerca_alumbra");
         }else svgDoc.getElementById(arr_items_scr_2[i]).classList.remove("tuerca_alumbra");
@@ -531,7 +532,6 @@ let abrirCssSvg = (svgDoc) => {
 let owlCarousel_func = (name) => {
     
     var it = document.getElementById(name);
-    console.log('it',it);
     if(it){
         $("#"+name).owlCarousel({
             autoPlay: 3000, //Set AutoPlay to 3 seconds

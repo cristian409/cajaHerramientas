@@ -81,8 +81,6 @@ let abrirSeccionInterna = elemento => {
                         Ayudas.alerta("contentPaginaInicio",
                             "No se encuentra la página de seccion interna", error);
                         setTimeout(() => {abrirCajaHerramientas();}, 2500);
-                            
-                        //location.reload();
                     });
                 }, 2500);
             });
@@ -102,10 +100,15 @@ let abrirSeccionInterna = elemento => {
  */
 let abrirCajaHerramientas = () => {
     let botonInterno = document.getElementById("btnLlevame");
-    botonInterno.addEventListener('click', async (event) => {
-        event.preventDefault;
-        location.href = "app/modeloCaja/cajaHerramienta.html";
-    });
+    if(botonInterno){
+        botonInterno.addEventListener('click', async (event) => {
+            event.preventDefault;
+            location.href = "app/modeloCaja/cajaHerramienta.html";
+        });
+    }else {
+        setTimeout(() => {abrirCajaHerramientas()}, 2000);
+    }
+        
 }
 
 let hover_llave_out = () => {
