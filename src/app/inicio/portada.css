@@ -19,9 +19,7 @@
     line-height: 34px;
 }
 
-.contentPortada .contentTitulo .tituloPrincipal>span {
-    color: #ffff;
-}
+.contentPortada .contentTitulo .tituloPrincipal>span {    color: #ffff;}
 
 .contentPortada .contentTitulo .estrellaIzquierda {
     width: 6%;
@@ -45,21 +43,16 @@
     line-height: 20px;
 }
 
-.contentPortada .contentTitulo {
-    padding-top: 5vh;
+.contentPortada .contentTitulo {    padding-top: 5vh;}
+@media (max-width:768px) {
+    .contentPortada .container.contentImg {
+        margin-top: -6vh;
+        animation: shake-slow 70s infinite;
+    }
 }
+#svg_opening.muneca_ir{    animation: volar_muneca_ir 3s;}
 
-.contentPortada .container.contentImg {
-    margin-top: -6vh;
-    animation: shake-slow 70s infinite;
-}
-#svg_opening.muneca_ir{
-    animation: volar_muneca_ir 3s;
-}
-
-.contentPortada .container.contentImg .conBrillo {
-    display: none;
-}
+.contentPortada .container.contentImg .conBrillo {    display: none;}
 
 .contentPortada .container.contentImg .btn {
     cursor: pointer;

@@ -82,7 +82,7 @@ let abrirSeccionInterna = elemento => {
                             "No se encuentra la página de seccion interna", error);
                         location.reload();
                     });
-                }, 3000);
+                }, 2500);
             });
         }else{
             setTimeout(() => {abrirSeccionInterna()}, 3000);
