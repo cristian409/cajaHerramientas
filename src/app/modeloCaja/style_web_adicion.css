@@ -100,6 +100,7 @@
     width: 80% !important;
     margin-left: 1vw !important;
     margin-top: -6vh !important;
+    margin-bottom: 0 !important;
 }
 
 .DivLenguajeDos .foto1.opcionB {
@@ -191,7 +192,7 @@
 }
 
 .DivRecomendacionUno .tituloPrincipal {
-    line-height: 5.6vh !important;
+    line-height: 7.5vh !important;
 }
 
 .seisRecomendacionDos .foto1, .sieteRecomendacionDos .foto1 {

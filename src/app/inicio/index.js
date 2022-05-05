@@ -79,6 +79,7 @@ let abrirSeccionInterna = elemento => {
                     ).catch(error => {
                         Ayudas.alerta("contentPaginaInicio",
                             "No se encuentra la página de seccion interna", error);
+                        reload();
                     });
                 }, 1000);
             });

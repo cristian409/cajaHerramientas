@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', async event => {
     ).catch(error => {
         Ayudas.alerta("cajaPrincipal",
             "Imposible acceder al menu", error);
+        reload();
     });
 
     await Modal.crear();
@@ -58,15 +59,7 @@ let botonesIntroduccion = () => {
         event.preventDefault();
         Modal.desplegarRecomendaciones();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-introRecomen").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-introRecomen');
         }, 500);
     }, false);
     document.getElementById("btnGuiaVerificacion").addEventListener('click', (event) => {
@@ -87,15 +80,7 @@ let botonesLenguaje = () => {
         event.preventDefault();
         Modal.desplegarLenguajeDos();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-lenguajeDos").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-lenguajeDos');
         }, 500);
     }, false);
 
@@ -111,15 +96,7 @@ let botonesAccesibilidad = () => {
         event.preventDefault();
         Modal.desplegarAccesoTexto();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-AccessTexto").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-AccessTexto');
         }, 500);
     }, false);
 
@@ -140,15 +117,7 @@ let botonesMaterialAudio = () => {
         event.preventDefault();
         Modal.desplegarElaborarVideos();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-ElaboracionV").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-ElaboracionV');
         }, 500);
     }, false);
 
@@ -190,15 +159,7 @@ let botonesRecomendacion = () => {
         event.preventDefault();
         Modal.desplegarRecomendacionAtencionUno();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-RecomendacionUno").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-RecomendacionUno');
         }, 500);
     }, false);
 
@@ -433,15 +394,7 @@ let botonesIntroduccionWeb = (svgDoc) => {
     imgRecomendaciones.addEventListener('click', () => {
         Modal.desplegarRecomendaciones();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-introRecomen").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-introRecomen');
         }, 500);
     }, false);
     imgGuiaVerifica.addEventListener('click', () => {
@@ -462,15 +415,7 @@ let botonesLenguajeWeb = (svgDoc) => {
     imgLenguajeDos.addEventListener('click', () => {
         Modal.desplegarLenguajeDos();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-lenguajeDos").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-lenguajeDos');
         }, 500);
     }, false);
     imgLenguajeTres.addEventListener('click', () => {
@@ -490,15 +435,7 @@ let botonesAccesibilidadWeb = (svgDoc) => {
     imgAccesibilidadTxt.addEventListener('click', () => {
         Modal.desplegarAccesoTexto();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-AccessTexto").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-AccessTexto');
         }, 500);
     }, false);
     imgAccesibilidadVerificacion.addEventListener('click', () => {
@@ -521,15 +458,7 @@ let botonesMaterialAudioWeb = (svgDoc) => {
     imgMaterialAudioDos.addEventListener('click', () => {
         Modal.desplegarElaborarVideos();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-ElaboracionV").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-ElaboracionV');
         }, 500);
     }, false);
 
@@ -605,15 +534,7 @@ let botonesRecomendacionWeb = (svgDoc) => {
     imgRecomendacionPersonas.addEventListener('click', () => {
         Modal.desplegarRecomendacionAtencionUno();
         setTimeout(() => {
-            $(document).ready(function () {
-                $("#owl-RecomendacionUno").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    autoPlay: false,
-                    items: 1,
-                    itemsDesktop: [640, 5],
-                    itemsDesktopSmall: [414, 4]
-                });
-            });
+            owlCarousel_func('owl-RecomendacionUno');
         }, 500);
     }, false);
     imgRecomendacionDiscapacidad.addEventListener('click', () => {
@@ -645,4 +566,22 @@ let abrirCssSvg = (svgDoc) => {
     css.type = 'text/css';
     css.href = '../../../../../../app//modeloCaja/estilosSvg.css';
     svgDoc.getElementsByTagName('svg')[0].appendChild(css);
+}
+
+let owlCarousel_func = (name) => {
+    
+    var it = document.getElementById(name);
+    console.log('it',it);
+    if(it){
+        $("#"+name).owlCarousel({
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            autoPlay: false,
+            items: 1,
+            itemsDesktop: [640, 5],
+            itemsDesktopSmall: [414, 4]
+        });
+    }else{
+        setTimeout(() => {     owlCarousel_func(name)     }, 4000);
+    }
+        
 }
