@@ -53,6 +53,9 @@
     margin-top: -6vh;
     animation: shake-slow 70s infinite;
 }
+#svg_opening.muneca_ir{
+    animation: volar_muneca_ir 3s;
+}
 
 .contentPortada .container.contentImg .conBrillo {
     display: none;

@@ -39,8 +39,11 @@ and open the template in the editor.
     56%{transform:translate(-4px, 2px) rotate(1.5deg)}
     58%{transform:translate(10px, -7px) rotate(-2.5deg)}60%{transform:translate(-2px, -4px) rotate(-1.5deg)}62%{transform:translate(-3px, 3px) rotate(1.5deg)}64%{transform:translate(8px, 2px) rotate(-1.5deg)}66%{transform:translate(-4px, -1px) rotate(1.5deg)}68%{transform:translate(-1px, -2px) rotate(-1.5deg)}70%{transform:translate(8px, 8px) rotate(.5deg)}72%{transform:translate(-8px, -3px) rotate(-2.5deg)}74%{transform:translate(6px, 5px) rotate(.5deg)}76%{transform:translate(4px, -9px) rotate(1.5deg)}78%{transform:translate(-2px, -6px) rotate(3.5deg)}80%{transform:translate(1px, 0px) rotate(1.5deg)}82%{transform:translate(-4px, 6px) rotate(-2.5deg)}84%{transform:translate(-4px, -3px) rotate(1.5deg)}86%{transform:translate(7px, 10px) rotate(2.5deg)}88%{transform:translate(-3px, -2px) rotate(1.5deg)}90%{transform:translate(8px, -3px) rotate(3.5deg)}92%{transform:translate(0px, 3px) rotate(1.5deg)}94%{transform:translate(5px, -5px) rotate(-2.5deg)}96%{transform:translate(7px, -2px) rotate(-.5deg)}98%{transform:translate(-6px, 0px) rotate(3.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}
     
-    
-    @keyframes transicionNubes {
+@keyframes volar_muneca_ir{
+    0%{transform:translate(0px, 0px) rotate(0.5deg)}
+    100%{transform:translate(1600px, -7px) rotate(2.5deg)}
+}    
+@keyframes transicionNubes {
     0% {     transform: translate(10px,4px);
             -webkit-transform: translate(10px,4px);
             -o-transform: translate(10px,4px);

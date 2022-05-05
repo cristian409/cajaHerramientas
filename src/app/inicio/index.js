@@ -70,6 +70,7 @@ let abrirSeccionInterna = elemento => {
             });
             l_l_ave.addEventListener('click', (event) => {
                 event.preventDefault;
+                document.getElementById("svg_opening").classList.add("muneca_ir");
                 setTimeout(() => {
                     Ayudas.cargarPagina(
                         `${elemento}`,
@@ -81,7 +82,7 @@ let abrirSeccionInterna = elemento => {
                             "No se encuentra la página de seccion interna", error);
                         location.reload();
                     });
-                }, 1000);
+                }, 3000);
             });
         }else{
             setTimeout(() => {abrirSeccionInterna()}, 3000);
