@@ -82,6 +82,8 @@ let abrirSeccionInterna = elemento => {
                     });
                 }, 1000);
             });
+        }else{
+            setTimeout(() => {abrirSeccionInterna()}, 3000);
         }
     }, 1000);
         
