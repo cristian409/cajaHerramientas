@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async event => {
     ).catch(error => {
         Ayudas.alerta("cajaPrincipal",
             "Imposible acceder al menu", error);
-        reload();
+        location.reload()
     });
 
     await Modal.crear();
