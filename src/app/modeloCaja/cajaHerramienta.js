@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', async event => {
     ).then(
         gestionarMetodos,
     ).catch(error => {
-        Ayudas.alerta("cajaPrincipal",
-            "Imposible acceder al menu", error);
+        console.log('hay error',error);
+        /*Ayudas.alerta("cajaPrincipal",
+            "Imposible acceder al menu", error);*/
         setTimeout(() => {gestionarMetodos();}, 2500);
         
     });
@@ -267,7 +268,7 @@ let cambiarColorMenuWeb = (svgDoc) => {
         let txtsMenus = svgDoc.getElementById("Capa_2-2");
         
         var sc1 = document.getElementById('accesibilidadSeccion').getBoundingClientRect().top;
-        var scro1 = sc1+screen.height;
+        var scro1 = sc1+screen.height-200;
         var sc2 = document.getElementById('materialAudioSeccion').getBoundingClientRect().top;
         var scro2 = sc2+screen.height-200;
         

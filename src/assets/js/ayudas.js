@@ -14,6 +14,7 @@ export default class Ayudas {
         let respuesta = await fetch(url);
     
         if (respuesta.ok) {
+            //console.log('->>', ${elemento}  );
             const contenedor = document.getElementById(`${elemento}`);
             contenedor.innerHTML = await respuesta.text();
             return contenedor;

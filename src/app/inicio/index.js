@@ -78,8 +78,9 @@ let abrirSeccionInterna = elemento => {
                     ).then(
                         abrirCajaHerramientas
                     ).catch(error => {
-                        Ayudas.alerta("contentPaginaInicio",
-                            "No se encuentra la página de seccion interna", error);
+                        console.log('hay error',error);
+                        /*Ayudas.alerta("contentPaginaInicio",
+                            "No se encuentra la página de seccion interna", error);*/
                         setTimeout(() => {abrirCajaHerramientas();}, 2500);
                     });
                 }, 2500);
