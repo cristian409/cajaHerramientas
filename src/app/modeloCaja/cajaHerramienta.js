@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', async event => {
 
 let gestionarMetodos = () => {
     cambiarColorMenu();
+    cerrarMenuMobile();
 
     botonesIntroduccion();
     botonesLenguaje();
@@ -49,6 +50,18 @@ let cambiarColorMenu = () => {
             menu.style.color = "#ffff";
         }
     }, false);
+}
+
+let cerrarMenuMobile = () => {
+    let contentMenu = document.getElementById("navbarToggleExternalContent");
+    let tagsA = contentMenu.getElementsByTagName("a");
+    for(let i=0; i < tagsA.length; i++){
+        tagsA[i].addEventListener('click', ()=>{
+            setTimeout(() => {
+                contentMenu.classList.remove("show");
+            }, 2000);
+        });
+    }
 }
 
 let botonesIntroduccion = () => {

@@ -287,7 +287,7 @@
 }
 
 .primerDivEvaluacionM .estrellaDerecha {
-    left: 75px;
+    left: 122px;
 }
 
 .primerRecomendacionDos .estrellaDerecha {
@@ -363,7 +363,7 @@
 }
 
 .cincoDivAccesImagen .estrellaIzquierda {
-    left: -140px;
+    left: -150px;
     top: 20px;
 }
 
@@ -373,7 +373,7 @@
 }
 
 .primerDivEvaluacionM .estrellaIzquierda {
-    left: -70px;
+    left: -122px;
 }
 
 .primerRecomendacionDos .estrellaIzquierda {
@@ -1673,11 +1673,11 @@
 }
 
 .DivElaboracionV .itemSlider .itemTres {
-    width: 40vw;
+    width: 90vw;
 }
 
 .DivElaboracionV .itemSlider .itemCinco {
-    width: 34vw;
+    width: 74vw;
     margin-left: 5vw;
 }
 

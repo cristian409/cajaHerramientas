@@ -111,7 +111,7 @@ and open the template in the editor.
 }
 
 .cajaPrincipal .evaluacionMateriales .estrellaDerecha {
-    left: 102px;
+    left: 80px;
     top: -35px;
 }
 
@@ -159,12 +159,12 @@ and open the template in the editor.
 }
 
 .cajaPrincipal .materialAudio .estrellaIzquierda {
-    left: -105px;
+    left: -80px;
     top: 20px;
 }
 
 .cajaPrincipal .evaluacionMateriales .estrellaIzquierda {
-    left: -80px;
+    left: -105px;
     top: 20px;
 }
 
