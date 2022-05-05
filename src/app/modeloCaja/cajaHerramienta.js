@@ -288,7 +288,7 @@ let leerSvg = () => {
 
     svgDoc = svgReferencias.contentDocument;
     abrirCssSvg(svgDoc);
-    //botonesReferenciasWeb(svgDoc);
+    botonesReferenciasWeb(svgDoc);
 
     svgDoc = svgInfoAdicional.contentDocument;
     abrirCssSvg(svgDoc);
@@ -562,13 +562,13 @@ let botonesEvaluacionWeb = (svgDoc) => {
 
 let botonesReferenciasWeb = (svgDoc) => {
 
-    let imgBombilloUno = svgDoc.getElementById("DOCUMENTOBOMBILLOAPAGADO");
-    let imgBombilloDos = svgDoc.getElementById("RECURSOSEDUCATIVOSBOMBILLOAPAGADO");
-    let imgBombilloTres = svgDoc.getElementById("TALLERISTASBOMBILLOAPAGADO");
-    let imgBombilloCuatro = svgDoc.getElementById("RECURSOSWEBBOMBILLOAPAGADO");
-    let imgBombilloCinco = svgDoc.getElementById("MATERIALAUDIOVISUALBOMBILLOAPAGADO");
-    let imgBombilloSeis = svgDoc.getElementById("ORGANIZACIONESYPROYECTOSBOMBILLOAPAGADO");
-    let imgBombilloSiete = svgDoc.getElementById("ARTICULOSBOMBILLOAPAGADO");
+    let imgBombilloUno = svgDoc.getElementById("DOCUMENTOBOMBILLO");
+    let imgBombilloDos = svgDoc.getElementById("RECURSOSEDUCATIVOSBOMBILLO");
+    let imgBombilloTres = svgDoc.getElementById("TALLERISTASBOMBILLO");
+    let imgBombilloCuatro = svgDoc.getElementById("RECURSOSWEBBOMBILLO");
+    let imgBombilloCinco = svgDoc.getElementById("MATERIALAUDIOVISUALBOMBILLO");
+    let imgBombilloSeis = svgDoc.getElementById("ORGANIZACIONESYPROYECTOSBOMBILLO");
+    let imgBombilloSiete = svgDoc.getElementById("ARTICULOSBOMBILLO");
 
     imgBombilloUno.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/DOCUMENTOS.pdf");
@@ -591,8 +591,6 @@ let botonesReferenciasWeb = (svgDoc) => {
     imgBombilloSiete.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/PDF'S REFERENCIAS/ARTICULOS.pdf");
     }, false);
-
-    // eventoBombillos(imgBombilloUno, imgBombilloDos, imgBombilloTres, imgBombilloCuatro, imgBombilloCinco, imgBombilloSeis, imgBombilloSiete, svgDocB);
 }
 
 let botonesRecomendacionWeb = (svgDoc) => {
@@ -639,75 +637,6 @@ let botonesInfoAdicionalWeb = (svgDoc) => {
     imgProceso.addEventListener('click', () => {
         window.open("../../assets/imagenes/RECURSOS PC/008_RECOMENDACIONES PROCESO DE CUALIFICACION.pdf");
     }, false);
-}
-
-let eventoBombillos = (bombilloOffUno, bombilloOffDos, bombilloOffTres, bombilloOffCuatro, bombilloOffCinco, bombilloOffSeis, bombilloOffSiete, svgDocB) => {
-
-    let bombilloOnUno = svgDocB.getElementById("DOCUMENTOSENBOMBILLOENCENDIDO");
-    let bombilloOnDos = svgDocB.getElementById("RECURSOSEDUCATIVOSENBOMBILLOENCENDIDO");
-    let bombilloOnTres = svgDocB.getElementById("TALLERISTASENBOMBILLOENCENDIDO");
-    let bombilloOnCuatro = svgDocB.getElementById("ARTICULOSENBOMBILLOENCENDIDO");
-    let bombilloOnCinco = svgDocB.getElementById("RECURSOSWEBENBOMBILLOENCENDIDO");
-    let bombilloOnSeis = svgDocB.getElementById("MATERIALAUDIOVISUALENBOMBILLOENCENDIDO");
-    let bombilloOnSiete = svgDocB.getElementById("ORGANIZACIONESYPROYECTOSENBOMBILLOENCENDIDO");
-
-    bombilloOffUno.addEventListener("mouseover", () => {
-        bombilloOffUno.style.opacity = "0";
-        bombilloOnUno.style.opacity = "1"
-    },false);
-    bombilloOffUno.addEventListener('mouseout', () => {
-        bombilloOffUno.style.opacity = "1";
-        bombilloOnUno.style.opacity = "0"
-    },false);
-    bombilloOffDos.addEventListener("mouseover", () => {
-        bombilloOffDos.style.opacity = "0";
-        bombilloOnDos.style.opacity = "1"
-    },false);
-    bombilloOffDos.addEventListener('mouseout', () => {
-        bombilloOffDos.style.opacity = "1";
-        bombilloOnDos.style.opacity = "0"
-    },false);
-    bombilloOffTres.addEventListener("mouseover", () => {
-        bombilloOffTres.style.opacity = "0";
-        bombilloOnTres.style.opacity = "1"
-    },false);
-    bombilloOffTres.addEventListener('mouseout', () => {
-        bombilloOffTres.style.opacity = "1";
-        bombilloOnTres.style.opacity = "0"
-    },false);
-    bombilloOffCuatro.addEventListener("mouseover", () => {
-        bombilloOffCuatro.style.opacity = "0";
-        bombilloOnCuatro.style.opacity = "1"
-    },false);
-    bombilloOffCuatro.addEventListener('mouseout', () => {
-        bombilloOffCuatro.style.opacity = "1";
-        bombilloOnCuatro.style.opacity = "0"
-    },false);
-    bombilloOffCinco.addEventListener("mouseover", () => {
-        bombilloOffCinco.style.opacity = "0";
-        bombilloOnCinco.style.opacity = "1"
-    },false);
-    bombilloOffCinco.addEventListener('mouseout', () => {
-        bombilloOffCinco.style.opacity = "1";
-        bombilloOnCinco.style.opacity = "0"
-    },false);
-    bombilloOffSeis.addEventListener("mouseover", () => {
-        bombilloOffSeis.style.opacity = "0";
-        bombilloOnSeis.style.opacity = "1"
-    },false);
-    bombilloOffSeis.addEventListener('mouseout', () => {
-        bombilloOffSeis.style.opacity = "1";
-        bombilloOnSeis.style.opacity = "0"
-    },false);
-    bombilloOffSiete.addEventListener("mouseover", () => {
-        bombilloOffSiete.style.opacity = "0";
-        bombilloOnSiete.style.opacity = "1"
-    },false);
-    bombilloOffSiete.addEventListener('mouseout', () => {
-        bombilloOffSiete.style.opacity = "1";
-        bombilloOnSiete.style.opacity = "0"
-    },false);
-
 }
 
 let abrirCssSvg = (svgDoc) => {
