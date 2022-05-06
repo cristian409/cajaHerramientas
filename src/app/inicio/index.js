@@ -50,7 +50,7 @@ let abrirSeccionInterna = elemento => {
                 document.getElementById("svg_opening").classList.add("muneca_ir");
                 setTimeout(() => {
                     Ayudas.cargarPagina(
-                        `${elemento}`,
+                        elemento,
                         "app/paginaPortada/portadaInterna.html"
                     ).then(
                         abrirCajaHerramientas
@@ -58,7 +58,11 @@ let abrirSeccionInterna = elemento => {
                         console.log('hay error',error);
                         /*Ayudas.alerta("contentPaginaInicio",
                             "No se encuentra la página de seccion interna", error);*/
-                        setTimeout(() => {abrirCajaHerramientas();}, 2500);
+                        setTimeout(() => {
+                            Ayudas.cargarPagina(elemento,   "app/paginaPortada/portadaInterna.html"
+                            ).then( abrirCajaHerramientas
+                            ).catch(error => {location.reload()});
+                        }, 2500);
                         //setTimeout(() => {location.reload()}, 5500);
                     });
                 }, 2000);

@@ -1,33 +1,33 @@
-.cajaPrincipal .navbar-toggler .fa-bars {
-    font-size: 35px;
-}
+.cajaPrincipal .navbar-toggler .fa-bars {    font-size: 35px;}
 
-.cajaPrincipal .menuMobile .navbar-nav {
-    padding: 7vh 0 7vh 5vw;
-}
+.cajaPrincipal .menuMobile .navbar-nav {    padding: 7vh 0 5vh 5vw;}
 
-.cajaPrincipal .menuMobile {
-    padding-left: 2vw;
-}
+.cajaPrincipal .menuMobile {    padding-left: 2vw;}
 
-.cajaPrincipal .colorMenu {
+.cajaPrincipal .colorMenu {    
     background-color: #C63D96;
+    -webkit-box-shadow: -10px 5px 40px -6px rgb(255 255 255 / 75%);
+    -moz-box-shadow: -10px 5px 40px -6px rgb(255 255 255 / 75%);
+    box-shadow: -10px 5px 40px -6px rgb(255 255 255 / 75%);
 }
 
 .cajaPrincipal .nav-item .estrellaMobile {
     width: 4vw;
-    margin: 9px 0;
+    margin: 0.8vh 0;
 }
 
 .cajaPrincipal .navbar-nav .nav-item {
     font-family: Myriad Pro Bold;
-    margin-left: 12vw;
-    font-size: 6.3vw;
+    margin-left: 8vw;
+    font-size: 6vw;
     line-height: 3vh;
 }
 
-.cajaPrincipal .navbar-nav a {
-    color: #fff;
+.cajaPrincipal .navbar-nav a {    color: #fff;}
+.cajaPrincipal .navbar-nav a:focus, .cajaPrincipal .navbar-nav a:active {  
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+    box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
 }
 
 .cajaPrincipal .navbar-nav .nav-item.evaluacion,

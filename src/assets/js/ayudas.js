@@ -15,7 +15,7 @@ export default class Ayudas {
     
         if (respuesta.ok) {
             //console.log('->>', ${elemento}  );
-            const contenedor = document.getElementById(`${elemento}`);
+            const contenedor = document.getElementById(elemento);
             contenedor.innerHTML = await respuesta.text();
             return contenedor;
         }

@@ -59,7 +59,7 @@ let cerrarMenuMobile = () => {
         tagsA[i].addEventListener('click', ()=>{
             setTimeout(() => {
                 contentMenu.classList.remove("show");
-            }, 2000);
+            }, 500);
         });
     }
 }
