@@ -38,12 +38,12 @@ body strong {
 
 .contentPortada .contentTitulo .estrellaIzquierda {
     width: 2%;
-    left: -21%;
+    left: -18%;
 }
 
 .contentPortada .contentTitulo .estrellaDerecha {
     width: 2%;
-    left: 21%;
+    left: 18%;
 }
 
 .contentPortada .contentTitulo .parrafoTitulo {
@@ -92,11 +92,6 @@ body strong {
 .contentPortada .container .nube.arriba,
 .contentInterna .nube.arriba {
     display: block !important;
-    float: right;
-    right: -50px;
-}
-
-.contentInterna .nube.arriba {
     position: absolute;
     width: 12%;
     right: 40px;
@@ -105,20 +100,13 @@ body strong {
 
 .contentPortada .container .nube.izquierda,
 .contentInterna .nube.izquierda {
-    top: -90px;
+    position: absolute;
+    width: 14%;
+    left: 5%;
+    top: 75%;
 }
 
 .contentPortada .container .nube.derecha,
-.contentInterna .nube.derecha {
-    left: 55%;
-    top: -46px;
-}
-
-.contentInterna .nube.izquierda,
-.contentInterna .nube.derecha {
-    display: block !important;
-}
-
 .contentInterna .nube.derecha {
     position: absolute;
     width: 14%;
@@ -126,11 +114,9 @@ body strong {
     top: 89%;
 }
 
-.contentInterna .nube.izquierda {
-    position: absolute;
-    width: 14%;
-    left: 5%;
-    top: 75%;
+.contentInterna .nube.izquierda,
+.contentInterna .nube.derecha {
+    display: block !important;
 }
 
 /*DENTO DE LA LLAVE*/
